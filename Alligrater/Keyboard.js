@@ -97,14 +97,20 @@ function processInput(inputDir, type){
         if(Fish_Tank[ProcessIndex]){
             Fish_Tank[ProcessIndex].processInput(inputDir, type, TICK_TIME);
         }
-        if(type == 1 && !isSoundPlaying){
-            hit_sound.play();
-            isSoundPlaying = true;
-        }
     }
     else{
         //Send input to all 4 keys
-        //for()
+        for(var i = 0; i < 4; i++){
+            //send to all 4
+            if(SushiInputQueue[SushiInputIndex + i] != null){
+                SushiInputQueue[SushiInputIndex + i].processInput(inputDir, type, TICK_TIME);
+            }
+        }
+    }
+
+    if(type == 1 && !isSoundPlaying){
+        hit_sound.play();
+        isSoundPlaying = true;
     }
 
 }

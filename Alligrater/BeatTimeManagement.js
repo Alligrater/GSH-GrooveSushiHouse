@@ -15,7 +15,9 @@ function nextFish(){
     console.log(ProcessIndex)
 }
 
-function nextSushi(){
+function nextSushi(currentSushi){
+    currentSushi.enabled = false;
+    currentSushi.unregisterSelf();
     SushiInputIndex += 1;
 }
 

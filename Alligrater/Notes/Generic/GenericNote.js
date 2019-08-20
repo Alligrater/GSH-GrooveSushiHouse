@@ -34,5 +34,10 @@ class GenericNote{
         this.stage.removeChild(this.head);
     }
 
+    processInput(key, eventType, currentTime){
+        //Ignore
+    }
+
+
 
 }

@@ -36,6 +36,9 @@ function setupSushiStage(){
 
     //sushistage
     sushi_background  = createSpriteOnStage(sushistage,CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, "Resources/Images/SushiBackground.png");
+
+    var ht_perfect_l = createSpriteOnStage(sushistage, SPAWN_X_LEFT, MAP_CENTER_Y, "Resources/Images/ring_perfect.png");
+    var ht_perfect_r = createSpriteOnStage(sushistage, SPAWN_X_RIGHT, MAP_CENTER_Y, "Resources/Images/ring_perfect.png");
     sushi_background.scale.x = 2;
     sushi_background.scale.y = 2;
 

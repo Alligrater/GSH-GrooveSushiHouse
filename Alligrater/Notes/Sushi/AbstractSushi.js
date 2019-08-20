@@ -66,5 +66,10 @@ class AbstractSushi extends GenericNote{
         doMiss();
     }
 
+    processInput(key, eventType, currentTime){
+        //Ignore
+        //console.log(key, eventType, currentTime);
+    }
+
 
 }
