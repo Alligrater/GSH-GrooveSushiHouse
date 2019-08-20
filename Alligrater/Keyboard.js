@@ -102,9 +102,9 @@ function processInput(inputDir, type){
         //Send input to all 4 keys
         for(var i = 0; i < 4; i++){
             //send to all 4
-            var index = SushiInputIndex[i];
-            if(SushiInputQueue[SushiInputIndex + index] != null){
-                SushiInputQueue[SushiInputIndex + index].processInput(inputDir, type, TICK_TIME);
+            var index = SushiInputIndices[i];
+            if(SushiInputQueue[index] != null){
+                SushiInputQueue[index].processInput(inputDir, type, TICK_TIME);
             }
         }
     }
