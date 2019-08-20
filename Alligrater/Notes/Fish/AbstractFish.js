@@ -1,5 +1,5 @@
 
-var DEFAULT_FISH_SPAWN_X = 900;
+
 
 //Regular Fish Class
 class AbstractFish extends GenericNote{

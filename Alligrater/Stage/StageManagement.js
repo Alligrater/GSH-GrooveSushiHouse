@@ -6,7 +6,7 @@ var message;
 function setupFishingStage(){
 
 
-    fishing_background  = createSpriteOnStage(fishstage,canvas_width / 2, canvas_height / 2, "Resources/Images/FishingBackground.png");
+    fishing_background  = createSpriteOnStage(fishstage,CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, "Resources/Images/FishingBackground.png");
     fishing_background.scale.x = 2;
     fishing_background.scale.y = 2;
     detection_good = createSpriteOnStage(fishstage,GOOD_HANTEI_X, DEFAULT_SPAWN_POINT_Y, "Resources/Images/ring_good.png");
@@ -35,7 +35,7 @@ function setupFishingStage(){
 function setupSushiStage(){
 
     //sushistage
-    sushi_background  = createSpriteOnStage(sushistage,canvas_width / 2, canvas_height / 2, "Resources/Images/SushiBackground.png");
+    sushi_background  = createSpriteOnStage(sushistage,CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, "Resources/Images/SushiBackground.png");
     sushi_background.scale.x = 2;
     sushi_background.scale.y = 2;
 

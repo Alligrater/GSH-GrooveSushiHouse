@@ -2,13 +2,7 @@
 var app;
 
 
-var canvas_width;
-var canvas_height;
 
-var TICK_TIME = 0;
-var MUSIC_OFFSET = 180; //3 Seconds
-
-var AUTO_PLAY = false;
 
 var ACTIVE_STAGE;
 
@@ -17,16 +11,14 @@ var ACTIVE_STAGE;
 function beginPixi(){
 	//set up the application
 	app = new PIXI.Application({
-			width: 800,         // default: 800
-			height: 450,        // default: 600
+			width: CANVAS_WIDTH,         // default: 800
+			height: CANVAS_HEIGHT,        // default: 600
 			antialias: false,    // default: false
 			transparent: false, // default: false
 			resolution: 1,       // default: 1
 		}
 	);
 	document.body.appendChild(app.view);
-	canvas_width = app.view.width;
-	canvas_height = app.view.height;
 	app.renderer.backgroundColor = 0x000000;
 	PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
 	PIXI.settings.ANISOTROPIC_LEVEL = 0;

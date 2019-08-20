@@ -1,7 +1,5 @@
 
-var PERFECT_HANTEI_X = 200;
-var GOOD_HANTEI_X = 200;
-var DEFAULT_SPAWN_POINT_Y = 408;
+
 
 var fishstage;
 //key detect range
