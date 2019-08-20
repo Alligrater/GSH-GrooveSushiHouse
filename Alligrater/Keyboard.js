@@ -56,7 +56,6 @@ let up = keyboard("w"),
 
 up.press = () => {
     processInput("up", 1);
-    console.log(TICK_TIME);
 };
 
 up.release = () => {
@@ -66,7 +65,6 @@ up.release = () => {
 
 down.press = () => {
     processInput("down", 1);
-    console.log(TICK_TIME);
 };
 
 down.release = () => {
@@ -75,7 +73,6 @@ down.release = () => {
 
 left.press = () => {
     processInput("left", 1);
-    console.log(TICK_TIME);
 };
 
 left.release = () => {
@@ -84,7 +81,6 @@ left.release = () => {
 
 right.press = () => {
     processInput("right", 1);
-    console.log(TICK_TIME);
 };
 
 right.release = () => {
@@ -99,6 +95,10 @@ function processInput(inputDir, type){
         }
     }
     else{
+        if(type == 1){
+            console.log("Sushi: " + TICK_TIME)
+        }
+
         //Send input to all 4 keys
         for(var i = 0; i < 4; i++){
             //send to all 4

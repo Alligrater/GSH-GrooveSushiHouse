@@ -204,7 +204,7 @@
 		},
 
 		{
-			"start": 1220,
+			"start": 1205,
 			"type": "regular-sushi",
 			"side": "left",
 			"from": "up"
@@ -212,10 +212,73 @@
 		{
 			"start": 1220,
 			"type": "regular-sushi",
-			"side": "right",
-			"from": "down"
+			"side": "left",
+			"from": "up"
+		},
+		{
+			"start": 1235,
+			"type": "regular-sushi",
+			"side": "left",
+			"from": "up"
 		},
 
+
+		{
+			"start": 1260,
+			"type": "regular-sushi",
+			"side": "right",
+			"from": "up"
+		},
+		{
+			"start": 1275,
+			"type": "regular-sushi",
+			"side": "right",
+			"from": "up"
+		},
+		{
+			"start": 1290,
+			"type": "regular-sushi",
+			"side": "right",
+			"from": "up"
+		},
+
+
+		{
+			"start": 1315,
+			"type": "regular-sushi",
+			"side": "right",
+			"from": "up"
+		},
+		{
+			"start": 1315,
+			"type": "regular-sushi",
+			"side": "left",
+			"from": "up"
+		},
+		{
+			"start": 1330,
+			"type": "regular-sushi",
+			"side": "right",
+			"from": "up"
+		},
+		{
+			"start": 1330,
+			"type": "regular-sushi",
+			"side": "left",
+			"from": "up"
+		},
+		{
+			"start": 1345,
+			"type": "regular-sushi",
+			"side": "right",
+			"from": "up"
+		},
+		{
+			"start": 1345,
+			"type": "regular-sushi",
+			"side": "left",
+			"from": "up"
+		},
 
 		{
 			"start": 1611,

@@ -40,7 +40,6 @@ class DirectionalFish extends AbstractFish{
             return;
         }
         if(currentTime >= this.start + 10 && !this.isReady){
-            console.log("disable!");
             this.enabled = false;
             this.processMissEvent();
             return;

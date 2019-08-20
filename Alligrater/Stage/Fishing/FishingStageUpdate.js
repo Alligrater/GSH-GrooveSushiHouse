@@ -17,7 +17,6 @@ function fishingUpdate(delta){
     if(BeatMap[BeatIndex] != null){
         if(BeatMap[BeatIndex].type != "switch" && TICK_TIME >= BeatMap[BeatIndex].start + MUSIC_OFFSET - BeatSpeed){
             summonFish(BeatMap[BeatIndex]);
-            console.log("BT:" + TICK_TIME);
             BeatIndex += 1;
         }
         else if(BeatMap[BeatIndex].type == "switch" && TICK_TIME >= BeatMap[BeatIndex].start + MUSIC_OFFSET){

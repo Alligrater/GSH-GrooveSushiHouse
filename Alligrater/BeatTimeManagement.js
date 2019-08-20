@@ -12,7 +12,6 @@ function nextFish(){
         Fish_Tank[ProcessIndex].unregisterSelf();
     }
     ProcessIndex += 1;
-    console.log(ProcessIndex)
 }
 
 function nextSushi(currentSushi){
@@ -20,7 +19,7 @@ function nextSushi(currentSushi){
     currentSushi.unregisterSelf();
     for(var i = 0; i < 4; i++){
         if(SushiInputIndices[i] == currentSushi.sushi_index){
-            SushiInputIndices[i] == Math.max(SushiInputIndices) + 1;
+            SushiInputIndices[i] = findMax(SushiInputIndices.values()) + 1;
         }
     }
 }
@@ -44,4 +43,15 @@ function inputTimeCheck(currentTime, inputTime){
     else{
         return ComboRating.NOT_IN_RANGE;
     }
+}
+
+function findMax(inputArray){
+    var max = -1;
+    for(var x of inputArray){
+        if(x > max){
+            max = x;
+        }
+    }
+    return max;
+
 }

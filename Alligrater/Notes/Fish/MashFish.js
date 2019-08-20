@@ -20,7 +20,6 @@ class MashFish extends AbstractFish{
             return;
         }
         if(currentTime >= this.stop){
-            console.log("disabled!");
             this.enabled = false;
             console.log("End Mash!");
             nextFish();

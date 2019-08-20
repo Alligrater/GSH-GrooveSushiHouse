@@ -29,7 +29,8 @@ class AbstractSushi extends GenericNote{
         if(currentTime >= this.start + 10){
             console.log("disable!");
             this.enabled = false;
-            //this.processMissEvent();
+            this.processMissEvent();
+            console.log("miss")
             return;
         }
         this.head.x = this.x - this.velx * (currentTime - this.start + BeatSpeed);
@@ -65,7 +66,7 @@ class AbstractSushi extends GenericNote{
     }
 
     processMissEvent(){
-        nextSushi();
+        nextSushi(this);
         doMiss();
     }
 
