@@ -132,8 +132,8 @@ class LongFish extends AbstractFish{
     }
 
     unregisterSelf(){
-        app.stage.removeChild(this.head);
-        app.stage.removeChild(this.body);
-        app.stage.removeChild(this.tail);
+        this.stage.removeChild(this.head);
+        this.stage.removeChild(this.body);
+        this.stage.removeChild(this.tail);
     }
 }

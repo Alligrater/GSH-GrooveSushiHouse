@@ -29,10 +29,10 @@ const ComboRating = {
 function inputTimeCheck(currentTime, inputTime){
     //1. What is a perfect hit:
     console.log("Check");
-    if(inputTime - currentTime <= 10){
+    if(inputTime - currentTime <= 10 && inputTime - currentTime >= -5){
         return ComboRating.PERFECT;
     }
-    else if(inputTime - currentTime <= 25){
+    else if(inputTime - currentTime <= 25 || inputTime - currentTime >= -10){
         return ComboRating.GOOD;
     }
     else{

@@ -1,16 +1,5 @@
 
-var MAP_CENTER_X = 400;
-var MAP_CENTER_Y = 225;
 
-
-var SPAWN_X_LEFT = MAP_CENTER_X - 800/3;
-var SPAWN_X_RIGHT = MAP_CENTER_X + 800/3;
-var SPAWN_Y_UP = MAP_CENTER_Y - 510/3;
-var SPAWN_Y_DOWN = MAP_CENTER_Y + 510/3;
-
-//                1/2 WINDOW HEIGHT
-var SPAWNDISTANCE_Y = MAP_CENTER_Y + 510 / 4;
-var SPAWNDISTANCE_X = MAP_CENTER_X + 800 / 4;
 
 
 class AbstractSushi extends GenericNote{

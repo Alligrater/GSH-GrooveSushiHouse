@@ -8,6 +8,8 @@ class GenericNote{
         this.head = null;
         this.index = CURRENT_NOTE_INDEX;
 
+        this.stage = app.stage;
+
         CURRENT_NOTE_INDEX += 1;
     }
 
@@ -29,7 +31,7 @@ class GenericNote{
 
     unregisterSelf(){
         //Do nothing
-        app.stage.removeChild(this.head);
+        this.stage.removeChild(this.head);
     }
 
 
