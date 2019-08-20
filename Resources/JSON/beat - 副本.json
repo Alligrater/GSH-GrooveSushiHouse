@@ -1,0 +1,57 @@
+{
+	"name":"DoReMiFa Beat",
+	"path":"Resources/BGM/offset_test_music.wav",
+	"offset":180,
+	"timepernote": 100,
+	"map":
+	[
+		{
+			"start":70,
+			"type":"regular"
+		},
+		
+		{
+			"start":105,
+			"type":"regular"
+		},
+
+		{
+			"start":140,
+			"type":"regular"
+		},
+		
+		{
+			"start":175,
+			"type":"regular"
+		},
+		
+		{
+			"start":210,
+			"type":"regular"
+		},
+		
+		{
+			"start":245,
+			"type":"long",
+			"until":280
+		},
+
+		{
+			"start":315,
+			"type":"regular"
+		},
+		{
+			"start":350,
+			"type":"regular"
+		},
+		{
+			"start":385,
+			"type":"regular"
+		},
+		{
+			"start":420,
+			"type":"long",
+			"until":455
+		}
+	]
+}

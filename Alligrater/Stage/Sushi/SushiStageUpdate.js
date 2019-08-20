@@ -1,0 +1,50 @@
+
+
+SushiOrderQueue = [];
+SushiOrderIndex = 0;
+
+
+SushiInputQueue = [];
+SushiInputIndex = 0;
+
+
+var sushistage;
+var sushi_background;
+
+var hasUpdatedQueue = false;
+
+function sushiUpdate(delta){
+    if(ACTIVE_STAGE == sushistage){
+        //Begin parsing:
+        if(!hasUpdatedQueue){
+            while(BeatMap[BeatIndex] != null && BeatMap[BeatIndex].type != "switch"){
+                //Do work
+                SushiOrderQueue.push(BeatMap[BeatIndex]);
+
+                //Then increment
+                BeatIndex += 1;
+            }
+            hasUpdatedQueue = true;
+        }
+
+        if(SushiOrderQueue[SushiOrderIndex] != null && TICK_TIME >= SushiOrderQueue[SushiOrderIndex].start + MUSIC_OFFSET - BeatSpeed){
+            //Summon Sushi
+            for(var i = 0; i < 4; i++){
+                if(SushiOrderQueue[SushiOrderIndex + i] != null) {
+                    summonSushi(SushiOrderQueue[SushiOrderIndex + i]);
+                }
+            }
+
+            SushiOrderIndex += 4;
+        }
+
+        //Update All Sushi
+        for(var x of SushiInputQueue){
+            x.update(TICK_TIME);
+        }
+
+
+
+    }
+
+}

@@ -1,0 +1,284 @@
+{
+	"name":"DoReMiFa Beat",
+	"path":"Resources/BGM/7El.mp3",
+	"offset":180,
+	"timepernote": 80,
+	"map":
+	[
+		{
+			"start":60,
+			"type":"regular-fish"
+		},
+		{
+			"start":80,
+			"type":"regular-fish"
+		},
+	
+		{
+			"start":100,
+			"type":"regular-fish"
+		},
+
+
+		{
+			"start":200,
+			"type":"long-fish",
+			"until":290
+		},
+		{
+			"start":315,
+			"type":"directional-fish",
+			"direction": "up"
+		},
+		{
+			"start":330,
+			"type":"directional-fish",
+			"direction": "down"
+		},
+		
+		{
+			"start":345,
+			"type":"directional-fish",
+			"direction": "up"
+		},
+
+		{
+			"start":370,
+			"type":"directional-fish",
+			"direction": "down"
+		},
+		{
+			"start":385,
+			"type":"directional-fish",
+			"direction": "up"
+		},
+		{
+			"start":400,
+			"type":"directional-fish",
+			"direction": "down"
+		},
+		{
+			"start":425,
+			"type":"directional-fish",
+			"direction": "down"
+		},
+		{
+			"start":440,
+			"type":"directional-fish",
+			"direction": "down"
+		},
+		{
+			"start":455,
+			"type":"directional-fish",
+			"direction": "down"
+		},
+		{
+			"start":479,
+			"type":"regular-fish"
+		},
+		{
+			"start":502,
+			"type":"regular-fish"
+		},
+		{
+			"start":625,
+			"type":"regular-fish"
+		},
+		{
+			"start":631,
+			"type":"regular-fish"
+		},
+		{
+			"start":637,
+			"type":"regular-fish"
+		},
+		{
+			"start":643,
+			"type":"regular-fish"
+		},
+		{
+			"start":649,
+			"type":"regular-fish"
+		},
+		{
+			"start":655,
+			"type":"regular-fish"
+		},
+		{
+			"start":661,
+			"type":"regular-fish"
+		},
+		{
+			"start":662,
+			"type":"regular-fish"
+		},
+
+		{
+			"start":679,
+			"type":"directional-fish",
+			"direction": "up"
+		},
+		{
+			"start":693,
+			"type":"directional-fish",
+			"direction": "down"
+		},
+		{
+			"start":707,
+			"type":"directional-fish",
+			"direction": "up"
+		},
+		{
+			"start":761,
+			"type":"regular-fish"
+		},
+		{
+			"start":775,
+			"type":"regular-fish"
+		},
+		{
+			"start":789,
+			"type":"regular-fish"
+		},
+		{
+			"start":814,
+			"type":"regular-fish"
+		},
+		{
+			"start":828,
+			"type":"regular-fish"
+		},
+		{
+			"start":842,
+			"type":"regular-fish"
+		},
+		{
+			"start":873,
+			"type":"regular-fish"
+		},
+		{
+			"start":888,
+			"type":"regular-fish"
+		},
+		{
+			"start":903,
+			"type":"regular-fish"
+		},
+		{
+			"start":926,
+			"type":"long-fish",
+			"until":939
+		},
+		{
+			"start":954,
+			"type":"long-fish",
+			"until": 990
+		},
+		{
+			"start":1004,
+			"type":"long-fish",
+			"until": 1049
+		},
+
+		{
+			"start":1064,
+			"type":"mash-fish",
+			"until": 1107
+		},
+
+		{
+			"start":1122,
+			"type":"regular-fish"
+		},
+		{
+			"start":1137,
+			"type":"regular-fish"
+		},
+		{
+			"start":1152,
+			"type":"regular-fish"
+		},
+		{
+			"start": 1153,
+			"type": "switch"
+		},
+
+		{
+			"start": 1205,
+			"type": "trash-sushi",
+			"side": "up",
+			"from": "left"
+		},
+		{
+			"start": 1205,
+			"type": "trash-sushi",
+			"side": "down",
+			"from": "right"
+		},
+		{
+			"start": 1220,
+			"type": "regular-sushi",
+			"side": "left",
+			"from": "up"
+		},
+		{
+			"start": 1220,
+			"type": "regular-sushi",
+			"side": "right",
+			"from": "down"
+		},
+
+
+		{
+			"start": 1611,
+			"type": "switch"
+		},
+		{
+			"start":1650,
+			"type":"directional-fish",
+			"direction": "up"
+		},
+		{
+			"start":1665,
+			"type":"directional-fish",
+			"direction": "down"
+		},
+
+		{
+			"start":1680,
+			"type":"directional-fish",
+			"direction": "up"
+		},
+
+		{
+			"start":1705,
+			"type":"directional-fish",
+			"direction": "down"
+		},
+		{
+			"start":1720,
+			"type":"directional-fish",
+			"direction": "up"
+		},
+		{
+			"start":1735,
+			"type":"directional-fish",
+			"direction": "down"
+		},
+		{
+			"start":1760,
+			"type":"directional-fish",
+			"direction": "down"
+		},
+		{
+			"start":1775,
+			"type":"directional-fish",
+			"direction": "down"
+		},
+		{
+			"start":1790,
+			"type":"directional-fish",
+			"direction": "down"
+		}
+	]
+}
