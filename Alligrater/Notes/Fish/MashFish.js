@@ -37,7 +37,7 @@ class MashFish extends AbstractFish{
     processInput(key, eventType, currentTime){
         if(eventType == 1){
             var comboRating = inputTimeCheck(currentTime, this.start);
-            if(comboRating = ComboRating.GOOD || comboRating == ComboRating.PERFECT){
+            if(comboRating == ComboRating.GOOD || comboRating == ComboRating.PERFECT){
                 if(!this.isReady){
                     console.log("Begin Mash!");
                     doCombo("perfect");

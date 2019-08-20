@@ -74,13 +74,13 @@ class LongFish extends AbstractFish{
             var comboRating = inputTimeCheck(currentTime, this.start);
             //Also check if it's head, if it's not head then it's nothing.
             console.log("Begin Long Note");
-            if(comboRating = ComboRating.PERFECT){
+            if(comboRating == ComboRating.PERFECT){
                 doCombo("perfect");
                 this.isHolding = true;
                 //this.head.visible = false;
                 this.isReady = true;
             }
-            else if(comboRating = ComboRating.GOOD){
+            else if(comboRating == ComboRating.GOOD){
                 doCombo("good");
                 this.isHolding = true;
                 //this.head.visible = false;

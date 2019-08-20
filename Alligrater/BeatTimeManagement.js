@@ -18,7 +18,11 @@ function nextFish(){
 function nextSushi(currentSushi){
     currentSushi.enabled = false;
     currentSushi.unregisterSelf();
-    SushiInputIndex += 1;
+    for(var i = 0; i < 4; i++){
+        if(SushiInputIndices[i] == currentSushi.sushi_index){
+            SushiInputIndices[i] == Math.max(SushiInputIndices) + 1;
+        }
+    }
 }
 
 const ComboRating = {
@@ -30,14 +34,14 @@ const ComboRating = {
 
 function inputTimeCheck(currentTime, inputTime){
     //1. What is a perfect hit:
-    console.log("Check");
-    if(inputTime - currentTime <= 10 && inputTime - currentTime >= -5){
+
+    if(inputTime - currentTime <= 4 && inputTime - currentTime >= -4){
         return ComboRating.PERFECT;
     }
-    else if(inputTime - currentTime <= 25 || inputTime - currentTime >= -10){
+    else if(inputTime - currentTime <= 10 && inputTime - currentTime >= -10){
         return ComboRating.GOOD;
     }
     else{
-        return null;
+        return ComboRating.NOT_IN_RANGE;
     }
 }

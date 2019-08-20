@@ -1,6 +1,6 @@
 
 
-
+var CUR_SUSHI_INDEX = 0;
 
 class AbstractSushi extends GenericNote{
     constructor(time, side, from){
@@ -15,6 +15,9 @@ class AbstractSushi extends GenericNote{
         this.side = side;
         this.from = from;
         this.head = null;
+
+        this.sushi_index = CUR_SUSHI_INDEX;
+        CUR_SUSHI_INDEX += 1;
 
         this.setSpawnPointAndVelocity();
     }

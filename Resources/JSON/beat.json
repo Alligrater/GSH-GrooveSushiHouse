@@ -204,18 +204,6 @@
 		},
 
 		{
-			"start": 1205,
-			"type": "trash-sushi",
-			"side": "up",
-			"from": "left"
-		},
-		{
-			"start": 1205,
-			"type": "trash-sushi",
-			"side": "down",
-			"from": "right"
-		},
-		{
 			"start": 1220,
 			"type": "regular-sushi",
 			"side": "left",

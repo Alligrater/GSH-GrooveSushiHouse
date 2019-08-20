@@ -5,7 +5,7 @@ SushiOrderIndex = 0;
 
 
 SushiInputQueue = [];
-SushiInputIndex = 0;
+SushiInputIndices = [0, 1, 2, 3];
 
 
 var sushistage;
