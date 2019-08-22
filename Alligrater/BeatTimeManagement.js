@@ -17,9 +17,11 @@ function nextFish(){
 function nextSushi(currentSushi){
     currentSushi.enabled = false;
     currentSushi.unregisterSelf();
+    var maxVal = findMax(SushiInputIndices.values()) + 1;
     for(var i = 0; i < 4; i++){
         if(SushiInputIndices[i] == currentSushi.sushi_index){
-            SushiInputIndices[i] = findMax(SushiInputIndices.values()) + 1;
+            SushiInputIndices.splice(i, 1);
+            SushiInputIndices.push(maxVal);
         }
     }
 }

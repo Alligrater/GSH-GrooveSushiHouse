@@ -30,7 +30,7 @@ function setupFishingStage(){
 }
 
 
-
+var sushimessage;
 
 function setupSushiStage(){
 
@@ -41,6 +41,20 @@ function setupSushiStage(){
     var ht_good_l = createSpriteOnStage(sushistage, SPAWN_X_LEFT, MAP_CENTER_Y, "Resources/Images/ring_good.png");
     var ht_perfect_r = createSpriteOnStage(sushistage, SPAWN_X_RIGHT, MAP_CENTER_Y, "Resources/Images/ring_perfect.png");
     var ht_good_r = createSpriteOnStage(sushistage, SPAWN_X_RIGHT, MAP_CENTER_Y, "Resources/Images/ring_good.png");
+    let style = new PIXI.TextStyle({
+        fontFamily: "Arial",
+        fontSize: 18,
+        fill: "white",
+        stroke: '#ff3300',
+        strokeThickness: 4,
+        dropShadow: true,
+        dropShadowColor: "#000000",
+        dropShadowBlur: 4,
+        dropShadowAngle: Math.PI / 6,
+        dropShadowDistance: 6,
+    });
+    sushimessage = new PIXI.Text("Hello Pixi!", style);
+    sushistage.addChild(sushimessage);
     sushi_background.scale.x = 2;
     sushi_background.scale.y = 2;
 

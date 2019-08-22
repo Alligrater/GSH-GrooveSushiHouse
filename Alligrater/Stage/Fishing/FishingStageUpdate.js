@@ -40,7 +40,7 @@ function fishingUpdate(delta){
 
 
     for(var n of Fish_Tank){
-        n.update(TICK_TIME);
+        n.update(TICK_TIME + delta);
     }
 
     isSoundPlaying = false;

@@ -14,6 +14,8 @@ var sushi_background;
 var hasUpdatedQueue = false;
 
 function sushiUpdate(delta){
+    sushimessage.text = SushiInputIndices;
+
     if(ACTIVE_STAGE == sushistage){
         //Begin parsing:
         if(!hasUpdatedQueue){

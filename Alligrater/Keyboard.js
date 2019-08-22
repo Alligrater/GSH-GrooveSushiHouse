@@ -100,13 +100,27 @@ function processInput(inputDir, type){
         }
 
         //Send input to all 4 keys
-        for(var i = 0; i < 4; i++){
+        //Cheap fix:
+        var SushiTemp = [];
+        for(var i = 0; i < SushiInputIndices.length; i++){
             //send to all 4
             var index = SushiInputIndices[i];
+
             if(SushiInputQueue[index] != null){
-                SushiInputQueue[index].processInput(inputDir, type, TICK_TIME);
+                SushiTemp.push(SushiInputQueue[index]);
             }
         }
+
+        for(var i = 0; i < 4; i++){
+            var index = findFirstDir(SushiTemp, DIRECTIONS[i]);
+
+            //console.log("First " + DIRECTIONS[i] + ": " + index);
+            if(SushiTemp[index] != null){
+                //console.log(SushiTemp[index])
+                SushiTemp[index].processInput(inputDir, type, TICK_TIME);
+            }
+        }
+        //console.log("===========")
     }
 
     if(type == 1 && !isSoundPlaying){
@@ -114,4 +128,17 @@ function processInput(inputDir, type){
         isSoundPlaying = true;
     }
 
+}
+
+var DIRECTIONS = ["up", "down", "left", "right"];
+
+function findFirstDir(siq, direction){
+    var firstIndex = -1;
+    var first
+    for(var i = 0; i < siq.length; i++){
+        if(siq[i].side == direction){
+            return i;
+        }
+    }
+    return -1;
 }
