@@ -35,7 +35,6 @@ class AbstractSushi extends GenericNote{
         }
         this.head.x = this.x - this.velx * (currentTime - this.start + BeatSpeed);
         this.head.y = this.y - this.vely * (currentTime - this.start + BeatSpeed);
-
     }
 
     setSpawnPointAndVelocity(){
@@ -68,11 +67,6 @@ class AbstractSushi extends GenericNote{
     processMissEvent(){
         nextSushi(this);
         doMiss();
-    }
-
-    processInput(key, eventType, currentTime){
-        //Ignore
-        //console.log(key, eventType, currentTime);
     }
 
 

@@ -38,6 +38,7 @@ function beginPixi(){
 		.add("Resources/Images/SushiBackground.png")
 		.add("Resources/Images/PlainSushi.png")
 		.add("Resources/Images/AnotherSushi.png")
+		.add("Resources/Images/GhostSushi.png")
 		.load(setupStage);
 
 
