@@ -43,7 +43,7 @@ function fishingUpdate(delta){
         n.update(TICK_TIME + delta);
     }
 
-    isSoundPlaying = false;
+
 }
 
 function executeAutoPlay(){

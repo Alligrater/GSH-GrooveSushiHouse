@@ -70,12 +70,19 @@ function beginRenderSequence(){
 
 }
 
+var soundcooldown = 0;
+
 //This is good
 function update(delta){
 	TICK_TIME += 1;
 	message.text = (TICK_TIME) + " INDEX: " + ProcessIndex + " COMBO: " + COMBO_COUNT;
 	fishingUpdate(delta);
 	sushiUpdate(delta);
+	soundcooldown += 1;
+	if(soundcooldown >= 4){
+		isSoundPlaying = false;
+		soundcooldown = 0;
+	}
 
 }
 
