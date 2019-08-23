@@ -1,4 +1,4 @@
-class RegularSushi extends AbstractSushi{
+class JunkSushi extends AbstractSushi{
     constructor(time, side, from){
         super(time, side, from)
         //Basically the same thing.
