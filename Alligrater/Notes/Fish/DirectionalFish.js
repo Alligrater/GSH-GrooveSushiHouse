@@ -5,11 +5,9 @@ class DirectionalFish extends AbstractFish{
         this.type = "directional-fish";
         this.direction = direction;
 
-        var headPath = "Resources/Images/PufferFish.png";
-        var arrowPath  = "Resources/Images/PufferFish_DIR.png";
+        var headPath = "Resources/Images/Directional.png";
         this.head = createSpriteOnStage(fishstage,this.x, this.y, headPath);
         scaleSprite(this.head, 1.5);
-        this.arrow = createSpriteOnStage(fishstage,this.x, this.y, arrowPath);
 
         this.setDirection();
     }
@@ -51,13 +49,13 @@ class DirectionalFish extends AbstractFish{
     setDirection(){
         switch(this.direction){
             case "up":
-                this.arrow.rotation = 0.5*Math.PI;
+                this.head.rotation = 0.5*Math.PI;
                 break;
             case "down":
-                this.arrow.rotation = 1.5*Math.PI;
+                this.head.rotation = 1.5*Math.PI;
                 break;
             case "right":
-                this.arrow.rotation = Math.PI;
+                this.head.rotation = Math.PI;
                 break;
             case "left":
                 break;
