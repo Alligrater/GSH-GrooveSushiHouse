@@ -50,15 +50,18 @@ class AbstractSushi extends GenericNote{
         switch(this.side){
             case("left"):
                 this.x = SPAWN_X_LEFT;
-                this.y = sushi_background.y + directionVec * SPAWNDISTANCE_Y;
+                break;
+            case("center"):
+                this.x = MAP_CENTER_X;
                 break;
             case("right"):
                 this.x = SPAWN_X_RIGHT;
-                this.y = MAP_CENTER_Y + directionVec * SPAWNDISTANCE_Y;
                 break;
             default:
                 break;
+
         }
+        this.y = MAP_CENTER_Y + directionVec * SPAWNDISTANCE_Y;
         this.velx = 0;
 
         this.vely = (this.y - MAP_CENTER_Y)/BeatSpeed;
