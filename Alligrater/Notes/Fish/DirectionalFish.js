@@ -5,7 +5,7 @@ class DirectionalFish extends AbstractFish{
         this.type = "directional-fish";
         this.direction = direction;
 
-        var headPath = "Resources/Images/Directional.png";
+        var headPath = "Resources/Images/DirectionalFish.png";
         this.head = createSpriteOnStage(fishstage,this.x, this.y, headPath);
         scaleSprite(this.head, 1.5);
 
@@ -43,7 +43,6 @@ class DirectionalFish extends AbstractFish{
             return;
         }
         this.head.x = this.x - this.basespeed * (currentTime - this.start + BeatSpeed);
-        this.arrow.x = this.head.x;
     }
 
     setDirection(){
@@ -67,6 +66,5 @@ class DirectionalFish extends AbstractFish{
     unregisterSelf(){
         //Do nothing
         app.stage.removeChild(this.head);
-        app.stage.removeChild(this.arrow);
     }
 }
