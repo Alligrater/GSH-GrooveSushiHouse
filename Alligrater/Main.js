@@ -24,21 +24,30 @@ function beginPixi(){
 	PIXI.settings.ANISOTROPIC_LEVEL = 0;
 
 	PIXI.loader
-		.add("Resources/Images/FishingBackground.png")
-		.add("Resources/Images/RegularFish.png")
+		//General Assets
 		.add("Resources/Images/ring_good.png")
 		.add("Resources/Images/ring_perfect.png")
 		.add("Resources/Images/ring_miss.png")
+		//Fishing
+		.add("Resources/Images/FishingBackground.png")
+		//Fish
+		.add("Resources/Images/RegularFish.png")
 		.add("Resources/Images/FishHead.png")
 		.add("Resources/Images/FishBody.png")
 		.add("Resources/Images/FishTail.png")
 		.add("Resources/Images/DirectionalFish.png")
 		.add("Resources/Images/MashFish.png")
+		//Sushi-ing
 		.add("Resources/Images/SushiBackground.png")
+		//Sushi
 		.add("Resources/Images/PlainSushi.png")
 		.add("Resources/Images/AnotherSushi.png")
 		.add("Resources/Images/GhostSushi.png")
 		.add("Resources/Images/Melon.png")
+
+		.add("Resources/Images/SushiHead.png")
+		.add("Resources/Images/SushiBody.png")
+		.add("Resources/Images/SushiTail.png")
 		.load(setupStage);
 
 

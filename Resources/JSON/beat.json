@@ -238,23 +238,10 @@
 			"side": "left",
 			"from": "up"
 		},
-
-
 		{
 			"start": 1260,
-			"type": "regular-sushi",
-			"side": "right",
-			"from": "up"
-		},
-		{
-			"start": 1275,
-			"type": "regular-sushi",
-			"side": "down",
-			"from": "up"
-		},
-		{
-			"start": 1290,
-			"type": "regular-sushi",
+			"until": 1290,
+			"type": "long-sushi",
 			"side": "right",
 			"from": "up"
 		},

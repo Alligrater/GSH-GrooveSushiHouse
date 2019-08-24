@@ -15,7 +15,7 @@ class LongFish extends AbstractFish{
         var headSample = createSpriteOnStage(fishstage,this.x, this.y, headPath);
         scaleSprite(headSample, 1.5);
 
-        var bodyLength = this.x - this.x + (this.stop - this.start) * this.basespeed - headSample.width;
+        var bodyLength = (this.stop - this.start) * this.basespeed - headSample.width;
 
 
         //Make body part

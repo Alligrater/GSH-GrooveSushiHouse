@@ -9,6 +9,9 @@ function summonSushi(summonJSON){
         case "junk-sushi":
             summonJunkSushi(summonJSON);
             break;
+        case "long-sushi":
+            summonLongSushi(summonJSON);
+            break;
         default:
             break;
     }
@@ -27,5 +30,10 @@ function summonGhostSushi(summonJSON){
 
 function summonJunkSushi(summonJSON){
     var sushi = new JunkSushi(summonJSON.start + MUSIC_OFFSET, summonJSON.side, summonJSON.from)
+    SushiInputQueue.push(sushi);
+}
+
+function summonLongSushi(summonJSON){
+    var sushi = new LongSushi(summonJSON.start + MUSIC_OFFSET, summonJSON.until + MUSIC_OFFSET, summonJSON.side, summonJSON.from)
     SushiInputQueue.push(sushi);
 }
