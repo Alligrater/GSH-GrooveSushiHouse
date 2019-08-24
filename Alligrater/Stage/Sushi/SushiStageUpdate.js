@@ -40,13 +40,19 @@ function sushiUpdate(delta){
             SushiOrderIndex += 4;
         }
 
+
+        if(AUTO_PLAY){
+            sushiAutoPlay();
+        }
+
         //Update All Sushi
         for(var x of SushiInputQueue){
             x.update(TICK_TIME);
         }
 
-
-
     }
+}
 
+function sushiAutoPlay(){
+    
 }

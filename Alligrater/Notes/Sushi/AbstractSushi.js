@@ -51,7 +51,7 @@ class AbstractSushi extends GenericNote{
             case("left"):
                 this.x = SPAWN_X_LEFT;
                 break;
-            case("center"):
+            case("down"):
                 this.x = MAP_CENTER_X;
                 break;
             case("right"):

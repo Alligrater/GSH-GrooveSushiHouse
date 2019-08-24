@@ -6,7 +6,7 @@ class JunkSushi extends AbstractSushi{
 
         this.head = createSpriteOnStage(sushistage, this.x, this.y, headPath);
         scaleSprite(this.head, 1.2);
-        this.type = "regular-sushi"
+        this.type = "junk-sushi"
 
     }
 

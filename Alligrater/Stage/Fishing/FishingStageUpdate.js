@@ -35,7 +35,7 @@ function fishingUpdate(delta){
     }
 
     if(AUTO_PLAY && Fish_Tank[ProcessIndex] != null && TICK_TIME >= Fish_Tank[ProcessIndex].start){
-        executeAutoPlay();
+        fishingAutoPlay();
     }
 
 
@@ -46,7 +46,7 @@ function fishingUpdate(delta){
 
 }
 
-function executeAutoPlay(){
+function fishingAutoPlay(){
 
     switch(Fish_Tank[ProcessIndex].type){
         case "directional-fish":
