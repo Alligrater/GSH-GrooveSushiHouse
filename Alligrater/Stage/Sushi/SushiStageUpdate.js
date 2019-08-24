@@ -14,7 +14,7 @@ var sushi_background;
 var hasUpdatedQueue = false;
 
 function sushiUpdate(delta){
-    sushimessage.text = SushiInputIndices;
+    sushimessage.text = (TICK_TIME) + " INDEX: " + SushiInputIndices + " COMBO: " + COMBO_COUNT;
 
     if(ACTIVE_STAGE == sushistage){
         //Begin parsing:
@@ -42,7 +42,12 @@ function sushiUpdate(delta){
 
 
         if(AUTO_PLAY){
-            sushiAutoPlay();
+            for(var index of SushiInputIndices){
+                if(SushiInputQueue[index] != null && TICK_TIME >= SushiInputQueue[index].start){
+                    //Process Input
+                    sushiAutoPlay(SushiInputQueue[index]);
+                }
+            }
         }
 
         //Update All Sushi
@@ -53,6 +58,12 @@ function sushiUpdate(delta){
     }
 }
 
-function sushiAutoPlay(){
-    
+function sushiAutoPlay(sushi){
+    switch(sushi.type){
+        case "junk-sushi":
+            //Do nothing
+            break;
+        default:
+            processInput(sushi.side, 1);
+    }
 }
