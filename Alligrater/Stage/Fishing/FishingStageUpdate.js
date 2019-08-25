@@ -1,9 +1,12 @@
 
 
 
-
+var i=0;
 
 function fishingUpdate(delta){
+
+    detection_perfect.rotation = i/Math.PI
+    i+=0.2;
 
     if(TICK_TIME == MUSIC_OFFSET){
         music.play();

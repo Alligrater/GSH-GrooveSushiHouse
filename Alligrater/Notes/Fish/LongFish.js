@@ -12,6 +12,8 @@ class LongFish extends AbstractFish{
         this.isHolding = false;
         this.isReady = false;
 
+        this.keyDown = null;
+
         var headSample = createSpriteOnStage(fishstage,this.x, this.y, headPath);
         scaleSprite(headSample, 1.5);
 
@@ -79,12 +81,14 @@ class LongFish extends AbstractFish{
                 this.isHolding = true;
                 //this.head.visible = false;
                 this.isReady = true;
+                this.keyDown = key;
             }
             else if(comboRating == ComboRating.GOOD){
                 doCombo("good");
                 this.isHolding = true;
                 //this.head.visible = false;
                 this.isReady = true;
+                this.keyDown = key;
             }
             else{
 
@@ -92,7 +96,7 @@ class LongFish extends AbstractFish{
         }
         //is it key release?
         else{
-            if(this.isReady){
+            if(this.isReady && key == this.keyDown){
                 //First check whether it has started
                 this.isHolding = false;
                 console.log("End Long Note");

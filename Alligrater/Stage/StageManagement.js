@@ -5,6 +5,8 @@ var fishstage;
 var fishing_background;
 var message;
 
+var detection_perfect;
+
 var fish_hit_fx;
 
 function setupFishingStage(){
@@ -13,9 +15,9 @@ function setupFishingStage(){
     fishing_background  = createSpriteOnStage(fishstage,CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, "Resources/Images/FishingBackground.png");
     fishing_background.scale.x = 2;
     fishing_background.scale.y = 2;
-    var detection_good = createSpriteOnStage(fishstage,FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y, "Resources/Images/ring_good.png");
-    scaleSprite(detection_good, 1.5);
-    var detection_perfect = createSpriteOnStage(fishstage,FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y, "Resources/Images/ring_perfect.png");
+    //var detection_good = createSpriteOnStage(fishstage,FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y, "Resources/Images/ring_good.png");
+    //scaleSprite(detection_good, 1.5);
+    detection_perfect = createSpriteOnStage(fishstage,FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y, "Resources/Images/ring_perfect.png");
     let style = new PIXI.TextStyle({
         fontFamily: "Arial",
         fontSize: 18,

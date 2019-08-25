@@ -92,11 +92,12 @@ function update(delta){
 	message.text = (TICK_TIME) + " INDEX: " + ProcessIndex + " COMBO: " + COMBO_COUNT;
 	fishingUpdate(delta);
 	sushiUpdate(delta);
-	soundcooldown += 1;
-	if(soundcooldown >= 4){
+
+	if(soundcooldown >= 5){
 		isSoundPlaying = false;
 		soundcooldown = 0;
 	}
+	soundcooldown += 1;
 
 }
 

@@ -20,6 +20,7 @@ class HitVFX{
     playSpriteAnimation(){
         this.sprite.visible = true;
         this.sprite.gotoAndPlay(0);
+        this.sprite.zIndex = 5;
     }
 
 

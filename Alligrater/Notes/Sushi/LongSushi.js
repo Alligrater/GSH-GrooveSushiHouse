@@ -10,6 +10,8 @@ class LongSushi extends AbstractSushi{
         this.type = "long-sushi";
         this.stop = stop;
 
+        this.keyDown = null;
+
 
         this.isHolding = false;
         this.isReady = false;
@@ -80,12 +82,14 @@ class LongSushi extends AbstractSushi{
                 this.isHolding = true;
                 //this.head.visible = false;
                 this.isReady = true;
+                this.keyDown = key;
             }
             else if(comboRating == ComboRating.GOOD){
                 doCombo("good");
                 this.isHolding = true;
                 //this.head.visible = false;
                 this.isReady = true;
+                this.keyDown = key;
             }
             else{
 
@@ -93,7 +97,7 @@ class LongSushi extends AbstractSushi{
         }
         //is it key release?
         else{
-            if(this.isReady){
+            if(this.isReady && key == this.keyDown){
                 //First check whether it has started
                 this.isHolding = false;
                 console.log("End Long Note");
