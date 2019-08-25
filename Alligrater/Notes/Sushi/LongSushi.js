@@ -82,14 +82,19 @@ class LongSushi extends AbstractSushi{
                 this.isHolding = true;
                 //this.head.visible = false;
                 this.isReady = true;
-                this.keyDown = key;
+                if(this.keyDown == null){
+                    this.keyDown = key;
+                }
+
             }
             else if(comboRating == ComboRating.GOOD){
                 doCombo("good");
                 this.isHolding = true;
                 //this.head.visible = false;
                 this.isReady = true;
-                this.keyDown = key;
+                if(this.keyDown == null){
+                    this.keyDown = key;
+                }
             }
             else{
 

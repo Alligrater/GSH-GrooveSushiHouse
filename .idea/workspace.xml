@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Alligrater/Notes/Sushi/LongSushi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="99" column="50" selection-start-line="99" selection-start-column="50" selection-end-line="99" selection-end-column="50" />
+            <state relative-caret-position="350">
+              <caret line="96" column="17" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -88,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Alligrater/Notes/Fish/LongFish.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="95" column="9" lean-forward="true" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
+            <state relative-caret-position="190">
+              <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -133,6 +133,7 @@
       <find>regular</find>
       <find>center</find>
       <find>next</find>
+      <find>end long note</find>
     </findStrings>
     <replaceStrings>
       <replace>DEFAULT_SPAWN_POINT</replace>
@@ -196,8 +197,8 @@
         <option value="$PROJECT_DIR$/Alligrater/Main.js" />
         <option value="$PROJECT_DIR$/Alligrater/Stage/StageManagement.js" />
         <option value="$PROJECT_DIR$/Alligrater/Stage/Fishing/FishingStageUpdate.js" />
-        <option value="$PROJECT_DIR$/Alligrater/Notes/Fish/LongFish.js" />
         <option value="$PROJECT_DIR$/Alligrater/Notes/Sushi/LongSushi.js" />
+        <option value="$PROJECT_DIR$/Alligrater/Notes/Fish/LongFish.js" />
       </list>
     </option>
   </component>
@@ -357,12 +358,12 @@
       <workItem from="1566439060932" duration="4618000" />
       <workItem from="1566562368715" duration="3434000" />
       <workItem from="1566666305372" duration="6920000" />
-      <workItem from="1566748156985" duration="9613000" />
+      <workItem from="1566748156985" duration="9743000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170061000" />
+    <option name="totallyTimeSpent" value="170191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -642,15 +643,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Alligrater/Notes/Sushi/LongSushi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="99" column="50" selection-start-line="99" selection-start-column="50" selection-end-line="99" selection-end-column="50" />
+        <state relative-caret-position="350">
+          <caret line="96" column="17" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Alligrater/Notes/Fish/LongFish.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="95" column="9" lean-forward="true" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
+        <state relative-caret-position="190">
+          <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
         </state>
       </provider>
     </entry>
