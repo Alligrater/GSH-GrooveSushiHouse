@@ -4,7 +4,7 @@ class RegularFish extends AbstractFish{
     constructor(time){
         super(time);
         this.type = "regular-fish";
-        var headPath = "Resources/Images/RegularFish.png";
+        var headPath = "Resources/Images/Fish/RegularFish.png";
         //?
         this.head = createSpriteOnStage(fishstage,this.x, this.y, headPath);
         scaleSprite(this.head, 1.5);

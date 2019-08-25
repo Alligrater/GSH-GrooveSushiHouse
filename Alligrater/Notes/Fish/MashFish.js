@@ -3,7 +3,7 @@ class MashFish extends AbstractFish{
         super(time);
         this.type = "mash-fish";
         this.stop = stop;
-        var headPath = "Resources/Images/MashFish.png";
+        var headPath = "Resources/Images/Fish/MashFish.png";
         this.head = createSpriteOnStage(fishstage, this.x, this.y, headPath);
         scaleSprite(this.head, 1.5);
         this.isReady = false;

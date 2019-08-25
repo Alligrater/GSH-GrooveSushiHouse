@@ -27,27 +27,32 @@ function beginPixi(){
 		//General Assets
 		.add("Resources/Images/ring_good.png")
 		.add("Resources/Images/ring_perfect.png")
-		.add("Resources/Images/ring_miss.png")
 		//Fishing
 		.add("Resources/Images/FishingBackground.png")
 		//Fish
-		.add("Resources/Images/RegularFish.png")
-		.add("Resources/Images/FishHead.png")
-		.add("Resources/Images/FishBody.png")
-		.add("Resources/Images/FishTail.png")
-		.add("Resources/Images/DirectionalFish.png")
-		.add("Resources/Images/MashFish.png")
+		.add("Resources/Images/Fish/RegularFish.png")
+		.add("Resources/Images/Fish/FishHead.png")
+		.add("Resources/Images/Fish/FishBody.png")
+		.add("Resources/Images/Fish/FishTail.png")
+		.add("Resources/Images/Fish/DirectionalFish.png")
+		.add("Resources/Images/Fish/MashFish.png")
 		//Sushi-ing
 		.add("Resources/Images/SushiBackground.png")
 		//Sushi
-		.add("Resources/Images/PlainSushi.png")
-		.add("Resources/Images/AnotherSushi.png")
-		.add("Resources/Images/GhostSushi.png")
-		.add("Resources/Images/Melon.png")
+		.add("Resources/Images/Sushi/PlainSushi.png")
+		.add("Resources/Images/Sushi/AnotherSushi.png")
+		.add("Resources/Images/Sushi/GhostSushi.png")
+		.add("Resources/Images/Sushi/Melon.png")
 
-		.add("Resources/Images/SushiHead.png")
-		.add("Resources/Images/SushiBody.png")
-		.add("Resources/Images/SushiTail.png")
+		.add("Resources/Images/Sushi/SushiHead.png")
+		.add("Resources/Images/Sushi/SushiBody.png")
+		.add("Resources/Images/Sushi/SushiTail.png")
+
+		.add("Resources/Images/VFX/Hit-0.png")
+		.add("Resources/Images/VFX/Hit-1.png")
+		.add("Resources/Images/VFX/Hit-2.png")
+		.add("Resources/Images/VFX/Hit-3.png")
+		.add("Resources/Images/VFX/Hit-4.png")
 		.load(setupStage);
 
 

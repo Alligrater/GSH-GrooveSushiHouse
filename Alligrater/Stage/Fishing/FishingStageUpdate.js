@@ -1,11 +1,7 @@
 
 
 
-var fishstage;
-//key detect range
-var fishing_background;
-var detection_good;
-var detection_perfect;
+
 
 function fishingUpdate(delta){
 

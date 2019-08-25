@@ -1,6 +1,8 @@
 
 
-
+var fishstage;
+//key detect range
+var fishing_background;
 var message;
 
 function setupFishingStage(){
@@ -9,9 +11,9 @@ function setupFishingStage(){
     fishing_background  = createSpriteOnStage(fishstage,CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, "Resources/Images/FishingBackground.png");
     fishing_background.scale.x = 2;
     fishing_background.scale.y = 2;
-    detection_good = createSpriteOnStage(fishstage,FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y, "Resources/Images/ring_good.png");
+    var detection_good = createSpriteOnStage(fishstage,FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y, "Resources/Images/ring_good.png");
     scaleSprite(detection_good, 1.5);
-    detection_perfect = createSpriteOnStage(fishstage,FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y, "Resources/Images/ring_perfect.png");
+    var detection_perfect = createSpriteOnStage(fishstage,FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y, "Resources/Images/ring_perfect.png");
     let style = new PIXI.TextStyle({
         fontFamily: "Arial",
         fontSize: 18,
@@ -30,10 +32,12 @@ function setupFishingStage(){
 }
 
 
-var sushimessage;
+
+var sushistage;
+var sushi_background;
+
 
 function setupSushiStage(){
-
     //sushistage
     sushi_background  = createSpriteOnStage(sushistage,CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, "Resources/Images/SushiBackground.png");
 
@@ -61,5 +65,11 @@ function setupSushiStage(){
     sushistage.addChild(sushimessage);
     sushi_background.scale.x = 2;
     sushi_background.scale.y = 2;
+}
 
+var menustage;
+var menu_background;
+
+function setupMenuStage(){
+    
 }

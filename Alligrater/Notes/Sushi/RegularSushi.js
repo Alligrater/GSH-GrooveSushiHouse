@@ -2,7 +2,7 @@ class RegularSushi extends AbstractSushi{
     constructor(time, side, from){
         super(time, side, from)
         //Basically the same thing.
-        var headPath = "Resources/Images/PlainSushi.png";
+        var headPath = "Resources/Images/Sushi/PlainSushi.png";
 
         this.head = createSpriteOnStage(sushistage, this.x, this.y, headPath);
         scaleSprite(this.head, 1.2);

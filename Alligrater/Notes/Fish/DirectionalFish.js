@@ -5,7 +5,7 @@ class DirectionalFish extends AbstractFish{
         this.type = "directional-fish";
         this.direction = direction;
 
-        var headPath = "Resources/Images/DirectionalFish.png";
+        var headPath = "Resources/Images/Fish/DirectionalFish.png";
         this.head = createSpriteOnStage(fishstage,this.x, this.y, headPath);
         scaleSprite(this.head, 1.5);
 

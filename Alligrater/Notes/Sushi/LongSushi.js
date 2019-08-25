@@ -3,9 +3,9 @@ class LongSushi extends AbstractSushi{
         super(time, side, from);
         //Basically the same thing.
 
-        var headPath = "Resources/Images/SushiHead.png";
-        var bodyPath = "Resources/Images/SushiBody.png";
-        var tailPath = "Resources/Images/SushiTail.png";
+        var headPath = "Resources/Images/Sushi/SushiHead.png";
+        var bodyPath = "Resources/Images/Sushi/SushiBody.png";
+        var tailPath = "Resources/Images/Sushi/SushiTail.png";
 
         this.type = "long-sushi";
         this.stop = stop;

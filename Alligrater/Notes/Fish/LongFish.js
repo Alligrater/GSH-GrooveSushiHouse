@@ -4,9 +4,9 @@ class LongFish extends AbstractFish{
         this.type = "long-fish";
         this.stop = stop;
 
-        var headPath = "Resources/Images/FishHead.png";
-        var bodyPath = "Resources/Images/FishBody.png";
-        var tailPath = "Resources/Images/FishTail.png";
+        var headPath = "Resources/Images/Fish/FishHead.png";
+        var bodyPath = "Resources/Images/Fish/FishBody.png";
+        var tailPath = "Resources/Images/Fish/FishTail.png";
 
 
         this.isHolding = false;

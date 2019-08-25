@@ -54,6 +54,18 @@ function createTilingSpriteOnStage(stage, x, y, spriteName, width = -1, height =
     return sprite;
 }
 
+function createAnimatedSpriteOnStage(stage, x, y, textures, anchorx = 0.5, anchory = 0.5){
+    var sprite = new PIXI.AnimatedSprite(textures);
+    //Hanamichi, on Stage!
+    sprite.x = x;
+    sprite.y = y;
+    sprite.anchor.x = anchorx;
+    sprite.anchor.y = anchory;
+    stage.addChild(sprite);
+
+    return sprite;
+}
+
 function scaleSprite(sprite, scale){
     sprite.scale.x = scale;
     sprite.scale.y = scale;

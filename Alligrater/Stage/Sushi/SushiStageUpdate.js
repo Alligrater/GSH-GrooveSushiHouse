@@ -8,10 +8,10 @@ SushiInputQueue = [];
 SushiInputIndices = [0, 1, 2, 3];
 
 
-var sushistage;
-var sushi_background;
+
 
 var hasUpdatedQueue = false;
+var sushimessage;
 
 function sushiUpdate(delta){
     sushimessage.text = (TICK_TIME) + " INDEX: " + SushiInputIndices + " COMBO: " + COMBO_COUNT;
