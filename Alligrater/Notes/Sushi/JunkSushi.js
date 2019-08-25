@@ -13,9 +13,8 @@ class JunkSushi extends AbstractSushi{
     processInput(key, eventType, currentTime){
         if(eventType == 1 && key == this.side){
             var comboRating = inputTimeCheck(currentTime, this.start);
-            if(comboRating == ComboRating.PERFECT || ComboRating == ComboRating.GOOD){
+            if(comboRating == ComboRating.PERFECT || comboRating == ComboRating.GOOD){
                 this.enabled = false;
-                this.isReady = true;
                 doMiss();
                 nextSushi(this);
             }

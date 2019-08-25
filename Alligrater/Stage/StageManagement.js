@@ -5,6 +5,8 @@ var fishstage;
 var fishing_background;
 var message;
 
+var fish_hit_fx;
+
 function setupFishingStage(){
 
 
@@ -28,6 +30,9 @@ function setupFishingStage(){
     });
 
     message = new PIXI.Text("Hello Pixi!", style);
+
+    fish_hit_fx = new HitVFX(fishstage, FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y);
+
     fishstage.addChild(message);
 }
 
@@ -71,5 +76,5 @@ var menustage;
 var menu_background;
 
 function setupMenuStage(){
-    
+
 }
