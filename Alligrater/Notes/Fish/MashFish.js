@@ -27,7 +27,7 @@ class MashFish extends AbstractFish{
         }
         this.head.x = this.x - this.basespeed * (currentTime - this.start + BeatSpeed);
         if(this.isReady){
-            this.head.x = PERFECT_HANTEI_X;
+            this.head.x = FISH_TARGET_X;
         }
 
     }
@@ -41,7 +41,7 @@ class MashFish extends AbstractFish{
                     console.log("Begin Mash!");
                     doCombo("perfect");
                     this.basespeed = 0;
-                    this.head.x = PERFECT_HANTEI_X;
+                    this.head.x = FISH_TARGET_X;
                     this.isReady = true;
                 }
                 else{

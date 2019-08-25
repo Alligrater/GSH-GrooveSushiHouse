@@ -9,9 +9,9 @@ function setupFishingStage(){
     fishing_background  = createSpriteOnStage(fishstage,CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, "Resources/Images/FishingBackground.png");
     fishing_background.scale.x = 2;
     fishing_background.scale.y = 2;
-    detection_good = createSpriteOnStage(fishstage,GOOD_HANTEI_X, DEFAULT_SPAWN_POINT_Y, "Resources/Images/ring_good.png");
+    detection_good = createSpriteOnStage(fishstage,FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y, "Resources/Images/ring_good.png");
     scaleSprite(detection_good, 1.5);
-    detection_perfect = createSpriteOnStage(fishstage,PERFECT_HANTEI_X, DEFAULT_SPAWN_POINT_Y, "Resources/Images/ring_perfect.png");
+    detection_perfect = createSpriteOnStage(fishstage,FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y, "Resources/Images/ring_perfect.png");
     let style = new PIXI.TextStyle({
         fontFamily: "Arial",
         fontSize: 18,
@@ -37,14 +37,14 @@ function setupSushiStage(){
     //sushistage
     sushi_background  = createSpriteOnStage(sushistage,CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, "Resources/Images/SushiBackground.png");
 
-    createSpriteOnStage(sushistage, SPAWN_X_LEFT, MAP_CENTER_Y, "Resources/Images/ring_perfect.png");
-    createSpriteOnStage(sushistage, SPAWN_X_LEFT, MAP_CENTER_Y, "Resources/Images/ring_good.png");
+    createSpriteOnStage(sushistage, SPAWN_X_LEFT, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png");
+    createSpriteOnStage(sushistage, SPAWN_X_LEFT, SUSHI_TARGET_Y, "Resources/Images/ring_good.png");
 
-    createSpriteOnStage(sushistage, SPAWN_X_RIGHT, MAP_CENTER_Y, "Resources/Images/ring_perfect.png");
-    createSpriteOnStage(sushistage, SPAWN_X_RIGHT, MAP_CENTER_Y, "Resources/Images/ring_good.png");
+    createSpriteOnStage(sushistage, SPAWN_X_RIGHT, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png");
+    createSpriteOnStage(sushistage, SPAWN_X_RIGHT, SUSHI_TARGET_Y, "Resources/Images/ring_good.png");
 
-    createSpriteOnStage(sushistage, MAP_CENTER_X, MAP_CENTER_Y, "Resources/Images/ring_perfect.png");
-    createSpriteOnStage(sushistage, MAP_CENTER_X, MAP_CENTER_Y, "Resources/Images/ring_good.png");
+    createSpriteOnStage(sushistage, MAP_CENTER_X, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png");
+    createSpriteOnStage(sushistage, MAP_CENTER_X, SUSHI_TARGET_Y, "Resources/Images/ring_good.png");
     let style = new PIXI.TextStyle({
         fontFamily: "Arial",
         fontSize: 18,

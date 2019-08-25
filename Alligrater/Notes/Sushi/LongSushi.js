@@ -9,6 +9,8 @@ class LongSushi extends AbstractSushi{
 
         this.type = "long-sushi";
         this.stop = stop;
+
+
         this.isHolding = false;
         this.isReady = false;
 
@@ -34,11 +36,13 @@ class LongSushi extends AbstractSushi{
         if(this.enabled != true){
             return;
         }
-        if(currentTime >= this.start + 10){
-            console.log("disable!");
+        if(currentTime >= this.start + 10 && !this.isReady){
             this.enabled = false;
             this.processMissEvent();
-            console.log("miss")
+            return;
+        }
+        if(currentTime >= this.stop){
+            this.enabled = false;
             return;
         }
         this.head.x = this.x - this.velx * (currentTime - this.start + BeatSpeed);
@@ -50,6 +54,88 @@ class LongSushi extends AbstractSushi{
 
         this.tail.x = this.x + (this.stop - this.start) * this.velx - this.velx * (currentTime - this.start + BeatSpeed);
         this.tail.y = this.y + (this.stop - this.start) * this.vely - this.vely * (currentTime - this.start + BeatSpeed);
+
+        if(this.isHolding){
+            console.log("holding");
+            this.head.y = SUSHI_TARGET_Y;
+            this.body.height = this.calculateBodyLength()/1.2;
+            this.body.y = this.head.y - this.head.height/2
+            if(inputTimeCheck(currentTime, this.stop) == ComboRating.PERFECT){
+                doCombo("perfect");
+                this.isHolding = false;
+                this.isReady = false;
+                nextSushi(this);
+            }
+        }
+    }
+
+    processInput(key, eventType, currentTime){
+        //is it key press?
+        if(eventType == 1){
+            var comboRating = inputTimeCheck(currentTime, this.start);
+            //Also check if it's head, if it's not head then it's nothing.
+            console.log("Begin Long Note");
+            if(comboRating == ComboRating.PERFECT){
+                doCombo("perfect");
+                this.isHolding = true;
+                //this.head.visible = false;
+                this.isReady = true;
+            }
+            else if(comboRating == ComboRating.GOOD){
+                doCombo("good");
+                this.isHolding = true;
+                //this.head.visible = false;
+                this.isReady = true;
+            }
+            else{
+
+            }
+        }
+        //is it key release?
+        else{
+            if(this.isReady){
+                //First check whether it has started
+                this.isHolding = false;
+                console.log("End Long Note");
+                if(inputTimeCheck(currentTime, this.stop) == ComboRating.PERFECT){
+                    doCombo("perfect");
+                    nextSushi(this);
+                }
+                else if(inputTimeCheck(currentTime, this.stop) == ComboRating.GOOD){
+                    doCombo("good");
+                    nextSushi(this);
+                }
+                else{
+                    doMiss();
+                    nextSushi(this);
+                    //Do nothing
+                }
+            }
+
+
+        }
+    }
+
+    processMissEvent(){
+        //Do nothing.
+        if(this.isHolding){
+
+        }
+        else{
+            doMiss();
+            nextSushi(this);
+        }
+
+    }
+
+    calculateBodyLength(){
+        return this.tail.y - this.head.y + this.head.height;
+    }
+
+    unregisterSelf() {
+        this.stage.removeChild(this.head);
+        this.stage.removeChild(this.body);
+        this.stage.removeChild(this.tail);
     }
 
 

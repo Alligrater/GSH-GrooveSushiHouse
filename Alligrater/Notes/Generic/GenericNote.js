@@ -18,7 +18,6 @@ class GenericNote{
             return;
         }
         if(currentTime >= this.start + 40){
-            console.log("disable!");
             this.enabled = false;
             return;
         }

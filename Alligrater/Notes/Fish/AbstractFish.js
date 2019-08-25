@@ -8,7 +8,7 @@ class AbstractFish extends GenericNote{
         this.type = "abstract-fish";
         this.x = DEFAULT_FISH_SPAWN_X;
         this.y = DEFAULT_SPAWN_POINT_Y;
-        this.basespeed = (DEFAULT_FISH_SPAWN_X - PERFECT_HANTEI_X)/BeatSpeed;
+        this.basespeed = (DEFAULT_FISH_SPAWN_X - FISH_TARGET_X)/BeatSpeed;
 
         this.head = null;
 
@@ -20,7 +20,6 @@ class AbstractFish extends GenericNote{
             return;
         }
         if(currentTime >= this.start + 10 && !this.isReady){
-            console.log("disable!");
             this.processMissEvent();
             this.enabled = false;
             return;

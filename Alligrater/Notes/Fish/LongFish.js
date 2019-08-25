@@ -55,7 +55,7 @@ class LongFish extends AbstractFish{
         //Deal with the holding event
         if(this.isHolding){
             console.log("holding");
-            this.head.x = PERFECT_HANTEI_X;
+            this.head.x = FISH_TARGET_X;
             this.body.width = this.calculateBodyLength()/1.5;
             this.body.x = this.head.x + this.head.width/2
             if(inputTimeCheck(currentTime, this.stop) == ComboRating.PERFECT){

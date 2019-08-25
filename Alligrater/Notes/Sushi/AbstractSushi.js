@@ -6,7 +6,7 @@ class AbstractSushi extends GenericNote{
     constructor(time, side, from){
         super(time);
         this.x = MAP_CENTER_X;
-        this.y = MAP_CENTER_Y;
+        this.y = SUSHI_TARGET_Y;
         this.type = "abstract-sushi";
 
         this.velx = 0;
@@ -61,10 +61,10 @@ class AbstractSushi extends GenericNote{
                 break;
 
         }
-        this.y = MAP_CENTER_Y + directionVec * SPAWNDISTANCE_Y;
+        this.y = SUSHI_TARGET_Y + directionVec * SPAWNDISTANCE_Y;
         this.velx = 0;
 
-        this.vely = (this.y - MAP_CENTER_Y)/BeatSpeed;
+        this.vely = (this.y - SUSHI_TARGET_Y)/BeatSpeed;
     }
 
     processMissEvent(){
