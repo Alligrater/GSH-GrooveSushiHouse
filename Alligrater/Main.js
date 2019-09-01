@@ -61,12 +61,11 @@ function beginPixi(){
 function setupStage(){
 	//Load in the good detection circle
 	fishstage = new PIXI.Container();
-	sushistage = new PIXI.Container();
+	sushistage = new SushiStage();
 	app.stage = fishstage;
 	ACTIVE_STAGE = fishstage;
 
 	setupFishingStage();
-	setupSushiStage();
 	setupAudio();
 }
 
@@ -91,7 +90,7 @@ function update(delta){
 	TICK_TIME += 1;
 	message.text = (TICK_TIME) + " INDEX: " + ProcessIndex + " COMBO: " + COMBO_COUNT;
 	fishingUpdate(delta);
-	sushiUpdate(delta);
+	sushistage.update(delta);
 
 	if(soundcooldown >= 5){
 		isSoundPlaying = false;

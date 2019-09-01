@@ -21,7 +21,7 @@ function fishingUpdate(delta){
         else if(BeatMap[BeatIndex].type == "switch" && TICK_TIME >= BeatMap[BeatIndex].start + MUSIC_OFFSET){
             //Switch to a new stage:
             if(app.stage == fishstage){
-                app.stage = sushistage;
+                app.stage = sushistage.stage;
             }
             else{
                 app.stage = fishstage;

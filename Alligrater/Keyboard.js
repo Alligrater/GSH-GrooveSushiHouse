@@ -102,12 +102,12 @@ function processInput(inputDir, type){
         //Send input to all 4 keys
         //Cheap fix:
         var SushiTemp = [];
-        for(var i = 0; i < SushiInputIndices.length; i++){
+        for(var i = 0; i < sushistage.SushiInputIndices.length; i++){
             //send to all 4
-            var index = SushiInputIndices[i];
+            var index = sushistage.SushiInputIndices[i];
 
-            if(SushiInputQueue[index] != null){
-                SushiTemp.push(SushiInputQueue[index]);
+            if(sushistage.SushiInputQueue[index] != null){
+                SushiTemp.push(sushistage.SushiInputQueue[index]);
             }
         }
 

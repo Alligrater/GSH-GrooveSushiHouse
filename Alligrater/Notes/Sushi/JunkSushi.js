@@ -4,7 +4,7 @@ class JunkSushi extends AbstractSushi{
         //Basically the same thing.
         var headPath = "Resources/Images/Sushi/Melon.png";
 
-        this.head = createSpriteOnStage(sushistage, this.x, this.y, headPath);
+        this.head = createSpriteOnStage(sushistage.stage, this.x, this.y, headPath);
         scaleSprite(this.head, 1.2);
         this.type = "junk-sushi"
 
