@@ -7,6 +7,8 @@ class FishingStage extends GenericStage{
     }
 
     setup(){
+
+
         this.Fish_Tank = [];
         this.fishing_background  = createSpriteOnStage(this.stage,CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, "Resources/Images/FishingBackground.png");
         this.fishing_background.scale.x = 2;
@@ -35,6 +37,10 @@ class FishingStage extends GenericStage{
     }
 
     update(delta){
+
+        if(this.pause){
+            return;
+        }
         this.message.text = (TICK_TIME) + " INDEX: " + ProcessIndex + " COMBO: " + COMBO_COUNT;
         this.detection_perfect.rotation = TICK_TIME/(Math.PI*5);
 
@@ -52,11 +58,12 @@ class FishingStage extends GenericStage{
                 //Switch to a new stage:
                 if(app.stage == fishstage.stage){
                     app.stage = sushistage.stage;
+                    ACTIVE_STAGE = sushistage;
                 }
                 else{
                     app.stage = fishstage.stage;
+                    ACTIVE_STAGE = fishstage;
                 }
-                ACTIVE_STAGE = app.stage;
                 sushistage.hasUpdatedQueue = false;
                 console.log("switch!");
                 BeatIndex += 1;
@@ -73,7 +80,11 @@ class FishingStage extends GenericStage{
         }
     }
 
-
+    processInput(key, type) {
+        if(this.Fish_Tank[ProcessIndex]){
+            this.Fish_Tank[ProcessIndex].processInput(key, type, TICK_TIME);
+        }
+    }
 
 
     fishingAutoPlay(){

@@ -48,6 +48,10 @@ function beginPixi(){
 		.add("Resources/Images/Sushi/SushiBody.png")
 		.add("Resources/Images/Sushi/SushiTail.png")
 
+		//Menu
+		.add("Resources/Images/Menu_BG.png")
+		.add("Resources/Images/Menu_Button.png")
+
 		.add("Resources/Images/VFX/Hit-0.png")
 		.add("Resources/Images/VFX/Hit-1.png")
 		.add("Resources/Images/VFX/Hit-2.png")
@@ -63,7 +67,7 @@ function setupStage(){
 	fishstage = new FishingStage();
 	sushistage = new SushiStage();
 	app.stage = fishstage.stage;
-	ACTIVE_STAGE = fishstage.stage;
+	ACTIVE_STAGE = fishstage;
 
 	setupAudio();
 }

@@ -12,9 +12,13 @@ class SushiStage extends GenericStage{
     }
 
     update(delta){
+        if(this.pause){
+            return;
+        }
+
         this.sushimessage.text = (TICK_TIME) + " INDEX: " + sushistage.SushiInputIndices + " COMBO: " + COMBO_COUNT;
 
-        if(ACTIVE_STAGE == this.stage){
+        if(ACTIVE_STAGE == this){
             //Begin parsing:
             if(!this.hasUpdatedQueue){
                 while(BeatMap[BeatIndex] != null && BeatMap[BeatIndex].type != "switch"){
@@ -58,6 +62,9 @@ class SushiStage extends GenericStage{
 
     setup(){
         //sushistage
+        if(this.pause){
+            return;
+        }
         this.sushi_background  = createSpriteOnStage(this.stage,CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, "Resources/Images/SushiBackground.png");
 
         createSpriteOnStage(this.stage, SPAWN_X_LEFT, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png");
@@ -94,5 +101,31 @@ class SushiStage extends GenericStage{
             default:
                 processInput(sushi.side, 1);
         }
+    }
+
+    processInput(key, type) {
+
+        //Send input to all 4 keys
+        //Cheap fix:
+        var SushiTemp = [];
+        for(var i = 0; i < this.SushiInputIndices.length; i++){
+            //send to all 4
+            var index = this.SushiInputIndices[i];
+
+            if(this.SushiInputQueue[index] != null){
+                SushiTemp.push(this.SushiInputQueue[index]);
+            }
+        }
+
+        for(var i = 0; i < 4; i++){
+            var index = findFirstDir(SushiTemp, DIRECTIONS[i]);
+
+            //console.log("First " + DIRECTIONS[i] + ": " + index);
+            if(SushiTemp[index] != null){
+                //console.log(SushiTemp[index])
+                SushiTemp[index].processInput(key, type, TICK_TIME);
+            }
+        }
+        //console.log("===========")
     }
 }

@@ -39,7 +39,7 @@ class GenericStage{
 
     }
 
-    processInput(){
+    processInput(key, type){
 
     }
 }

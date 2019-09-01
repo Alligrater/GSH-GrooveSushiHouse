@@ -45,11 +45,22 @@ class MashFish extends AbstractFish{
                     this.isReady = true;
                 }
                 else{
-                    console.log("Hit!");
+                    if(!isSoundPlaying){
+                        console.log("Hit!");
+                        hit_sound.play();
+                        isSoundPlaying = true;
+                    }
                 }
 
             }
             else{
+                if(this.isReady && this.enabled == true){
+                    if(!isSoundPlaying){
+                        console.log("Hit!");
+                        hit_sound.play();
+                        isSoundPlaying = true;
+                    }
+                }
                 //Not in range
 
             }

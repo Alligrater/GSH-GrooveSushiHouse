@@ -89,44 +89,8 @@ right.release = () => {
 
 
 function processInput(inputDir, type){
-    if(ACTIVE_STAGE == fishstage.stage){
-        if(fishstage.Fish_Tank[ProcessIndex]){
-            fishstage.Fish_Tank[ProcessIndex].processInput(inputDir, type, TICK_TIME);
-        }
-    }
-    else{
-        if(type == 1){
-            console.log("Sushi: " + TICK_TIME)
-        }
 
-        //Send input to all 4 keys
-        //Cheap fix:
-        var SushiTemp = [];
-        for(var i = 0; i < sushistage.SushiInputIndices.length; i++){
-            //send to all 4
-            var index = sushistage.SushiInputIndices[i];
-
-            if(sushistage.SushiInputQueue[index] != null){
-                SushiTemp.push(sushistage.SushiInputQueue[index]);
-            }
-        }
-
-        for(var i = 0; i < 4; i++){
-            var index = findFirstDir(SushiTemp, DIRECTIONS[i]);
-
-            //console.log("First " + DIRECTIONS[i] + ": " + index);
-            if(SushiTemp[index] != null){
-                //console.log(SushiTemp[index])
-                SushiTemp[index].processInput(inputDir, type, TICK_TIME);
-            }
-        }
-        //console.log("===========")
-    }
-
-    if(type == 1 && !isSoundPlaying){
-        hit_sound.play();
-        isSoundPlaying = true;
-    }
+    ACTIVE_STAGE.processInput(inputDir, type);
 
 }
 

@@ -4,6 +4,12 @@ function doCombo(level){
     COMBO_COUNT += 1;
     console.log(level);
     fishstage.fish_hit_fx.playSpriteAnimation();
+
+
+    if(!isSoundPlaying){
+        hit_sound.play();
+        isSoundPlaying = true;
+    }
 }
 
 
