@@ -18,7 +18,7 @@ class GenericStage{
         }
     }
 
-    pause(){
+    setpause(){
         this.pause = true;
     }
 

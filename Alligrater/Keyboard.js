@@ -51,7 +51,16 @@ function keyboard(value) {
 let up = keyboard("w"),
     down = keyboard("s"),
     left = keyboard("a"),
-    right = keyboard("d");
+    right = keyboard("d"),
+    enter = keyboard("Enter");
+
+enter.press = () => {
+    processInput("Enter", 1);
+};
+
+enter.release = () => {
+    processInput("Enter", 0);
+};
 
 
 up.press = () => {

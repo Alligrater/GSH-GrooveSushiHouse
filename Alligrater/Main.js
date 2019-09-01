@@ -5,7 +5,11 @@ var app;
 
 
 var ACTIVE_STAGE;
+var fishstage;
+var sushistage;
+var menustage;
 
+var pause = true;
 
 //Begin the stage
 function beginPixi(){
@@ -66,8 +70,13 @@ function setupStage(){
 	//Load in the good detection circle
 	fishstage = new FishingStage();
 	sushistage = new SushiStage();
-	app.stage = fishstage.stage;
-	ACTIVE_STAGE = fishstage;
+	menustage = new MenuStage();
+
+	fishstage.setpause();
+	sushistage.setpause();
+
+	app.stage = menustage.stage;
+	ACTIVE_STAGE = menustage;
 
 	setupAudio();
 }
@@ -90,16 +99,21 @@ var soundcooldown = 0;
 
 //This is good
 function update(delta){
-	TICK_TIME += 1;
 
+	if(!pause){
+		TICK_TIME += 1;
+		if(soundcooldown >= 5){
+			isSoundPlaying = false;
+			soundcooldown = 0;
+		}
+		soundcooldown += 1;
+	}
+
+	menustage.update(delta);
 	fishstage.update(delta);
 	sushistage.update(delta);
 
-	if(soundcooldown >= 5){
-		isSoundPlaying = false;
-		soundcooldown = 0;
-	}
-	soundcooldown += 1;
+
 
 }
 
