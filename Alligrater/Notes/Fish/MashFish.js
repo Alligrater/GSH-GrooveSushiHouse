@@ -4,7 +4,7 @@ class MashFish extends AbstractFish{
         this.type = "mash-fish";
         this.stop = stop;
         var headPath = "Resources/Images/Fish/MashFish.png";
-        this.head = createSpriteOnStage(fishstage, this.x, this.y, headPath);
+        this.head = createSpriteOnStage(fishstage.stage, this.x, this.y, headPath);
         scaleSprite(this.head, 1.5);
         this.isReady = false;
     }
@@ -22,7 +22,7 @@ class MashFish extends AbstractFish{
         if(currentTime >= this.stop){
             this.enabled = false;
             console.log("End Mash!");
-            nextFish();
+            fishstage.nextFish();
             return;
         }
         this.head.x = this.x - this.basespeed * (currentTime - this.start + BeatSpeed);

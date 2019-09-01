@@ -7,7 +7,7 @@ class HitVFX{
             textureArray.push(texture);
         }
 
-        this.sprite = createAnimatedSpriteOnStage(fishstage, x, y, textureArray);
+        this.sprite = createAnimatedSpriteOnStage(stage, x, y, textureArray);
         scaleSprite(this.sprite, 4);
         this.sprite.loop = false;
         this.sprite.animationSpeed = 0.8;

@@ -2,7 +2,7 @@ var BeatMap = [];
 var BeatIndex = 0;
 var ProcessIndex = 0;
 
-var Fish_Tank = [];
+
 
 var music;
 var BeatSpeed;

@@ -38,4 +38,8 @@ class GenericStage{
     setup(){
 
     }
+
+    processInput(){
+
+    }
 }

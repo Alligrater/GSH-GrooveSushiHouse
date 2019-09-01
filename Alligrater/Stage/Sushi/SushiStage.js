@@ -16,7 +16,7 @@ class SushiStage extends GenericStage{
 
         if(ACTIVE_STAGE == this.stage){
             //Begin parsing:
-            if(!hasUpdatedQueue){
+            if(!this.hasUpdatedQueue){
                 while(BeatMap[BeatIndex] != null && BeatMap[BeatIndex].type != "switch"){
                     //Do work
                     this.SushiOrderQueue.push(BeatMap[BeatIndex]);

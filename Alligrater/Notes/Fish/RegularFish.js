@@ -6,7 +6,7 @@ class RegularFish extends AbstractFish{
         this.type = "regular-fish";
         var headPath = "Resources/Images/Fish/RegularFish.png";
         //?
-        this.head = createSpriteOnStage(fishstage,this.x, this.y, headPath);
+        this.head = createSpriteOnStage(fishstage.stage,this.x, this.y, headPath);
         scaleSprite(this.head, 1.5);
     }
 
@@ -17,13 +17,13 @@ class RegularFish extends AbstractFish{
                 this.enabled = false;
                 this.isReady = true;
                 doCombo("perfect");
-                nextFish();
+                fishstage.nextFish();
             }
             else if(comboRating == ComboRating.GOOD){
                 this.enabled = false;
                 this.isReady = true;
                 doCombo("good");
-                nextFish();
+                fishstage.nextFish();
             }
             else{
                 //Not in range
@@ -32,7 +32,7 @@ class RegularFish extends AbstractFish{
     }
 
     processMissEvent(){
-        nextFish();
+        fishstage.nextFish();
         doMiss();
     }
 

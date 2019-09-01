@@ -22,20 +22,20 @@ function summonFish(summonJSON){
 
 function summonRegularFish(summonJSON){
     var fish = new RegularFish(summonJSON.start + MUSIC_OFFSET);
-    Fish_Tank.push(fish);
+    fishstage.Fish_Tank.push(fish);
 }
 
 function summonLongFish(summonJSON){
     var fish = new LongFish(summonJSON.start + MUSIC_OFFSET, summonJSON.until + MUSIC_OFFSET);
-    Fish_Tank.push(fish);
+    fishstage.Fish_Tank.push(fish);
 }
 
 function summonDirectionalFish(summonJSON){
     var fish = new DirectionalFish(summonJSON.start + MUSIC_OFFSET, summonJSON.direction);
-    Fish_Tank.push(fish);
+    fishstage.Fish_Tank.push(fish);
 }
 
 function summonMashFish(summonJSON){
     var fish = new MashFish(summonJSON.start + MUSIC_OFFSET, summonJSON.until + MUSIC_OFFSET);
-    Fish_Tank.push(fish);
+    fishstage.Fish_Tank.push(fish);
 }

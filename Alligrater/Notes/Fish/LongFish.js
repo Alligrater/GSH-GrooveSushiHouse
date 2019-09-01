@@ -14,22 +14,22 @@ class LongFish extends AbstractFish{
 
         this.keyDown = null;
 
-        var headSample = createSpriteOnStage(fishstage,this.x, this.y, headPath);
+        var headSample = createSpriteOnStage(fishstage.stage,this.x, this.y, headPath);
         scaleSprite(headSample, 1.5);
 
         var bodyLength = (this.stop - this.start) * this.basespeed - headSample.width;
 
 
         //Make body part
-        this.body = createTilingSpriteOnStage(fishstage, this.x + headSample.width / 2, this.y, bodyPath, bodyLength/1.5);
+        this.body = createTilingSpriteOnStage(fishstage.stage, this.x + headSample.width / 2, this.y, bodyPath, bodyLength/1.5);
         scaleSprite(this.body, 1.5);
 
             //Tail
-        this.tail = createSpriteOnStage(fishstage,this.x + (this.stop - this.start) * this.basespeed,
+        this.tail = createSpriteOnStage(fishstage.stage,this.x + (this.stop - this.start) * this.basespeed,
             this.y, tailPath);
         scaleSprite(this.tail, 1.5);
 
-        this.head = createSpriteOnStage(fishstage,this.x, this.y, headPath);
+        this.head = createSpriteOnStage(fishstage.stage,this.x, this.y, headPath);
         scaleSprite(this.head, 1.5);
     }
 
@@ -64,7 +64,7 @@ class LongFish extends AbstractFish{
                 doCombo("perfect");
                 this.isHolding = false;
                 this.isReady = false;
-                nextFish();
+                fishstage.nextFish();
             }
         }
 
@@ -106,15 +106,15 @@ class LongFish extends AbstractFish{
                 console.log("End Long Note");
                 if(inputTimeCheck(currentTime, this.stop) == ComboRating.PERFECT){
                     doCombo("perfect");
-                    nextFish();
+                    fishstage.nextFish();
                 }
                 else if(inputTimeCheck(currentTime, this.stop) == ComboRating.GOOD){
                     doCombo("good");
-                    nextFish();
+                    fishstage.nextFish();
                 }
                 else{
                     doMiss();
-                    nextFish();
+                    fishstage.nextFish();
                     //Do nothing
                 }
             }
@@ -134,7 +134,7 @@ class LongFish extends AbstractFish{
         }
         else{
             doMiss();
-            nextFish();
+            fishstage.nextFish();
         }
 
     }

@@ -89,9 +89,9 @@ right.release = () => {
 
 
 function processInput(inputDir, type){
-    if(ACTIVE_STAGE == fishstage){
-        if(Fish_Tank[ProcessIndex]){
-            Fish_Tank[ProcessIndex].processInput(inputDir, type, TICK_TIME);
+    if(ACTIVE_STAGE == fishstage.stage){
+        if(fishstage.Fish_Tank[ProcessIndex]){
+            fishstage.Fish_Tank[ProcessIndex].processInput(inputDir, type, TICK_TIME);
         }
     }
     else{

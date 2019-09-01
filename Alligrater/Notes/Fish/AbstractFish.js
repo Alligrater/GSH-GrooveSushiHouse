@@ -32,7 +32,7 @@ class AbstractFish extends GenericNote{
     }
 
     processMissEvent(){
-        nextFish();
+        fishstage.nextFish();
         doMiss();
     }
 

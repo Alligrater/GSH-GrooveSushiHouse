@@ -6,13 +6,6 @@
  *                        20TICK----[Note]--10TICK
  */
 
-function nextFish(){
-    if(Fish_Tank[ProcessIndex] != null){
-        Fish_Tank[ProcessIndex].enabled = false;
-        Fish_Tank[ProcessIndex].unregisterSelf();
-    }
-    ProcessIndex += 1;
-}
 
 function nextSushi(currentSushi){
     currentSushi.enabled = false;
