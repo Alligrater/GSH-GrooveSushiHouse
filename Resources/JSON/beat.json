@@ -340,19 +340,19 @@
 
 
 		{
-			"start": 1576,
+			"start": 1570,
 			"type": "junk-sushi",
 			"side": "left",
 			"from": "up"
 		},
 		{
-			"start": 1590,
+			"start": 1584,
 			"type": "junk-sushi",
 			"side": "down",
 			"from": "up"
 		},
 		{
-			"start": 1604,
+			"start": 1598,
 			"type": "junk-sushi",
 			"side": "right",
 			"from": "up"

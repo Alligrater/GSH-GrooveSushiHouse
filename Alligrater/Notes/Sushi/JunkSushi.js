@@ -10,6 +10,19 @@ class JunkSushi extends AbstractSushi{
 
     }
 
+    update(currentTime){
+        if(this.enabled != true){
+            return;
+        }
+        if(currentTime >= this.start){
+            this.enabled = false;
+            this.processMissEvent();
+            return;
+        }
+        this.head.x = this.x - this.velx * (currentTime - this.start + BeatSpeed);
+        this.head.y = this.y - this.vely * (currentTime - this.start + BeatSpeed);
+    }
+
     processInput(key, eventType, currentTime){
         if(eventType == 1 && key == this.side){
             var comboRating = inputTimeCheck(currentTime, this.start);

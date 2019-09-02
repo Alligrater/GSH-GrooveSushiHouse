@@ -55,6 +55,7 @@ function beginPixi(){
 		//Menu
 		.add("Resources/Images/Menu_BG.png")
 		.add("Resources/Images/Menu_Button.png")
+		.add("Resources/Images/Menu_Options.png")
 
 		.add("Resources/Images/VFX/Hit-0.png")
 		.add("Resources/Images/VFX/Hit-1.png")

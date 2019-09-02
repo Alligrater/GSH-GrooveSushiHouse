@@ -6,7 +6,6 @@ class GenericStage{
         //this.y = y;
         this.stage = new PIXI.Container();
 
-        this.setup();
     }
 
     update(delta){

@@ -3,7 +3,7 @@
 class FishingStage extends GenericStage{
     constructor(){
         super();
-
+        this.setup();
     }
 
     setup(){
