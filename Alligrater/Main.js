@@ -102,7 +102,7 @@ var soundcooldown = 0;
 function update(delta){
 
 	if(!pause){
-		TICK_TIME += 1;
+		TICK_TIME += delta;
 		if(soundcooldown >= 5){
 			isSoundPlaying = false;
 			soundcooldown = 0;

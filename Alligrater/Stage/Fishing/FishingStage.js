@@ -1,5 +1,5 @@
 
-
+var hasPlayed = false;
 class FishingStage extends GenericStage{
     constructor(){
         super();
@@ -44,8 +44,9 @@ class FishingStage extends GenericStage{
         this.message.text = (TICK_TIME) + " INDEX: " + ProcessIndex + " COMBO: " + COMBO_COUNT;
         this.detection_perfect.rotation = TICK_TIME/(Math.PI*5);
 
-        if(TICK_TIME == MUSIC_OFFSET){
+        if(TICK_TIME >= MUSIC_OFFSET && !hasPlayed){
             music.play();
+            hasPlayed = true
         }
 
 
