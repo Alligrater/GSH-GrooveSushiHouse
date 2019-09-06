@@ -7,6 +7,7 @@ class MashFish extends AbstractFish{
         this.head = createSpriteOnStage(fishstage.stage, this.x, this.y, headPath);
         scaleSprite(this.head, 1.5);
         this.isReady = false;
+        this.scale = 1.5;
     }
 
     update(currentTime){
@@ -25,11 +26,22 @@ class MashFish extends AbstractFish{
             fishstage.nextFish();
             return;
         }
+
         this.head.x = this.x - this.basespeed * (currentTime - this.start + BeatSpeed);
+
         if(this.isReady){
             this.head.x = FISH_TARGET_X;
+            if(this.scale > 1.5){
+                this.scale -= 0.02;
+            }
+            this.head.scale.x = this.scale;
+            this.head.scale.y = this.scale;
         }
 
+    }
+
+    poof(){
+        this.scale *= 1.2;
     }
 
 
@@ -49,6 +61,7 @@ class MashFish extends AbstractFish{
                         console.log("Hit!");
                         hit_sound.play();
                         isSoundPlaying = true;
+                        this.poof();
                     }
                 }
 
@@ -59,6 +72,7 @@ class MashFish extends AbstractFish{
                         console.log("Hit!");
                         hit_sound.play();
                         isSoundPlaying = true;
+                        this.poof();
                     }
                 }
                 //Not in range

@@ -40,6 +40,7 @@ function beginPixi(){
 		.add("Resources/Images/Fish/FishTail.png")
 		.add("Resources/Images/Fish/DirectionalFish.png")
 		.add("Resources/Images/Fish/MashFish.png")
+		.add("Resources/Images/Fish/Arrow.png")
 		//Sushi-ing
 		.add("Resources/Images/SushiBackground.png")
 		//Sushi

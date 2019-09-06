@@ -6,10 +6,26 @@ class DirectionalFish extends AbstractFish{
         this.direction = direction;
 
         var headPath = "Resources/Images/Fish/DirectionalFish.png";
+        var arrowPath = "Resources/Images/Fish/Arrow.png";
         this.head = createSpriteOnStage(fishstage.stage,this.x, this.y, headPath);
+        this.arrow = createSpriteOnStage(fishstage.stage,this.x - 9, this.y, arrowPath);
         scaleSprite(this.head, 1.5);
+        scaleSprite(this.arrow, 1.5);
 
         this.setDirection();
+    }
+
+    update(currentTime){
+        if(this.enabled != true){
+            return;
+        }
+        if(currentTime >= this.start + 10 && !this.isReady){
+            this.enabled = false;
+            this.processMissEvent();
+            return;
+        }
+        this.head.x = this.x - this.basespeed * (currentTime - this.start + BeatSpeed);
+        this.arrow.x = this.x - 9 - this.basespeed * (currentTime - this.start + BeatSpeed);
     }
 
     processInput(key, eventType, currentTime){
@@ -33,28 +49,16 @@ class DirectionalFish extends AbstractFish{
         }
     }
 
-    update(currentTime){
-        if(this.enabled != true){
-            return;
-        }
-        if(currentTime >= this.start + 10 && !this.isReady){
-            this.enabled = false;
-            this.processMissEvent();
-            return;
-        }
-        this.head.x = this.x - this.basespeed * (currentTime - this.start + BeatSpeed);
-    }
-
     setDirection(){
         switch(this.direction){
             case "up":
-                this.head.rotation = 0.5*Math.PI;
+                this.arrow.rotation = 0.5*Math.PI;
                 break;
             case "down":
-                this.head.rotation = 1.5*Math.PI;
+                this.arrow.rotation = 1.5*Math.PI;
                 break;
             case "right":
-                this.head.rotation = Math.PI;
+                this.arrow.rotation = Math.PI;
                 break;
             case "left":
                 break;
@@ -66,5 +70,6 @@ class DirectionalFish extends AbstractFish{
     unregisterSelf(){
         //Do nothing
         app.stage.removeChild(this.head);
+        app.stage.removeChild(this.arrow);
     }
 }

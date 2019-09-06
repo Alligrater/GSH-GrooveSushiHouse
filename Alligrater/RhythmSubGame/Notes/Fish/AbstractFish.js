@@ -20,8 +20,8 @@ class AbstractFish extends GenericNote{
             return;
         }
         if(currentTime >= this.start + 10 && !this.isReady){
-            this.processMissEvent();
             this.enabled = false;
+            this.processMissEvent();
             return;
         }
         this.head.x = this.x - this.basespeed * (currentTime - this.start + BeatSpeed);
