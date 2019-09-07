@@ -17,21 +17,21 @@ class LongSushi extends AbstractSushi{
         this.isReady = false;
 
         var headSample = createSpriteOnStage(sushistage.stage,this.x, this.y, headPath);
-        scaleSprite(headSample, 1.2);
+        scaleSprite(headSample, 1.5);
 
         this.bodyLength = (this.stop - this.start) * this.vely + headSample.height;
 
 
         this.body = createTilingSpriteOnStage(sushistage.stage, this.x, this.y - headSample.height / 2, bodyPath, -1, this.bodyLength/1.2, 0.5, 0.0);
-        scaleSprite(this.body, 1.2);
+        scaleSprite(this.body, 1.5);
 
         //Tail
         this.tail = createSpriteOnStage(sushistage.stage,this.x,
             this.y - (this.stop - this.start) * this.vely, tailPath);
-        scaleSprite(this.tail, 1.2);
+        scaleSprite(this.tail, 1.5);
 
         this.head = createSpriteOnStage(sushistage.stage,this.x, this.y, headPath);
-        scaleSprite(this.head, 1.2);
+        scaleSprite(this.head, 1.5);
     }
 
     update(currentTime){

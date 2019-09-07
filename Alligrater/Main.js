@@ -86,7 +86,7 @@ function setupStage(){
 function setupAudio(){
 	//Manage IO
 	//This has to be loaded differently.
-	loadInJson('./www/Resources/JSON/beat.json');
+	loadInJson('./www/Resources/JSON/Beatmap/beat.json');
 	//Play that track
 }
 
