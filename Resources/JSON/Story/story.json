@@ -3,9 +3,35 @@
 	"storyscript":
 	[
 		{
-			"dialogue":"",
-			"speaker":"",
-			"sfx":""
+			"stage":"stage1",
+			"actor":
+			[{
+				"name":"Owner",
+				"sprite":"/sprite/path/here",
+				"posx":0.5,
+				"posy":1.0
+			},
+			{
+				"name":"Developer",
+				"sprite":"/sprite/path/here",
+				"posx":0.4,
+				"posy":1.1
+			}]
+		},
+		{
+			"dialogue":"Hello, I am the owner of the groove sushi house.",
+			"speaker":"Owner",
+			"blip":"blip.wav"
+		},
+		{
+			"dialogue":"Hello Owner. I am the developer of this game.",
+			"speaker":"Developer",
+			"blip":"blip.wav"
+		},
+		{
+			"dialogue":"So, what do you want to order today?",
+			"speaker":"Owner",
+			"blip":"blip.wav"
 		}
 	]
 }
