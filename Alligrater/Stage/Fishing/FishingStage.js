@@ -41,7 +41,7 @@ class FishingStage extends GenericStage{
         if(this.pause){
             return;
         }
-        this.message.text = (TICK_TIME) + " INDEX: " + ProcessIndex + " COMBO: " + COMBO_COUNT;
+        this.message.text = (TICK_TIME) + "\n INDEX: " + ProcessIndex + " COMBO: " + COMBO_COUNT;
         this.detection_perfect.rotation = TICK_TIME/(Math.PI*5);
 
         if(TICK_TIME >= MUSIC_OFFSET && !hasPlayed){

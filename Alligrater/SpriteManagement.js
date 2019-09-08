@@ -12,9 +12,28 @@ function createSpriteOnStage(stage, x, y, spriteName, anchorx = 0.5, anchory = 0
     return sprite;
 }
 
+/*
 function createSpriteWithTexture(stage, x, y, texture, anchorx = 0.5, anchory = 0.5){
     var sprite = new PIXI.Sprite(
         texture
+    );
+    //Hanamichi, on Stage!
+    sprite.x = x;
+    sprite.y = y;
+    sprite.anchor.x = anchorx;
+    sprite.anchor.y = anchory;
+    stage.addChild(sprite);
+
+    return sprite;
+}*/
+
+function createSpriteFromJSON(stage, x, y, JSON, spriteName, anchorx = 0.5, anchory = 0.5){
+    if(!PIXI.loader.resources[JSON]){
+        return;
+    }
+    var sheet = PIXI.loader.resources[JSON].spritesheet;
+    var sprite = new PIXI.Sprite(
+        sheet.textures[spriteName]
     );
     //Hanamichi, on Stage!
     sprite.x = x;
@@ -54,6 +73,38 @@ function createTilingSpriteOnStage(stage, x, y, spriteName, width = -1, height =
     return sprite;
 }
 
+function createTilingSpriteFromJSON(stage,x,y,JSON,textureName,width=-1,height=-1,anchorx=0.5,anchory=0.5){
+    if(!PIXI.loader.resources[JSON]){
+        return;
+    }
+    var sheet = PIXI.loader.resources[JSON].spritesheet;
+    var sprite = new PIXI.TilingSprite(
+        sheet.textures[textureName]
+    );
+
+    sprite.x = x;
+    sprite.y = y;
+    stage.addChild(sprite);
+
+    var spriteSample = new PIXI.Sprite(
+        sheet.textures[textureName]
+    );
+    if(width == -1 ){
+        width = spriteSample.width;
+    }
+    if(height == -1){
+        height = spriteSample.height;
+    }
+    sprite.width = width;
+    sprite.height = height;
+
+    sprite.anchor.x = anchorx;
+    sprite.anchor.y = anchory;
+
+    return sprite;
+}
+
+/*
 function createAnimatedSpriteOnStage(stage, x, y, textures, anchorx = 0.5, anchory = 0.5){
     var sprite = new PIXI.AnimatedSprite(textures);
     //Hanamichi, on Stage!
@@ -64,12 +115,12 @@ function createAnimatedSpriteOnStage(stage, x, y, textures, anchorx = 0.5, ancho
     stage.addChild(sprite);
 
     return sprite;
-}
+}*/
 
 
 function createAnimatedSpriteWithJSON(stage,x,y,json,animationName){
     if(!PIXI.loader.resources[json]){
-        
+        return;
     }
     var sheet = PIXI.loader.resources[json].spritesheet;
     //console.log(sheet);

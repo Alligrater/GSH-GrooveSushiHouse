@@ -89,4 +89,17 @@ class StageCharacter{
             this.setAnimation(animation);
         }
     }
+
+    /*
+    moveTo(interpSpeed, targetx, targety){
+        var currentX = this.x;
+        var currentY = this.y;
+    }*/
+
+    setPos(posx, posy){
+        this.x = posx;
+        this.y = posy;
+        this.character.x = this.x;
+        this.character.y = this.y;
+    }
 }

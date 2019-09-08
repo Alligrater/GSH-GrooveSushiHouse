@@ -3,5 +3,6 @@ class CharacterAnimation{
         this.name = name;
         this.start = start;
         this.stop = stop;
+
     }
 }
