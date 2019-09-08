@@ -19,7 +19,7 @@ function loadCharacter(path){
     //Parsing
     var JSONContent = JSON.parse(content);
     //console.log(JSONContent);
-    var character = new StageCharacter(5, 5, JSONContent);
+    var character = new StageCharacter(CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, JSONContent);
     console.log(character);
     CHARACTER_POOL.set(character.name, character);
 }

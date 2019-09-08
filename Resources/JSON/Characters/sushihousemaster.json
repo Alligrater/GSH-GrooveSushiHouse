@@ -1,17 +1,17 @@
 {
   "name": "Master",
-  "spritesheet": "Resources/Images/HitVFX.json",
+  "spritesheet": "Resources/Images/Characters/Master/master.json",
   "animations":
   [
     {
       "name": "idle",
       "start": 0,
-      "stop": 5
+      "stop": 1
     },
     {
       "name": "walk",
-      "start": 5,
-      "stop": 8
+      "start": 2,
+      "stop": 5
     }
 
   ]
