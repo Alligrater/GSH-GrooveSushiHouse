@@ -67,6 +67,7 @@ function beginPixi(){
 		.add("Resources/Images/VFX/Hit-3.png")
 		.add("Resources/Images/VFX/Hit-4.png")*/
 		.add("Resources/Images/VFX/HitVFX.json")
+		.add("Resources/Images/HitVFX.json")
 		.load(setupStage);
 
 

@@ -1,6 +1,6 @@
 {
   "name": "Master",
-  "spritesheet": "path/to/spritesheet",
+  "spritesheet": "Resources/Images/HitVFX.json",
   "animations":
   [
     {

@@ -68,6 +68,9 @@ function createAnimatedSpriteOnStage(stage, x, y, textures, anchorx = 0.5, ancho
 
 
 function createAnimatedSpriteWithJSON(stage,x,y,json,animationName){
+    if(!PIXI.loader.resources[json]){
+        
+    }
     var sheet = PIXI.loader.resources[json].spritesheet;
     //console.log(sheet);
     var sprite = new PIXI.AnimatedSprite(sheet.animations[animationName]);
