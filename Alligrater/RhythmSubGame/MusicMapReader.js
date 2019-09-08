@@ -11,7 +11,7 @@ var hit_sound;
 
 
 
-function loadInJson(jsonpath){
+function loadinRhythmMap(jsonpath){
     var fs = require('fs');
     var content = fs.readFileSync(jsonpath);
 

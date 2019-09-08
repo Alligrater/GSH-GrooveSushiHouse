@@ -26,6 +26,7 @@ function beginPixi(){
 	app.renderer.backgroundColor = 0x000000;
 	PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
 	PIXI.settings.ANISOTROPIC_LEVEL = 0;
+	PIXI.settings.ROUND_PIXELS = true;
 
 	PIXI.loader
 		//General Assets
@@ -58,11 +59,13 @@ function beginPixi(){
 		.add("Resources/Images/Menu_Button.png")
 		.add("Resources/Images/Menu_Options.png")
 
+		/*
 		.add("Resources/Images/VFX/Hit-0.png")
 		.add("Resources/Images/VFX/Hit-1.png")
 		.add("Resources/Images/VFX/Hit-2.png")
 		.add("Resources/Images/VFX/Hit-3.png")
-		.add("Resources/Images/VFX/Hit-4.png")
+		.add("Resources/Images/VFX/Hit-4.png")*/
+		.add("Resources/Images/VFX/HitVFX.json")
 		.load(setupStage);
 
 
@@ -86,7 +89,7 @@ function setupStage(){
 function setupAudio(){
 	//Manage IO
 	//This has to be loaded differently.
-	loadInJson('./www/Resources/JSON/Beatmap/beat.json');
+	loadinRhythmMap('./www/Resources/JSON/Beatmap/beat.json');
 	//Play that track
 }
 

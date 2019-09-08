@@ -66,6 +66,17 @@ function createAnimatedSpriteOnStage(stage, x, y, textures, anchorx = 0.5, ancho
     return sprite;
 }
 
+
+function createAnimatedSpriteWithJSON(stage,x,y,json,animationName){
+    var sheet = PIXI.loader.resources[json].spritesheet;
+    //console.log(sheet);
+    var sprite = new PIXI.AnimatedSprite(sheet.animations[animationName]);
+    sprite.x = x;
+    sprite.y = y;
+    stage.addChild(sprite);
+    return sprite;
+}
+
 function scaleSprite(sprite, scale){
     sprite.scale.x = scale;
     sprite.scale.y = scale;
