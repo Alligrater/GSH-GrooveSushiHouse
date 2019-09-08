@@ -27,7 +27,7 @@ function beginPixi(){
 	app.renderer.backgroundColor = 0x000000;
 	PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
 	PIXI.settings.ANISOTROPIC_LEVEL = 0;
-	PIXI.settings.ROUND_PIXELS = true;
+	PIXI.ROUND_PIXELS = true;
 
 	PIXI.loader
 		//General Assets
