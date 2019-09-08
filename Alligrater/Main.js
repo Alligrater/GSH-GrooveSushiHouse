@@ -125,7 +125,7 @@ function update(delta){
 	menustage.update(delta);
 	fishstage.update(delta);
 	sushistage.update(delta);
-
+	storystage.update(delta);
 
 
 }

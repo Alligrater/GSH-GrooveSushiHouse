@@ -1,7 +1,7 @@
 
 
 class DialogueBox{
-    constructor(width, height, posx, posy){
+    constructor(stage, width, height, posx, posy){
 
         var DIALOGUEPATH = "Resources/Images/UI/DialogueBox.json";
         //Do something.
@@ -14,7 +14,11 @@ class DialogueBox{
 
 
         //We need a total of
-        this.dbox = new NinePatchBox(storystage.stage, DIALOGUEPATH, this.width, this.height, this.x, this.y);
+        this.dbox = new NinePatchBox(stage, DIALOGUEPATH, this.width, this.height, this.x, this.y);
+    }
+
+    update(delta){
+        this.dbox.update(delta);
     }
 
     showDialogue(){
