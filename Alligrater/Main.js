@@ -8,6 +8,7 @@ var ACTIVE_STAGE;
 var fishstage;
 var sushistage;
 var menustage;
+var storystage;
 
 var pause = true;
 
@@ -76,6 +77,7 @@ function setupStage(){
 	fishstage = new FishingStage();
 	sushistage = new SushiStage();
 	menustage = new MenuStage();
+	storystage = new StoryStage();
 
 	fishstage.setpause();
 	sushistage.setpause();
@@ -83,6 +85,7 @@ function setupStage(){
 	app.stage = menustage.stage;
 	ACTIVE_STAGE = menustage;
 
+	loadAllCharacters('./www/Resources/JSON/Characters/')
 	setupAudio();
 }
 

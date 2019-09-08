@@ -7,7 +7,7 @@ const Behaviors = {
 
 class StageCharacter{
 
-    constructor(JSON){
+    constructor(x,y,JSON){
         this.characterPath = null;
         this.animations = null;
 
@@ -20,6 +20,10 @@ class StageCharacter{
 
         if(JSON != null){
             //Override everything.
+            this.x = x;
+            this.y = y;
+            //Read in the json object.
+            this.character = createAnimatedSpriteWithJSON(storystage, this.x, this.y, JSON, "bundle");
         }
     }
 }
