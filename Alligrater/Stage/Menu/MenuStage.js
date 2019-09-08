@@ -28,6 +28,8 @@ class MenuStage extends GenericStage{
         var options = new Button(this.stage, CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2 + 96, "Resources/Images/Menu_Options.png", "options");
         options.choose = function(){
             console.log("options");
+            ACTIVE_STAGE = storystage;
+            app.stage = storystage.stage;
         }
         this.buttons.push(options);
 
@@ -68,7 +70,7 @@ class MenuStage extends GenericStage{
     }
 
     changeButton(direction){
-        this.buttonIndex = (this.buttonIndex + direction) % this.buttons.length;
-        console.log(this.buttons[this.buttonIndex]);
+        this.buttonIndex = (this.buttonIndex + direction + this.buttons.length) % this.buttons.length;
+        console.log(this.buttons[this.buttonIndex].text);
     }
 }

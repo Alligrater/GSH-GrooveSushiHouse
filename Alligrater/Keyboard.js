@@ -52,7 +52,37 @@ let up = keyboard("w"),
     down = keyboard("s"),
     left = keyboard("a"),
     right = keyboard("d"),
+    uparr = keyboard("ArrowUp"),
+    downarr = keyboard("ArrowDown"),
+    leftarr = keyboard("ArrowLeft"),
+    rightarr = keyboard("ArrowRight"),
     enter = keyboard("Enter");
+
+uparr.press = () =>{
+    up.press();
+}
+uparr.release = () =>{
+    up.release();
+}
+
+downarr.press = () =>{
+    down.press();
+}
+downarr.release = () =>{
+    down.release();
+}
+leftarr.press = () =>{
+    left.press();
+}
+leftarr.release = () =>{
+    left.release();
+}
+rightarr.press = () =>{
+    right.press();
+}
+rightarr.release = () =>{
+    right.release();
+}
 
 enter.press = () => {
     processInput("Enter", 1);
