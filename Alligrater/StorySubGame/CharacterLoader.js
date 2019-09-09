@@ -1,4 +1,4 @@
-var CHARACTER_POOL = new Map();
+
 
 function loadAllCharacters(directory){
     var fs = require('fs');
@@ -21,5 +21,5 @@ function loadCharacter(path){
     //console.log(JSONContent);
     var character = new StageCharacter(CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, JSONContent);
     //console.log(character);
-    CHARACTER_POOL.set(character.name, character);
+    storystage.CHARACTER_POOL.set(character.name, character);
 }

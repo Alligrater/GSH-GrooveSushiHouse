@@ -36,16 +36,21 @@ function loadStory(path){
 }
 
 function loadActions(JSON){
-    switch(JSON.type){
+    if(JSON.type){
+        switch(JSON.type){
 
-        case "dialogue-action":
-            //Do something
-            STAGE_ACTION_LIST.push(new DialogueAction(JSON));
-            break;
-        default:
-            //do nothing
-            break;
+            case "dialogue-action":
+                //Do something
+                STAGE_ACTION_LIST.push(new DialogueAction(JSON));
+                break;
+            case "stage-action":
+                STAGE_ACTION_LIST.push(new StageSetupAction(JSON));
+            default:
+                //do nothing
+                break;
+        }
     }
+
 
 
     //?

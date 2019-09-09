@@ -59,6 +59,7 @@ class DialogueBox{
     }
 
     hideBox(){
-
+        this.spriteMessage.hideAll();
+        this.dbox.hide();
     }
 }
