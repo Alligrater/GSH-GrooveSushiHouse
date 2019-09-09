@@ -2,22 +2,34 @@ const FONTPATH = "Resources/Images/UI/Fonts/fonts.json";
 class SpriteText{
     constructor(stage, text, BASE_X, BASE_Y){
         this.text = text.toUpperCase();
-        this.sprites = new PIXI.ParticleContainer(300, {
-            scale: true,
-            position: true,
-            rotation: true,
-            uvs: true,
-            alpha: true
-        });
+        this.sprites = new PIXI.Container();
 
         this.basex = BASE_X;
         this.basey = BASE_Y;
         this.spritelist = [];
+        this.showindex = 0;
         this.sheet = PIXI.loader.resources[FONTPATH].spritesheet;
 
         this.constructSpriteBundle();
 
         stage.addChild(this.sprites);
+    }
+
+    hideAll(){
+        for(var x of this.spritelist){
+            x.visible = false;
+        }
+        this.showindex = 0;
+    }
+
+    showNext(){
+
+        if(this.showindex >= this.spritelist.length){
+            return false;
+        }
+        this.spritelist[this.showindex].visible = true;
+        this.showindex += 1;
+        return true;
     }
 
     constructSpriteBundle(){
