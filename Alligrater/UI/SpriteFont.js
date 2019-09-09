@@ -105,7 +105,7 @@ function getActualName(c){
             return "Question";
         case "*":
             return "Asterisk";
-        case "'":
+        case "\'":
             return "Apostrophe";
         default:
             return c;
