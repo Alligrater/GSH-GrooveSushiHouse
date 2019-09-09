@@ -1,4 +1,9 @@
 
+const style = new PIXI.TextStyle({
+    fontFamily: "Arial",
+    fontSize: 14,
+    fill: "white",
+});
 
 class DialogueBox{
     constructor(stage, width, height, posx, posy){
@@ -15,6 +20,11 @@ class DialogueBox{
 
         //We need a total of
         this.dbox = new NinePatchBox(stage, DIALOGUEPATH, this.width, this.height, this.x, this.y);
+
+
+
+
+        this.message = new PIXI.Text("Hello Pixi!", style);
     }
 
     update(delta){
@@ -22,7 +32,7 @@ class DialogueBox{
     }
 
     showDialogue(){
-
+        //
     }
 
     clearDialogue(){

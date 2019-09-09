@@ -1,0 +1,33 @@
+{"frames": {
+
+"MasterCoder_Colored-small1.png":
+{
+	"frame": {"x":1,"y":1,"w":50,"h":61},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":3,"w":50,"h":61},
+	"sourceSize": {"w":64,"h":64},
+	"anchor": {"x":0.515625,"y":1}
+},
+"MasterCoder_Colored-small2.png":
+{
+	"frame": {"x":53,"y":1,"w":50,"h":61},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":3,"w":50,"h":61},
+	"sourceSize": {"w":64,"h":64},
+	"anchor": {"x":0.515625,"y":1}
+}},
+"animations": {
+	"bundle": ["MasterCoder_Colored-small1.png","MasterCoder_Colored-small2.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "Developer.png",
+	"format": "RGBA8888",
+	"size": {"w":104,"h":63},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:4f7daf129d20347b5617d815dcfdc47a:6a2b4ca9234ac27ffeb4674c99e34692:0846b07b2657eb4e641e10e8182bdf89$"
+}
+}

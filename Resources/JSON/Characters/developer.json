@@ -1,0 +1,13 @@
+{
+  "name": "Developer",
+  "spritesheet": "Resources/Images/Characters/Developer/developer.json",
+  "animations":
+  [
+    {
+      "name": "idle",
+      "start": 0,
+      "stop": 1
+    }
+
+  ]
+}

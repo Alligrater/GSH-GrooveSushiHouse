@@ -71,6 +71,7 @@ function beginPixi(){
 
 
 		.add("Resources/Images/Characters/Master/master.json")
+		.add("Resources/Images/Characters/Developer/developer.json")
 		.add("Resources/Images/UI/DialogueBox.json")
 		.load(setupStage);
 
@@ -91,6 +92,7 @@ function setupStage(){
 	ACTIVE_STAGE = menustage;
 
 	loadAllCharacters('./www/Resources/JSON/Characters/')
+
 	setupAudio();
 }
 

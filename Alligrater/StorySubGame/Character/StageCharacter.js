@@ -37,6 +37,7 @@ class StageCharacter{
             }
             console.log(this.spritesheet);
             this.character = createAnimatedSpriteWithJSON(storystage.stage, this.x, this.y, this.spritesheet, "bundle");
+            this.character.visible = false; //It's not the right time yet.
             scaleSprite(this.character, 1.5);
             this.setAnimation(animation);
 
@@ -51,7 +52,7 @@ class StageCharacter{
                 //this.aniFrame += 1;
                 if(this.currentFrame > this.animationStop || this.currentFrame < this.animationStart ){
                     //Loop back if the current frame is not something we want.
-                    this.visible = true;
+                    //this.visible = true;
                     this.gotoAndPlay(this.animationStart);
                 }
                 else{
@@ -72,7 +73,7 @@ class StageCharacter{
     }
 
     playAnimation(frameNumber){
-            this.character.visible = true;
+            //this.character.visible = true;
             this.character.gotoAndPlay(frameNumber);
             this.character.zIndex = 5;
     }
