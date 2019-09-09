@@ -93,7 +93,7 @@ function setupStage(){
 	ACTIVE_STAGE = menustage;
 
 	loadAllCharacters('./www/Resources/JSON/Characters/')
-
+	loadAllStories('./www/Resources/JSON/Story/')
 	setupAudio();
 }
 

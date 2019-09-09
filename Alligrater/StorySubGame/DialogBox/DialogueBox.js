@@ -11,11 +11,12 @@ class DialogueBox{
         var DIALOGUEPATH = "Resources/Images/UI/DialogueBox.json";
         //Do something.
         this.speaker = "";
-        this.dialogue = "";
         this.width = width;
         this.height = height;
         this.x = posx;
         this.y = posy;
+
+        this.stage = stage;
 
 
         //We need a total of
@@ -27,16 +28,23 @@ class DialogueBox{
 
     update(delta){
         this.dbox.update(delta);
+        if(this.spriteMessage != null){
             this.spriteMessage.showNext();
+        }
 
     }
 
-    showDialogue(){
-        //
+    showDialogue(string){
+        this.clearDialogue();
+        //Show the new dialogue:
+        this.spriteMessage = new SpriteText(this.stage, string, this.x - this.width/2.1 , this.y - this.height/2.2);
+        //One last thing:
+        this.spriteMessage.hideAll()
     }
 
     clearDialogue(){
-
+        this.stage.removeChild(this.spriteMessage.sprites);
+        this.spriteMessage = null;
     }
 
     setSpeaker(){

@@ -3,7 +3,7 @@ class GenericStageAction{
         this.type = "generic-action"
     }
 
-    action(){
+    execute(){
         //Do something with the stage.
     }
 }

@@ -3,6 +3,7 @@
 	"storyscript":
 	[
 		{
+			"type":"stage-action",
 			"stage":"stage1",
 			"actor":
 			[{
@@ -17,18 +18,22 @@
 				"posx":0.3,
 				"posy":0.5
 			}]
+			
 		},
 		{
+			"type":"dialogue-action",
 			"dialogue":"Hello, I am the owner of the groove sushi house.",
 			"speaker":"Owner",
 			"blip":"blip.wav"
 		},
 		{
+			"type":"dialogue-action",
 			"dialogue":"Hello Owner. I am the developer of this game.",
 			"speaker":"Developer",
 			"blip":"blip.wav"
 		},
 		{
+			"type":"dialogue-action",
 			"dialogue":"So, what do you want to order today?",
 			"speaker":"Owner",
 			"blip":"blip.wav"
