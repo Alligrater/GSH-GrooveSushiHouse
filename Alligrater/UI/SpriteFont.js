@@ -1,6 +1,6 @@
 const FONTPATH = "Resources/Images/UI/Fonts/fonts.json";
 class SpriteText{
-    constructor(stage, text, BASE_X, BASE_Y){
+    constructor(stage, text, BASE_X, BASE_Y, color=0xffffff){
         this.text = text.toUpperCase();
         this.sprites = new PIXI.Container();
 
@@ -9,6 +9,8 @@ class SpriteText{
         this.spritelist = [];
         this.showindex = 0;
         this.sheet = PIXI.loader.resources[FONTPATH].spritesheet;
+
+        this.color = color;
 
         this.constructSpriteBundle();
 
@@ -56,7 +58,8 @@ class SpriteText{
 
                 fontSprite.x = headx;
                 fontSprite.y = heady;
-
+                fontSprite.tint = this.color;
+                scaleSprite(fontSprite, 1.5);
                 headx += fontSprite.width;
 
                 this.spritelist.push(fontSprite);
@@ -80,12 +83,14 @@ function getActualName(c){
     switch(c){
         case "@":
             return "At";
+        case ":":
+            return "Colon";
         case ";":
             return "Semicolon";
         case ",":
             return "Comma";
         case ".":
-            return "Colon";
+            return "Dot";
         case "\\":
             return "Backlash";
         case "!":
