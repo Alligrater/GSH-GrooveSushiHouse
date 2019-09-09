@@ -11,7 +11,7 @@ class SpriteText{
         });
 
         this.basex = BASE_X;
-        this.basey = BASE_Y
+        this.basey = BASE_Y;
         this.spritelist = [];
         this.sheet = PIXI.loader.resources[FONTPATH].spritesheet;
 
@@ -27,12 +27,13 @@ class SpriteText{
 
 
         for(var x of this.text){
+
             //Look up on the table.
             var fontSprite;
             if(x != '\n'){
-                if(this.sheet.textures[x]){
-                    fontSprite =  new PIXI.Sprite(
-                        this.sheet.textures[x]
+                if(this.sheet.textures[getActualName(x)]){
+                    fontSprite = new PIXI.Sprite(
+                        this.sheet.textures[getActualName(x)]
                     );
                 }
                 else{
@@ -55,9 +56,42 @@ class SpriteText{
                     this.sheet.textures[" "]
                 );
                 heady += temp.height;
+                headx = this.basex;
             }
 
 
         }
+    }
+}
+
+function getActualName(c){
+    switch(c){
+        case "@":
+            return "At";
+        case ";":
+            return "Semicolon";
+        case ",":
+            return "Comma";
+        case ".":
+            return "Colon";
+        case "\\":
+            return "Backlash";
+        case "!":
+            return "Exclaim";
+        case "-":
+            return "Hyphen";
+        case "%":
+            return "Percentage";
+        case "+":
+            return "Plus";
+        case "?":
+            return "Question";
+        case "*":
+            return "Asterisk";
+        case "'":
+            return "Apostrophe";
+        default:
+            return c;
+
     }
 }

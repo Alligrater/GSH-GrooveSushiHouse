@@ -99,7 +99,7 @@
 	"sourceSize": {"w":16,"h":16},
 	"anchor": {"x":0.5,"y":0.5}
 },
-"@":
+"At":
 {
 	"frame": {"x":91,"y":1,"w":16,"h":16},
 	"rotated": false,
@@ -126,7 +126,7 @@
 	"sourceSize": {"w":16,"h":16},
 	"anchor": {"x":0.5,"y":0.5}
 },
-";":
+"Semicolon":
 {
 	"frame": {"x":19,"y":37,"w":16,"h":16},
 	"rotated": false,
@@ -144,7 +144,7 @@
 	"sourceSize": {"w":16,"h":16},
 	"anchor": {"x":0.5,"y":0.5}
 },
-",":
+"Comma":
 {
 	"frame": {"x":19,"y":73,"w":16,"h":16},
 	"rotated": false,
@@ -153,7 +153,7 @@
 	"sourceSize": {"w":16,"h":16},
 	"anchor": {"x":0.5,"y":0.5}
 },
-".":
+"Colon":
 {
 	"frame": {"x":19,"y":91,"w":16,"h":16},
 	"rotated": false,
@@ -162,7 +162,7 @@
 	"sourceSize": {"w":16,"h":16},
 	"anchor": {"x":0.5,"y":0.5}
 },
-"/":
+"Backslash":
 {
 	"frame": {"x":19,"y":109,"w":16,"h":16},
 	"rotated": false,
@@ -180,7 +180,7 @@
 	"sourceSize": {"w":16,"h":16},
 	"anchor": {"x":0.5,"y":0.5}
 },
-"!":
+"Exclaim":
 {
 	"frame": {"x":55,"y":19,"w":16,"h":16},
 	"rotated": false,
@@ -216,7 +216,7 @@
 	"sourceSize": {"w":16,"h":16},
 	"anchor": {"x":0.5,"y":0.5}
 },
-"-":
+"Hyphen":
 {
 	"frame": {"x":37,"y":37,"w":16,"h":16},
 	"rotated": false,
@@ -297,7 +297,7 @@
 	"sourceSize": {"w":16,"h":16},
 	"anchor": {"x":0.5,"y":0.5}
 },
-"%":
+"Percentage":
 {
 	"frame": {"x":55,"y":55,"w":16,"h":16},
 	"rotated": false,
@@ -306,7 +306,7 @@
 	"sourceSize": {"w":16,"h":16},
 	"anchor": {"x":0.5,"y":0.5}
 },
-"+":
+"Plus":
 {
 	"frame": {"x":55,"y":73,"w":16,"h":16},
 	"rotated": false,
@@ -324,7 +324,7 @@
 	"sourceSize": {"w":16,"h":16},
 	"anchor": {"x":0.5,"y":0.5}
 },
-"?":
+"Question":
 {
 	"frame": {"x":55,"y":109,"w":16,"h":16},
 	"rotated": false,
@@ -351,7 +351,7 @@
 	"sourceSize": {"w":16,"h":16},
 	"anchor": {"x":0.5,"y":0.5}
 },
-"*":
+"Asterisk":
 {
 	"frame": {"x":109,"y":55,"w":16,"h":16},
 	"rotated": false,
@@ -417,6 +417,24 @@
 "Z":
 {
 	"frame": {"x":91,"y":109,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"Apostrophe":
+{
+	"frame": {"x":109,"y":91,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16},
+	"anchor": {"x":0.5,"y":0.5}
+},
+" ":
+{
+	"frame": {"x":109,"y":109,"w":16,"h":16},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
