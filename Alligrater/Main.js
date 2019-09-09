@@ -73,6 +73,7 @@ function beginPixi(){
 		.add("Resources/Images/Characters/Master/master.json")
 		.add("Resources/Images/Characters/Developer/developer.json")
 		.add("Resources/Images/UI/DialogueBox.json")
+		.add("Resources/Images/UI/Fonts/fonts.json")
 		.load(setupStage);
 
 
