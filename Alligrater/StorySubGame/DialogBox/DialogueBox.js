@@ -43,6 +43,9 @@ class DialogueBox{
     }
 
     clearDialogue(){
+        if(this.spriteMessage == null){
+            return;
+        }
         this.stage.removeChild(this.spriteMessage.sprites);
         this.spriteMessage = null;
     }

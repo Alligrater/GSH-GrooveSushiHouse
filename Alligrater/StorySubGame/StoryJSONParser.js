@@ -1,5 +1,6 @@
 
 var STAGE_ACTION_LIST = [];
+var ACTION_INDEX = 0;
 
 
 //This should load in all the stories
@@ -9,8 +10,8 @@ function loadAllStories(directory){
         //console.log(items);
 
         for (var i=0; i<items.length; i++) {
-            console.log(directory+items[i]);
-            loadStory(JSON);
+            //console.log(directory+items[i]);
+            loadStory(directory+items[i]);
         }
     });
 }
@@ -24,11 +25,19 @@ function loadStory(path){
 
     for(x of JSONContent.storyscript){
         loadActions(x);
+
+    }
+
+
+    if(STAGE_ACTION_LIST[0] != null){
+        //console.log("complete");
+        STAGE_ACTION_LIST[0].execute();
     }
 }
 
 function loadActions(JSON){
     switch(JSON.type){
+
         case "dialogue-action":
             //Do something
             STAGE_ACTION_LIST.push(new DialogueAction(JSON));
