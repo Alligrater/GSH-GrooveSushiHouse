@@ -121,4 +121,8 @@ class FishingStage extends GenericStage{
         ProcessIndex += 1;
     }
 
+    cleanup(){
+        //Clean up everything.
+    }
+
 }

@@ -14,24 +14,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/StageActions/GenericStageAction.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/DialogBox/SpriteFont.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="85" column="57" selection-start-line="85" selection-start-column="57" selection-end-line="85" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/DialogBox/DialogueBox.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="37">
@@ -41,19 +23,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Story/StoryStage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="74" column="56" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/StageActions/StageSetupAction.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="59" selection-start-line="59" selection-end-line="61" selection-end-column="9" />
+            <state relative-caret-position="759">
+              <caret line="80" column="1" lean-forward="true" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -67,11 +40,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/StageActions/DialogueAction.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            <state relative-caret-position="551">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/StoryJSONParser.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="740">
+              <caret line="84" column="51" selection-start-line="84" selection-start-column="51" selection-end-line="84" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -86,19 +68,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/Character/StageCharacter.js">
+        <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Fishing/FishingStage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-209">
-              <caret line="40" column="59" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
+            <state relative-caret-position="1653">
+              <caret line="123" selection-start-line="123" selection-end-line="125" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Sushi/SushiStage.js">
+        <entry file="file://$PROJECT_DIR$/Alligrater/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="91" column="47" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
+            <state relative-caret-position="664">
+              <caret line="65" column="43" lean-forward="true" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="836">
+              <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/StageActions/StoryAction.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -160,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Alligrater/Notes/Fish/LongFish.js" />
         <option value="$PROJECT_DIR$/Alligrater/Notes/Fish/DirectionalFish.js" />
         <option value="$PROJECT_DIR$/Alligrater/VFX/HitVFX.js" />
         <option value="$PROJECT_DIR$/Alligrater/Notes/Fish/AbstractFish.js" />
@@ -184,12 +183,9 @@
         <option value="$PROJECT_DIR$/Alligrater/UI/Button.js" />
         <option value="$PROJECT_DIR$/Alligrater/UI/SpriteFont.js" />
         <option value="$PROJECT_DIR$/Alligrater/StorySubGame/CharacterLoader.js" />
-        <option value="$PROJECT_DIR$/Alligrater/StorySubGame/StoryJSONParser.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Alligrater/RhythmSubGame/MusicMapReader.js" />
         <option value="$PROJECT_DIR$/Alligrater/Main.js" />
         <option value="$PROJECT_DIR$/Alligrater/RhythmSubGame/DisplayFormatSheet.js" />
-        <option value="$PROJECT_DIR$/Alligrater/Stage/Fishing/FishingStage.js" />
         <option value="$PROJECT_DIR$/Alligrater/Stage/Sushi/SushiStage.js" />
         <option value="$PROJECT_DIR$/Alligrater/SpriteManagement.js" />
         <option value="$PROJECT_DIR$/Alligrater/RhythmSubGame/Notes/Fish/DirectionalFish.js" />
@@ -211,6 +207,10 @@
         <option value="$PROJECT_DIR$/Alligrater/StorySubGame/StageActions/StageSetupAction.js" />
         <option value="$PROJECT_DIR$/Alligrater/StorySubGame/StageActions/GenericStageAction.js" />
         <option value="$PROJECT_DIR$/Alligrater/StorySubGame/StageActions/DialogueAction.js" />
+        <option value="$PROJECT_DIR$/Alligrater/Stage/Fishing/FishingStage.js" />
+        <option value="$PROJECT_DIR$/Alligrater/StorySubGame/StageActions/StoryAction.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/Alligrater/StorySubGame/StoryJSONParser.js" />
       </list>
     </option>
   </component>
@@ -420,12 +420,12 @@
       <workItem from="1568093905236" duration="1040000" />
       <workItem from="1568123438884" duration="3446000" />
       <workItem from="1568132975292" duration="785000" />
-      <workItem from="1568134445017" duration="5763000" />
+      <workItem from="1568134445017" duration="7998000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250968000" />
+    <option name="totallyTimeSpent" value="253203000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -480,7 +480,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Resources/Images/MashFish.PNG" />
     <entry file="file://$PROJECT_DIR$/Resources/Images/FishHead.png" />
     <entry file="file://$PROJECT_DIR$/Resources/Images/FishBody.png" />
     <entry file="file://$PROJECT_DIR$/Resources/Images/DirectionalFish.png" />
@@ -531,13 +530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dependencies/sound.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -566,20 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" selection-start-line="21" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Fishing/FishingStage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="112" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/StoryJSONParser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -691,13 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Alligrater/Main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-172">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Alligrater/DisplayFormatSheet.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -719,13 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/CharacterLoader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -757,6 +721,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/StageActions/GenericStageAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Fishing/FishingStage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1653">
+          <caret line="123" selection-start-line="123" selection-end-line="125" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/DialogBox/DialogueBox.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="37">
@@ -771,24 +749,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/StageActions/StageSetupAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="59" selection-start-line="59" selection-end-line="61" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/StageActions/GenericStageAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/StageActions/DialogueAction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="551">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Alligrater/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="65" column="43" lean-forward="true" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/StageActions/StoryAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/StageActions/StageSetupAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="80" column="1" lean-forward="true" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/CharacterLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Alligrater/StorySubGame/StoryJSONParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="84" column="51" selection-start-line="84" selection-start-column="51" selection-end-line="84" selection-end-column="51" />
         </state>
       </provider>
     </entry>

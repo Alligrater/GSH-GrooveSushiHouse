@@ -2,6 +2,9 @@
 var STAGE_ACTION_LIST = [];
 var ACTION_INDEX = 0;
 
+var ALL_STORY_STAGES = new Map();
+var ACTIVE_ACTION_LIST;
+
 
 //This should load in all the stories
 function loadAllStories(directory){
@@ -11,8 +14,23 @@ function loadAllStories(directory){
 
         for (var i=0; i<items.length; i++) {
             //console.log(directory+items[i]);
-            loadStory(directory+items[i]);
+            STAGE_ACTION_LIST = [];
+            var name = loadStory(directory+items[i]);
+            ALL_STORY_STAGES.set(name, STAGE_ACTION_LIST);
+            if(name == "Main"){
+                //This should become the active one.
+                ACTIVE_ACTION_LIST = STAGE_ACTION_LIST;
+                if(ACTIVE_ACTION_LIST[0] != null){
+                    console.log("complete");
+                    ACTIVE_ACTION_LIST[0].execute();
+                }
+            }
         }
+        //Clean up when everything is done.
+        STAGE_ACTION_LIST = null;
+
+        //Then execute.
+
     });
 }
 
@@ -25,14 +43,10 @@ function loadStory(path){
 
     for(x of JSONContent.storyscript){
         loadActions(x);
-
+        //Set the first one as the active one. first come, first served.
     }
 
-
-    if(STAGE_ACTION_LIST[0] != null){
-        //console.log("complete");
-        STAGE_ACTION_LIST[0].execute();
-    }
+    return JSONContent.name;
 }
 
 function loadActions(JSON){
@@ -45,6 +59,8 @@ function loadActions(JSON){
                 break;
             case "stage-action":
                 STAGE_ACTION_LIST.push(new StageSetupAction(JSON));
+            case "story-action":
+                STAGE_ACTION_LIST.push(new StoryAction(JSON));
             default:
                 //do nothing
                 break;
@@ -55,8 +71,17 @@ function loadActions(JSON){
 
 function nextStageAction(){
     ACTION_INDEX += 1;
-    if(STAGE_ACTION_LIST[ACTION_INDEX] != null){
+    if(ACTIVE_ACTION_LIST[ACTION_INDEX] != null){
         //Do something
-        STAGE_ACTION_LIST[ACTION_INDEX].execute();
+        ACTIVE_ACTION_LIST[ACTION_INDEX].execute();
+    }
+}
+
+
+function playStory(storyName){
+    if(ALL_STORY_STAGES.get(storyName)){
+        ACTIVE_ACTION_LIST = ALL_STORY_STAGES.get(storyName);
+        ACTION_INDEX = 0;
+        ACTIVE_ACTION_LIST[ACTION_INDEX].execute();
     }
 }
