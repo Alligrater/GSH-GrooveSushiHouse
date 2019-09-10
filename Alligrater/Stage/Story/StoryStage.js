@@ -37,6 +37,7 @@ class StoryStage extends GenericStage{
             }
             else{
                 this.screenUnShake();
+                this.isAFrame = true;
             }
         }
         else{

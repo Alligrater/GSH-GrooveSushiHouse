@@ -5,7 +5,7 @@ class RegularSushi extends AbstractSushi{
         var headPath = "Resources/Images/Sushi/PlainSushi.png";
 
         this.head = createSpriteOnStage(sushistage.stage, this.x, this.y, headPath);
-        scaleSprite(this.head, 1.5);
+        scaleSprite(this.head, GLOBAL_SPRITE_SCALE);
         this.type = "regular-sushi"
 
     }

@@ -15,22 +15,22 @@ class LongFish extends AbstractFish{
         this.keyDown = null;
 
         var headSample = createSpriteOnStage(fishstage.stage,this.x, this.y, headPath);
-        scaleSprite(headSample, 1.5);
+        scaleSprite(headSample, GLOBAL_SPRITE_SCALE);
 
         var bodyLength = (this.stop - this.start) * this.basespeed - headSample.width;
 
 
         //Make body part
-        this.body = createTilingSpriteOnStage(fishstage.stage, this.x + headSample.width / 2, this.y, bodyPath, bodyLength/1.5);
-        scaleSprite(this.body, 1.5);
+        this.body = createTilingSpriteOnStage(fishstage.stage, this.x + headSample.width / 2, this.y, bodyPath, bodyLength/GLOBAL_SPRITE_SCALE);
+        scaleSprite(this.body, GLOBAL_SPRITE_SCALE);
 
             //Tail
         this.tail = createSpriteOnStage(fishstage.stage,this.x + (this.stop - this.start) * this.basespeed,
             this.y, tailPath);
-        scaleSprite(this.tail, 1.5);
+        scaleSprite(this.tail, GLOBAL_SPRITE_SCALE);
 
         this.head = createSpriteOnStage(fishstage.stage,this.x, this.y, headPath);
-        scaleSprite(this.head, 1.5);
+        scaleSprite(this.head, GLOBAL_SPRITE_SCALE);
     }
 
     update(currentTime){
@@ -58,7 +58,7 @@ class LongFish extends AbstractFish{
         if(this.isHolding){
             console.log("holding");
             this.head.x = FISH_TARGET_X;
-            this.body.width = this.calculateBodyLength()/1.5;
+            this.body.width = this.calculateBodyLength()/GLOBAL_SPRITE_SCALE;
             this.body.x = this.head.x + this.head.width/2
             if(inputTimeCheck(currentTime, this.stop) == ComboRating.PERFECT){
                 doCombo("perfect");

@@ -7,7 +7,7 @@ class RegularFish extends AbstractFish{
         var headPath = "Resources/Images/Fish/RegularFish.png";
         //?
         this.head = createSpriteOnStage(fishstage.stage,this.x, this.y, headPath);
-        scaleSprite(this.head, 1.5);
+        scaleSprite(this.head, GLOBAL_SPRITE_SCALE);
     }
 
     processInput(key, eventType, currentTime){

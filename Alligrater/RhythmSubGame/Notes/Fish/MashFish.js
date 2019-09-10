@@ -5,9 +5,9 @@ class MashFish extends AbstractFish{
         this.stop = stop;
         var headPath = "Resources/Images/Fish/MashFish.png";
         this.head = createSpriteOnStage(fishstage.stage, this.x, this.y, headPath);
-        scaleSprite(this.head, 1.5);
+        scaleSprite(this.head, GLOBAL_SPRITE_SCALE);
         this.isReady = false;
-        this.scale = 1.5;
+        this.scale = GLOBAL_SPRITE_SCALE;
     }
 
     update(currentTime){
@@ -31,7 +31,7 @@ class MashFish extends AbstractFish{
 
         if(this.isReady){
             this.head.x = FISH_TARGET_X;
-            if(this.scale > 1.5){
+            if(this.scale > GLOBAL_SPRITE_SCALE){
                 this.scale -= 0.02;
             }
             this.head.scale.x = this.scale;

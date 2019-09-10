@@ -5,7 +5,7 @@ class GhostSushi extends AbstractSushi{
         var headPath = "Resources/Images/Sushi/GhostSushi.png";
 
         this.head = createSpriteOnStage(sushistage.stage, this.x, this.y, headPath);
-        scaleSprite(this.head, 1.5);
+        scaleSprite(this.head, GLOBAL_SPRITE_SCALE);
         this.type = "ghost-sushi"
 
     }

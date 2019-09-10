@@ -17,21 +17,21 @@ class LongSushi extends AbstractSushi{
         this.isReady = false;
 
         var headSample = createSpriteOnStage(sushistage.stage,this.x, this.y, headPath);
-        scaleSprite(headSample, 1.5);
+        scaleSprite(headSample, GLOBAL_SPRITE_SCALE);
 
         this.bodyLength = (this.stop - this.start) * this.vely + headSample.height;
 
 
-        this.body = createTilingSpriteOnStage(sushistage.stage, this.x, this.y - headSample.height / 2, bodyPath, -1, this.bodyLength/1.2, 0.5, 0.0);
-        scaleSprite(this.body, 1.5);
+        this.body = createTilingSpriteOnStage(sushistage.stage, this.x, this.y - headSample.height / 2, bodyPath, -1, this.bodyLength/GLOBAL_SPRITE_SCALE, 0.5, 0.0);
+        scaleSprite(this.body, GLOBAL_SPRITE_SCALE);
 
         //Tail
         this.tail = createSpriteOnStage(sushistage.stage,this.x,
             this.y - (this.stop - this.start) * this.vely, tailPath);
-        scaleSprite(this.tail, 1.5);
+        scaleSprite(this.tail, GLOBAL_SPRITE_SCALE);
 
         this.head = createSpriteOnStage(sushistage.stage,this.x, this.y, headPath);
-        scaleSprite(this.head, 1.5);
+        scaleSprite(this.head, GLOBAL_SPRITE_SCALE);
     }
 
     update(currentTime){
@@ -60,7 +60,7 @@ class LongSushi extends AbstractSushi{
         if(this.isHolding){
             console.log("holding");
             this.head.y = SUSHI_TARGET_Y;
-            this.body.height = this.calculateBodyLength()/1.2;
+            this.body.height = this.calculateBodyLength()/GLOBAL_SPRITE_SCALE;
             this.body.y = this.head.y - this.head.height/2
             if(inputTimeCheck(currentTime, this.stop) == ComboRating.PERFECT){
                 doCombo("perfect");

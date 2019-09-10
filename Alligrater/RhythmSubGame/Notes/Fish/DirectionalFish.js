@@ -9,8 +9,8 @@ class DirectionalFish extends AbstractFish{
         var arrowPath = "Resources/Images/Fish/Arrow.png";
         this.head = createSpriteOnStage(fishstage.stage,this.x, this.y, headPath);
         this.arrow = createSpriteOnStage(fishstage.stage,this.x - 9, this.y, arrowPath);
-        scaleSprite(this.head, 1.5);
-        scaleSprite(this.arrow, 1.5);
+        scaleSprite(this.head, GLOBAL_SPRITE_SCALE);
+        scaleSprite(this.arrow, GLOBAL_SPRITE_SCALE);
 
         this.setDirection();
     }
