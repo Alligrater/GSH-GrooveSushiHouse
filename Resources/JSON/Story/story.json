@@ -67,7 +67,12 @@
 					"visible": false
 				}
 			],
-			"wait": 3
+			"wait": 2,
+			"params":["hide-dialogue"]
+		},
+		{
+			"type": "stage-action",
+			"params":["show-dialogue"]
 		},
 		{
 			"type": "dialogue-action",

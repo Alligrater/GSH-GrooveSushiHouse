@@ -48,15 +48,26 @@ class StageSetupAction extends GenericStageAction{
                     character.visible = false;
                 }
             }
+        }
 
+        if(this.JSON.params){
+            //Execute them.
+            for(var x of this.JSON.params){
+                this.executeParams(x);
+            }
         }
 
 
         if(this.JSON.wait){
-
+            setTimeout(nextStageAction,this.JSON.wait*1000);
         }
         //Set up something on the stage.
         //Now move on.
-        nextStageAction();
+        else{
+            nextStageAction();
+        }
+
     }
+
+
 }

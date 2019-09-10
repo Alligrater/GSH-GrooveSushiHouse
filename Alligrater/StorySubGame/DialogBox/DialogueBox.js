@@ -110,11 +110,13 @@ class DialogueBox{
         this.isVisible = true;
         this.dbox.show();
         this.spriteMessage.showAll();
+        this.speaker.showAll();
     }
 
     hideBox(){
         this.spriteMessage.hideAll();
         this.dbox.hide();
+        this.speaker.hideAll();
         this.isVisible = false;
     }
 }

@@ -11,6 +11,13 @@ class StoryStage extends GenericStage{
         this.background = null;
         this.backgroundVisible = false;
         this.CHARACTER_POOL = new Map();
+
+        this.screenShakeAmount = 0;
+        this.screenShakeTime = 0;
+        this.screenShakeTargetTime = 0;
+
+        
+
     }
 
     update(delta){
