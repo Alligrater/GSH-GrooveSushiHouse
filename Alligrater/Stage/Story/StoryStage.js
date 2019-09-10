@@ -21,14 +21,29 @@ class StoryStage extends GenericStage{
         this.screenShakex = 0;
         this.screenShakey = 0;
 
-        this.isAFrame = false;
+        this.isAFrame = true;
     }
 
     update(delta){
         this.dialogueBox.update();
         if(!this.isScreenShakeComplete){
-
+            this.screenShakeTime += 1;
+            if(this.screenShakeTime >= this.screenShakeTargetTime){
+                this.isScreenShakeComplete = true;
+            }
+            if(this.isAFrame){
+                this.screenShake();
+                this.isAFrame = false;
+            }
+            else{
+                this.screenUnShake();
+            }
         }
+        else{
+            this.screenUnShake();
+        }
+        //Unshake
+        //this.screenUnShake();
     }
 
     removeBackground(){
@@ -64,7 +79,8 @@ class StoryStage extends GenericStage{
 
     scheduleScreenshake(time, amount){
         this.screenShakeTargetTime = time;
-        if(this.screenShakeTargetTime)
+
+        this.isAFrame = true;
 
 
         this.screenShakeAmount = amount;
@@ -82,10 +98,10 @@ class StoryStage extends GenericStage{
             this.background.y += this.screenShakey;
         }
 
-        for(var x of this.CHARACTER_POOL){
+        for(var x of this.CHARACTER_POOL.keys()){
             //Shake all characters
-            x.character.x += this.screenShakex;
-            x.character.y += this.screenShakey;
+            this.CHARACTER_POOL.get(x).character.x += this.screenShakex;
+            this.CHARACTER_POOL.get(x).character.y += this.screenShakey;
         }
     }
 
@@ -98,10 +114,10 @@ class StoryStage extends GenericStage{
             this.background.x -= this.screenShakex;
             this.background.y -= this.screenShakey;
         }
-        for(var x of this.CHARACTER_POOL){
+        for(var x of this.CHARACTER_POOL.keys()){
             //Shake all characters
-            x.character.x -= this.screenShakex;
-            x.character.y -= this.screenShakey;
+            this.CHARACTER_POOL.get(x).character.x -= this.screenShakex;
+            this.CHARACTER_POOL.get(x).character.y -= this.screenShakey;
         }
         this.screenShakex = 0;
         this.screenShakey = 0;

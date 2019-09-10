@@ -68,7 +68,7 @@
 				}
 			],
 			"wait": 2,
-			"screenshake":{"time":1,"amount":10},
+			"screenshake":{"time":30,"amount":10},
 			"params":["hide-dialogue"]
 		},
 		{
