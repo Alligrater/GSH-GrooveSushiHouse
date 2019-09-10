@@ -6,6 +6,9 @@ class Button{
         }
         this.selectedSprite = createSpriteOnStage(stage, x, y, imagePath2)
         this.selectedSprite.visible = false;
+
+        scaleSprite(this.sprite, GLOBAL_SPRITE_SCALE);
+        scaleSprite(this.selectedSprite, GLOBAL_SPRITE_SCALE)
         this.text = text;
     }
 

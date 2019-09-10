@@ -38,7 +38,7 @@ class StageCharacter{
             console.log(this.spritesheet);
             this.character = createAnimatedSpriteWithJSON(storystage.stage, this.x, this.y, this.spritesheet, "bundle");
             this.character.visible = false; //It's not the right time yet.
-            scaleSprite(this.character, 1.5);
+            scaleSprite(this.character, GLOBAL_SPRITE_SCALE);
             this.setAnimation(animation);
 
             this.character.loop = true;

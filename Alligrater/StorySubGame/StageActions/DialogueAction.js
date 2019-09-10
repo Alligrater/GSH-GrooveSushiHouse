@@ -23,5 +23,10 @@ class DialogueAction extends GenericStageAction{
         if(this.JSON.speaker){
             storystage.dialogueBox.showName(this.JSON.speaker);
         }
+        if(this.JSON.screenshake){
+            storystage.scheduleScreenshake(this.JSON.screenshake.time, this.JSON.screenshake.amount)
+        }
     }
+
+
 }

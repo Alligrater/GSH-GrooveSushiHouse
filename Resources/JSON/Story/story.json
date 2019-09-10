@@ -57,6 +57,61 @@
 		},
 		{
 			"type": "stage-action",
+			"params":["show-dialogue"]
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "Let me introduce our protagonist, Tadokoro Monosugee.",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "Hi, I'm Monosugee. I paied all my de--",
+			"speaker": "Monosugee",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "WHOA-- Stop there--",
+			"screenshake":{"time":10,"amount":20},
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "You are talking to the wrong person. Talk to the player, not me.",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "Hmm.                                   \nShall we begin, then?",
+			"speaker": "Monosugee",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "stage-action",
 			"stage": "stage1",
 			"background": {
 				"name": "Resources/Images/Title.png"
@@ -67,23 +122,10 @@
 					"visible": false
 				}
 			],
+			"audio":"Resources/SE/titleintro.wav",
 			"wait": 2,
 			"screenshake":{"time":10,"amount":20},
 			"params":["hide-dialogue"]
-		},
-		{
-			"type": "stage-action",
-			"params":["show-dialogue"]
-		},
-		{
-			"type": "dialogue-action",
-			"dialogue": "You look fairly confused. \nHow about some energizer?",
-			"speaker": "Master",
-			"sound": {
-				"blip": "Resources/SE/blip.wav",
-				"volume": 0.1,
-				"frequency": 4
-			}
 		}
 	]
 }

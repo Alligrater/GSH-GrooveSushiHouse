@@ -72,7 +72,7 @@ class SpriteText{
                 fontSprite.x = headx;
                 fontSprite.y = heady;
                 fontSprite.tint = this.color;
-                scaleSprite(fontSprite, 1.5);
+                scaleSprite(fontSprite, GLOBAL_SPRITE_SCALE);
                 headx += fontSprite.width;
 
                 this.spritelist.push(fontSprite);
@@ -83,7 +83,7 @@ class SpriteText{
                 var temp =  new PIXI.Sprite(
                     this.sheet.textures[" "]
                 );
-                scaleSprite(temp, 2);
+                scaleSprite(temp, GLOBAL_SPRITE_SCALE*4/3);
                 heady += temp.height;
                 headx = this.basex;
             }

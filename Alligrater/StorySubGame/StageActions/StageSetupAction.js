@@ -61,6 +61,10 @@ class StageSetupAction extends GenericStageAction{
             storystage.scheduleScreenshake(this.JSON.screenshake.time, this.JSON.screenshake.amount)
         }
 
+        if(this.JSON.audio){
+            sounds[this.JSON.audio].play();
+        }
+
 
         if(this.JSON.wait){
             setTimeout(nextStageAction,this.JSON.wait*1000);

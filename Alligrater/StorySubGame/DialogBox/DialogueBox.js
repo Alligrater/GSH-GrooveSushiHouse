@@ -27,6 +27,7 @@ class DialogueBox{
 
 
         this.stage = stage;
+        this.autoplay = false;
 
 
         //We need a total of
@@ -59,7 +60,11 @@ class DialogueBox{
         }
         else{
             this.hasComplete = true;
+            if(this.autoplay){
+                nextStageAction();
+            }
         }
+        return this.hasComplete;
 
     }
 
@@ -76,8 +81,13 @@ class DialogueBox{
 
     }
 
+    skipDialogue(){
+        this.hasComplete = true;
+        this.spriteMessage.showAll();
+    }
 
-    showDialogue(string){
+
+    showDialogue(string, autoplay = false){
         this.clearDialogue();
         //Show the new dialogue:
         this.spriteMessage = new SpriteText(this.stage, string, this.x - this.width/2.1 , this.y - this.height/2.2);

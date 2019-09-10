@@ -11,6 +11,7 @@ class StoryStage extends GenericStage{
         this.background = null;
         this.backgroundVisible = false;
         this.CHARACTER_POOL = new Map();
+        this.isDialogueComplete = false;
 
         this.screenShakeAmount = 0;
         this.screenShakeTime = 0;
@@ -25,7 +26,7 @@ class StoryStage extends GenericStage{
     }
 
     update(delta){
-        this.dialogueBox.update();
+        this.isDialogueComplete = this.dialogueBox.update();
         if(!this.isScreenShakeComplete){
             this.screenShakeTime += 1;
             if(this.screenShakeTime >= this.screenShakeTargetTime){
@@ -70,7 +71,13 @@ class StoryStage extends GenericStage{
         if(type == 0){
             switch (key){
                 case "Enter":
-                    nextStageAction();
+                    if(!this.isDialogueComplete){
+                        this.dialogueBox.skipDialogue();
+                    }
+                    else{
+                        nextStageAction();
+                    }
+
                     break;
                 default:
                     break;
