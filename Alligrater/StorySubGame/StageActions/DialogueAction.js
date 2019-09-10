@@ -9,5 +9,24 @@ class DialogueAction extends GenericStageAction{
         //Set a new text on the dialogue box.
         //Something.
         storystage.dialogueBox.showDialogue(this.JSON.dialogue);
+        storystage.dialogueBox.sound = null;
+        if(this.JSON.sound){
+            /*
+            var volume = 0.5;
+            var blip = sounds[this.JSON.blip];
+            if(this.JSON.volume){
+                var volume = this.JSON.volume;
+            }
+            ;*/
+
+            var soundData = this.JSON.sound;
+
+            var volume = soundData.volume==null?0.2:soundData.volume;
+            var blip = soundData.blip==null?null:sounds[soundData.blip];
+            var frequency = soundData.frequency==null?4:soundData.frequency;
+            storystage.dialogueBox.setSound(blip, volume, frequency);
+
+        }
+
     }
 }

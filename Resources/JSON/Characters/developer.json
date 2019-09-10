@@ -1,6 +1,7 @@
 {
   "name": "Developer",
   "spritesheet": "Resources/Images/Characters/Developer/developer.json",
+  "speech_sound": "Resources/SE/blip.wav",
   "animations":
   [
     {
@@ -8,6 +9,5 @@
       "start": 0,
       "stop": 1
     }
-
   ]
 }

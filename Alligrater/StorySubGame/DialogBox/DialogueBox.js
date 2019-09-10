@@ -17,6 +17,13 @@ class DialogueBox{
         this.y = posy;
 
         this.isVisible = true;
+        this.hasComplete = false;
+
+        this.sound = null;
+        this.volume = 0.5; //Default
+        this.soundCooldown = 0;
+        this.soundTime = 2;
+
 
 
         this.stage = stage;
@@ -30,9 +37,26 @@ class DialogueBox{
     }
 
     update(delta){
+        this.soundCooldown += 1;
         this.dbox.update(delta);
-        if(this.spriteMessage != null && this.isVisible){
-            this.spriteMessage.showNext();
+        if(this.spriteMessage != null && this.isVisible && !this.hasComplete){
+            var x = this.spriteMessage.showNext();
+            //Play the blip sound, if it wants a blip.
+            if(x == false){
+                this.hasComplete = true;
+            }
+            else{
+
+                if(this.sound && this.soundCooldown >= this.soundTime){
+
+                    this.sound.play();
+                    this.soundCooldown = 0;
+                }
+            }
+
+        }
+        else{
+            this.hasComplete = true;
         }
 
     }
@@ -43,6 +67,7 @@ class DialogueBox{
         this.spriteMessage = new SpriteText(this.stage, string, this.x - this.width/2.1 , this.y - this.height/2.2);
         //One last thing:
         this.spriteMessage.hideAll()
+        this.hasComplete = false;
     }
 
     clearDialogue(){
@@ -51,6 +76,16 @@ class DialogueBox{
         }
         this.stage.removeChild(this.spriteMessage.sprites);
         this.spriteMessage = null;
+    }
+
+    setSound(sound,volume=0.5, frequency=4){
+        this.sound = sound;
+        this.volume = volume;
+        this.soundTime = frequency;
+        if(this.sound){
+            this.sound.volume = this.volume;
+        }
+
     }
 
     setSpeaker(){

@@ -26,10 +26,7 @@ function loadinRhythmMap(jsonpath){
     BeatSpeed = JSONContent.timepernote;
     FirstBeatCountdown = JSONContent.map[0].start;
 
-    sounds.load([
-        JSONContent.path,
-        "Resources/SE/hit.wav"
-    ]);
+
 
     music = sounds[JSONContent.path];
     music.volume = 0.5;

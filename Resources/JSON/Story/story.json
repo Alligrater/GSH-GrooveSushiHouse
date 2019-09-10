@@ -24,19 +24,35 @@
 			"type":"dialogue-action",
 			"dialogue":"Hello, I am the owner of the groove sushi house.",
 			"speaker":"Owner",
-			"blip":"blip.wav"
+			"sound":
+			{
+				"blip":"Resources/SE/blip.wav",
+				"volume":0.2,
+				"frequency":4
+			}
+			
 		},
 		{
 			"type":"dialogue-action",
 			"dialogue":"Hello Owner. I am the developer of this game.",
 			"speaker":"Developer",
-			"blip":"blip.wav"
+			"sound":
+			{
+				"blip":"Resources/SE/blip.wav",
+				"volume":0.2,
+				"frequency":4
+			}
 		},
 		{
 			"type":"dialogue-action",
 			"dialogue":"So, what do you want to order today?",
 			"speaker":"Owner",
-			"blip":"blip.wav"
+			"sound":
+			{
+				"blip":"Resources/SE/blip.wav",
+				"volume":0.2,
+				"frequency":4
+			}
 		}
 	]
 }

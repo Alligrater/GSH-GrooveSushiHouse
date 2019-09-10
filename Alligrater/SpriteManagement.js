@@ -1,3 +1,53 @@
+function loadSprites(){
+    PIXI.loader
+    //General Assets
+        .add("Resources/Images/ring_good.png")
+        .add("Resources/Images/ring_perfect.png")
+        //Fishing
+        .add("Resources/Images/FishingBackground.png")
+        //Fish
+        .add("Resources/Images/Fish/RegularFish.png")
+        .add("Resources/Images/Fish/FishHead.png")
+        .add("Resources/Images/Fish/FishBody.png")
+        .add("Resources/Images/Fish/FishTail.png")
+        .add("Resources/Images/Fish/DirectionalFish.png")
+        .add("Resources/Images/Fish/MashFish.png")
+        .add("Resources/Images/Fish/Arrow.png")
+        //Sushi-ing
+        .add("Resources/Images/SushiBackground.png")
+        //Sushi
+        .add("Resources/Images/Sushi/PlainSushi.png")
+        .add("Resources/Images/Sushi/AnotherSushi.png")
+        .add("Resources/Images/Sushi/GhostSushi.png")
+        .add("Resources/Images/Sushi/Melon.png")
+
+        .add("Resources/Images/Sushi/SushiHead.png")
+        .add("Resources/Images/Sushi/SushiBody.png")
+        .add("Resources/Images/Sushi/SushiTail.png")
+
+        //Menu
+        .add("Resources/Images/Menu_BG.png")
+        .add("Resources/Images/Menu_Button.png")
+        .add("Resources/Images/Menu_Button_HL.png")
+        .add("Resources/Images/Menu_Options.png")
+
+        /*
+        .add("Resources/Images/VFX/Hit-0.png")
+        .add("Resources/Images/VFX/Hit-1.png")
+        .add("Resources/Images/VFX/Hit-2.png")
+        .add("Resources/Images/VFX/Hit-3.png")
+        .add("Resources/Images/VFX/Hit-4.png")*/
+        .add("Resources/Images/VFX/HitVFX.json")
+        //.add("Resources/Images/HitVFX.json")
+
+
+        .add("Resources/Images/Characters/Master/master.json")
+        .add("Resources/Images/Characters/Developer/developer.json")
+        .add("Resources/Images/UI/DialogueBox.json")
+        .add("Resources/Images/UI/Fonts/fonts.json")
+        .load(setupStage);
+}
+
 function createSpriteOnStage(stage, x, y, spriteName, anchorx = 0.5, anchory = 0.5){
     var sprite = new PIXI.Sprite(
         PIXI.loader.resources[spriteName].texture
