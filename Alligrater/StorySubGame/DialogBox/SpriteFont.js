@@ -121,6 +121,8 @@ function getActualName(c){
             return "Asterisk";
         case "\'":
             return "Apostrophe";
+        case "$":
+            return "Dollar";
         default:
             return c;
 

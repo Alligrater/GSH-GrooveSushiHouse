@@ -1,85 +1,82 @@
 {
-	"name":"Day1",
-	"storyscript":
-	[
+	"name": "Day1",
+	"storyscript": [
 		{
-			"type":"stage-action",
-			"stage":"stage1",
-			"background":{
-				"Resources/Images/SushiHouse-Night.png"
-			}
-			
-		},
-		{
-			"type":"dialogue-action",
-			"dialogue":"This is, a story about a small, small, sushi house.",
-			"speaker":"Narrator",
-			"sound":
-			{
-				"blip":"Resources/SE/blip.wav",
-				"volume":0.1,
-				"frequency":4
-			}
-			
-		},
-		{
-			"type":"dialogue-action",
-			"dialogue":"You see, I've never been to this place. Every part of the\nstory comes from another person, who heard it from ano-\nther guy.",
-			"speaker":"Narrator",
-			"sound":
-			{
-				"blip":"Resources/SE/blip.wav",
-				"volume":0.1,
-				"frequency":4
-			}
-		},
-		{
-			"type":"dialogue-action",
-			"dialogue":"The master, Tadokoro Monosugee, left a legend story of \nhim managing to pay his $1919810 debt in 3 days.\n\nAll by himself.",
-			"speaker":"Narrator",
-			"sound":
-			{
-				"blip":"Resources/SE/blip.wav",
-				"volume":0.1,
-				"frequency":4
-			}
-		},
-		{
-			"type":"stage-action",
-			"stage":"stage1",
-			"hideactor":["Master"]
-			
-		},
-		{
-			"type":"dialogue-action",
-			"dialogue":"That is, honestly, a good question.\nI have no idea what to order.\n",
-			"speaker":"Developer",
-			"sound":
-			{
-				"blip":"Resources/SE/blip.wav",
-				"volume":0.1,
-				"frequency":4
-			}
-		},
-		{
-			"type":"stage-action",
-			"stage":"stage1",
-			"background":"Resources/Images/StoryBackground.png",
-			"actor":
-			[
-			{"name":"Master"}
+			"type": "stage-action",
+			"stage": "stage1",
+			"background": {
+				"name": "Resources/Images/SushiHouse-Long.png"
+			},
+			"actor": [
+				{
+					"name": "Developer",
+					"posx": 0.6,
+					"visible": true
+				}
 			]
-			
 		},
 		{
-			"type":"dialogue-action",
-			"dialogue":"You look fairly confused. \nHow about some energizer?",
-			"speaker":"Master",
-			"sound":
-			{
-				"blip":"Resources/SE/blip.wav",
-				"volume":0.1,
-				"frequency":4
+			"type": "dialogue-action",
+			"dialogue": "This is, a story about a small, small, sushi house.",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "You see, I've never been to this place. Every part of the\nstory comes from another person, who heard it from ano-\nther guy.",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "The master, Tadokoro Monosugee, left a legend story of \nhim managing to pay his $1919810 debt in 3 days.\n\nAll by himself.",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "How does he do that? You are about to find out.",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "stage-action",
+			"stage": "stage1",
+			"background": {
+				"name": "Resources/Images/Title.png"
+			},
+			"actor": [
+				{
+					"name": "Developer",
+					"visible": false
+				}
+			],
+			"wait": 3
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "You look fairly confused. \nHow about some energizer?",
+			"speaker": "Master",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
 			}
 		}
 	]

@@ -8,7 +8,11 @@ class StageSetupAction extends GenericStageAction{
 
     execute() {
         if(this.JSON.background){
-            storystage.setBackground(this.JSON.background);
+            //Do something with the background:
+            if(this.JSON.background.name){
+                storystage.setBackground(this.JSON.background.name);
+            }
+
             //storystage.background.
         }
 
@@ -19,13 +23,17 @@ class StageSetupAction extends GenericStageAction{
             for(var x of this.JSON.actor){
                 if(storystage.CHARACTER_POOL.get(x.name)){
                     var character = storystage.CHARACTER_POOL.get(x.name).character;
-                    character.visible = true;
+                    //character.visible = true;
                     if(x.posx){
                         console.log(x.posx);
                         character.x = CANVAS_WIDTH * x.posx;
                     }
                     if(x.posy){
                         character.y = CANVAS_HEIGHT * x.posy;
+                    }
+
+                    if(x.visible != null){
+                        character.visible = x.visible;
                     }
                     character.zIndex = 5;
                 }
@@ -44,7 +52,9 @@ class StageSetupAction extends GenericStageAction{
         }
 
 
+        if(this.JSON.wait){
 
+        }
         //Set up something on the stage.
         //Now move on.
         nextStageAction();

@@ -9,7 +9,7 @@ class MenuStage extends GenericStage{
 
     setup(){
 
-        this.menu_background = createBackgroundOnStage(this.stage,"Resources/Images/Menu_BG.png");
+        this.menu_background = createBackgroundOnStage(this.stage,"Resources/Images/SushiHouse-Long.png", CANVAS_WIDTH*19/30);
 
 
         var startButton = new Button(this.stage, CANVAS_WIDTH / 4, CANVAS_HEIGHT / 3, "Resources/Images/Menu_Button.png","Resources/Images/Menu_Button_HL.png", "start");
