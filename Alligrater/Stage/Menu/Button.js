@@ -5,19 +5,22 @@ class Button{
             imagePath2 = imagePath;
         }
         this.selectedSprite = createSpriteOnStage(stage, x, y, imagePath2)
+        this.selectedSprite.visible = false;
         this.text = text;
     }
 
     select(){
         //Do a select animation
-        this.sprite.visible = false;
+        //this.sprite.visible = false;
         this.selectedSprite.visible = true;
+        //console.log("selected: " + this.text);
     }
 
     unselect(){
         //unselect
-        this.sprite.visible = true;
+        //this.sprite.visible = true;
         this.selectedSprite.visible = false;
+        //console.log("unselected: " + this.text);
     }
 
     choose(){

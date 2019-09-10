@@ -13,7 +13,7 @@ class MenuStage extends GenericStage{
         scaleSprite(this.menu_background, CANVAS_HEIGHT/this.menu_background.height);
 
 
-        var startButton = new Button(this.stage, CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, "Resources/Images/Menu_Button.png","Resources/Images/Menu_Button_HL.png", "start");
+        var startButton = new Button(this.stage, CANVAS_WIDTH / 4, CANVAS_HEIGHT / 3, "Resources/Images/Menu_Button.png","Resources/Images/Menu_Button_HL.png", "start");
         startButton.choose = function(){
             //go to the other stage
             ACTIVE_STAGE = fishstage;
@@ -25,7 +25,7 @@ class MenuStage extends GenericStage{
         this.buttons.push(startButton);
 
 
-        var options = new Button(this.stage, CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2 + 96, "Resources/Images/Menu_Options.png","Resources/Images/Menu_Options.png", "options");
+        var options = new Button(this.stage, CANVAS_WIDTH / 4, CANVAS_HEIGHT / 3 + 96, "Resources/Images/Menu_Options.png","Resources/Images/Menu_Options_HL.png", "options");
         options.choose = function(){
             console.log("options");
             ACTIVE_STAGE = storystage;
@@ -75,6 +75,6 @@ class MenuStage extends GenericStage{
             x.unselect();
         }
         this.buttons[this.buttonIndex].select();
-        //console.log(this.buttons[this.buttonIndex].text);
+        console.log(this.buttons[this.buttonIndex].text);
     }
 }
