@@ -34,6 +34,8 @@ function loadSprites(){
 
 
         .add("Resources/Images/StoryBackground.png")
+        .add("Resources/Images/SushiHouse.png")
+        .add("Resources/Images/SushiHouse-Night.png")
         /*
         .add("Resources/Images/VFX/Hit-0.png")
         .add("Resources/Images/VFX/Hit-1.png")
@@ -51,6 +53,33 @@ function loadSprites(){
         .add("Resources/Images/UI/NewFonts/fonts.json")
         .load(setupStage);
 }
+
+function createBackgroundOnStage(stage, spriteName, x = CANVAS_WIDTH/2, y = CANVAS_HEIGHT/2){
+    var sprite = new PIXI.Sprite(
+        PIXI.loader.resources[spriteName].texture
+    );
+
+
+    sprite.x = x;
+    sprite.y = y;
+    sprite.anchor.x = 0.5;
+    sprite.anchor.y = 0.5;
+
+    var scale;
+    if(sprite.width > sprite.height){
+        scale = CANVAS_HEIGHT/sprite.height;
+    }
+    else{
+        scale = CANVAS_WIDTH/sprite.width;
+    }
+
+    scaleSprite(sprite, scale);
+
+    stage.addChildAt(sprite, 0);
+    return sprite;
+
+}
+
 
 function createSpriteOnStage(stage, x, y, spriteName, anchorx = 0.5, anchory = 0.5){
     var sprite = new PIXI.Sprite(

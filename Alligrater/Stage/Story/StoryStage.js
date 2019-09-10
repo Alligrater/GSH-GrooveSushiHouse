@@ -7,7 +7,7 @@ class StoryStage extends GenericStage{
 
 
     setup(){
-        this.dialogueBox = new DialogueBox(this.stage,CANVAS_WIDTH * 0.95, CANVAS_HEIGHT * 0.3, CANVAS_WIDTH/2, CANVAS_HEIGHT*0.85);
+        this.dialogueBox = new DialogueBox(this.stage,CANVAS_WIDTH * 0.95, CANVAS_HEIGHT * 0.25, CANVAS_WIDTH/2, CANVAS_HEIGHT*0.85);
         this.background = null;
         this.backgroundVisible = false;
         this.CHARACTER_POOL = new Map();
@@ -32,7 +32,9 @@ class StoryStage extends GenericStage{
     }
 
     setBackground(texturePath){
-
+        this.removeBackground();
+        this.background = createBackgroundOnStage(this.stage, texturePath);
+        /*
         var sprite = new PIXI.Sprite(
             PIXI.loader.resources[texturePath].texture
         );
@@ -45,7 +47,7 @@ class StoryStage extends GenericStage{
 
         this.background = sprite;
 
-        scaleSprite(this.background, 2/3);
+        scaleSprite(this.background, 2/3);*/
     }
 
     hideAllCharacters(){

@@ -10,9 +10,7 @@ class FishingStage extends GenericStage{
 
 
         this.Fish_Tank = [];
-        this.fishing_background  = createSpriteOnStage(this.stage,CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, "Resources/Images/FishingBackground.png");
-        this.fishing_background.scale.x = CANVAS_WIDTH/this.fishing_background.width;
-        this.fishing_background.scale.y = CANVAS_HEIGHT/this.fishing_background.height;
+        this.fishing_background = createBackgroundOnStage(this.stage, "Resources/Images/FishingBackground.png");
 
 
         this.detection_perfect = createSpriteOnStage(this.stage,FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y, "Resources/Images/ring_perfect.png");

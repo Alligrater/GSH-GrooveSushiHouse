@@ -66,7 +66,7 @@ class SushiStage extends GenericStage{
         if(this.pause){
             return;
         }
-        this.sushi_background  = createSpriteOnStage(this.stage,CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, "Resources/Images/SushiBackground.png");
+        this.sushi_background  = createBackgroundOnStage(this.stage, "Resources/Images/SushiBackground.png");
 
         createSpriteOnStage(this.stage, SPAWN_X_LEFT, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png");
         createSpriteOnStage(this.stage, SPAWN_X_LEFT, SUSHI_TARGET_Y, "Resources/Images/ring_good.png");
@@ -90,8 +90,6 @@ class SushiStage extends GenericStage{
         });
         this.sushimessage = new PIXI.Text("Hello Pixi!", style);
         this.stage.addChild(this.sushimessage);
-        this.sushi_background.scale.x = CANVAS_WIDTH/this.sushi_background.width;
-        this.sushi_background.scale.y = CANVAS_HEIGHT/this.sushi_background.height;
     }
 
     sushiAutoPlay(sushi){

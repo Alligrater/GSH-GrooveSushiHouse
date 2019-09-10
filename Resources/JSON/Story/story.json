@@ -5,25 +5,15 @@
 		{
 			"type":"stage-action",
 			"stage":"stage1",
-			"actor":
-			[{
-				"name":"Master",
-				"animation":"idle",
-				"posx":0.6,
-				"posy":0.5
-			},
-			{
-				"name":"Developer",
-				"animation":"idle",
-				"posx":0.3,
-				"posy":0.5
-			}]
+			"background":{
+				"Resources/Images/SushiHouse-Night.png"
+			}
 			
 		},
 		{
 			"type":"dialogue-action",
-			"dialogue":"Hello, I am the owner of the groove sushi house.",
-			"speaker":"Master",
+			"dialogue":"This is, a story about a small, small, sushi house.",
+			"speaker":"Narrator",
 			"sound":
 			{
 				"blip":"Resources/SE/blip.wav",
@@ -34,8 +24,8 @@
 		},
 		{
 			"type":"dialogue-action",
-			"dialogue":"Hello master. I am the developer of this game.",
-			"speaker":"Developer",
+			"dialogue":"You see, I've never been to this place. Every part of the\nstory comes from another person, who heard it from ano-\nther guy.",
+			"speaker":"Narrator",
 			"sound":
 			{
 				"blip":"Resources/SE/blip.wav",
@@ -45,8 +35,8 @@
 		},
 		{
 			"type":"dialogue-action",
-			"dialogue":"So, what do you want to order today?",
-			"speaker":"Master",
+			"dialogue":"The master, Tadokoro Monosugee, left a legend story of \nhim managing to pay his $1919810 debt in 3 days.\n\nAll by himself.",
+			"speaker":"Narrator",
 			"sound":
 			{
 				"blip":"Resources/SE/blip.wav",
