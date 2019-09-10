@@ -10,7 +10,7 @@ class MenuStage extends GenericStage{
     setup(){
 
         this.menu_background = createSpriteOnStage(this.stage, CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, "Resources/Images/Menu_BG.png");
-        scaleSprite(this.menu_background, 2);
+        scaleSprite(this.menu_background, CANVAS_HEIGHT/this.menu_background.height);
 
 
         var startButton = new Button(this.stage, CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, "Resources/Images/Menu_Button.png","Resources/Images/Menu_Button_HL.png", "start");

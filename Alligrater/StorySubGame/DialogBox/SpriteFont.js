@@ -83,6 +83,7 @@ class SpriteText{
                 var temp =  new PIXI.Sprite(
                     this.sheet.textures[" "]
                 );
+                scaleSprite(temp, 2);
                 heady += temp.height;
                 headx = this.basex;
             }

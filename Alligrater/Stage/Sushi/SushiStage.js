@@ -90,8 +90,8 @@ class SushiStage extends GenericStage{
         });
         this.sushimessage = new PIXI.Text("Hello Pixi!", style);
         this.stage.addChild(this.sushimessage);
-        this.sushi_background.scale.x = 2;
-        this.sushi_background.scale.y = 2;
+        this.sushi_background.scale.x = CANVAS_WIDTH/this.sushi_background.width;
+        this.sushi_background.scale.y = CANVAS_HEIGHT/this.sushi_background.height;
     }
 
     sushiAutoPlay(sushi){

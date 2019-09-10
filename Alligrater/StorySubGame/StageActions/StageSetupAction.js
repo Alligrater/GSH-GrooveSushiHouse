@@ -9,10 +9,13 @@ class StageSetupAction extends GenericStageAction{
     execute() {
         if(this.JSON.background){
             storystage.setBackground(this.JSON.background);
+            //storystage.background.
         }
+
+        //Put new actors on to the stage, or move them if they are already there.
         if(this.JSON.actor && this.JSON.actor.length > 0){
             //Do something with the actors.
-            storystage.hideAllCharacters();
+            //storystage.hideAllCharacters();
             for(var x of this.JSON.actor){
                 if(storystage.CHARACTER_POOL.get(x.name)){
                     var character = storystage.CHARACTER_POOL.get(x.name).character;
@@ -28,6 +31,20 @@ class StageSetupAction extends GenericStageAction{
                 }
             }
         }
+
+        if(this.JSON.hideactor && this.JSON.hideactor.length > 0){
+            //Time to hide the actor.
+            for(var x of this.JSON.hideactor){
+                if(storystage.CHARACTER_POOL.get(x)){
+                    var character = storystage.CHARACTER_POOL.get(x).character;
+                    character.visible = false;
+                }
+            }
+
+        }
+
+
+
         //Set up something on the stage.
         //Now move on.
         nextStageAction();

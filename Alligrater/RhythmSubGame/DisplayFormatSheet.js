@@ -1,7 +1,7 @@
 /*This file keeps track of all the data values to make sure everything runs properly.
 * Positioning objects are done using formulas.*/
-var CANVAS_WIDTH = 800;
-var CANVAS_HEIGHT = 450;
+var CANVAS_WIDTH = 1600;
+var CANVAS_HEIGHT = 900;
 
 var TICK_TIME = 0;
 var MUSIC_OFFSET = 180; //3 Seconds
@@ -30,3 +30,5 @@ var SPAWN_Y_DOWN = SUSHI_TARGET_Y + CANVAS_HEIGHT/3;
 var SPAWNDISTANCE_Y = SUSHI_TARGET_Y + (DEFAULT_FISH_SPAWN_X - FISH_TARGET_X);
 var SPAWNDISTANCE_X = MAP_CENTER_X + (DEFAULT_FISH_SPAWN_X - FISH_TARGET_X);
 /*Sushi Stage Ends*/
+
+var GLOBAL_SPRITE_SCALE = 1.5;

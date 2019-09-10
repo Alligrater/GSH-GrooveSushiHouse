@@ -31,6 +31,8 @@ function loadSprites(){
         .add("Resources/Images/Menu_Button_HL.png")
         .add("Resources/Images/Menu_Options.png")
 
+
+        .add("Resources/Images/StoryBackground.png")
         /*
         .add("Resources/Images/VFX/Hit-0.png")
         .add("Resources/Images/VFX/Hit-1.png")

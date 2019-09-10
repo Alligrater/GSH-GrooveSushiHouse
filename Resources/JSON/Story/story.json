@@ -23,7 +23,7 @@
 		{
 			"type":"dialogue-action",
 			"dialogue":"Hello, I am the owner of the groove sushi house.",
-			"speaker":"Owner",
+			"speaker":"Master",
 			"sound":
 			{
 				"blip":"Resources/SE/blip.wav",
@@ -34,7 +34,7 @@
 		},
 		{
 			"type":"dialogue-action",
-			"dialogue":"Hello Owner. I am the developer of this game.",
+			"dialogue":"Hello master. I am the developer of this game.",
 			"speaker":"Developer",
 			"sound":
 			{
@@ -46,7 +46,45 @@
 		{
 			"type":"dialogue-action",
 			"dialogue":"So, what do you want to order today?",
-			"speaker":"Owner",
+			"speaker":"Master",
+			"sound":
+			{
+				"blip":"Resources/SE/blip.wav",
+				"volume":0.1,
+				"frequency":4
+			}
+		},
+		{
+			"type":"stage-action",
+			"stage":"stage1",
+			"hideactor":["Master"]
+			
+		},
+		{
+			"type":"dialogue-action",
+			"dialogue":"That is, honestly, a good question.\nI have no idea what to order.\n",
+			"speaker":"Developer",
+			"sound":
+			{
+				"blip":"Resources/SE/blip.wav",
+				"volume":0.1,
+				"frequency":4
+			}
+		},
+		{
+			"type":"stage-action",
+			"stage":"stage1",
+			"background":"Resources/Images/StoryBackground.png",
+			"actor":
+			[
+			{"name":"Master"}
+			]
+			
+		},
+		{
+			"type":"dialogue-action",
+			"dialogue":"You look fairly confused. \nHow about some energizer?",
+			"speaker":"Master",
 			"sound":
 			{
 				"blip":"Resources/SE/blip.wav",

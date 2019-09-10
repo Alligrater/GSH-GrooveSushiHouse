@@ -32,8 +32,20 @@ class StoryStage extends GenericStage{
     }
 
     setBackground(texturePath){
-        this.background = createSpriteOnStage(this.stage, CANVAS_WIDTH/2, CANVAS_HEIGHT/2, texturePath);
-        scaleSprite(this.background, 2);
+
+        var sprite = new PIXI.Sprite(
+            PIXI.loader.resources[texturePath].texture
+        );
+        //Hanamichi, on Stage!
+        sprite.x = CANVAS_WIDTH/2;
+        sprite.y = CANVAS_HEIGHT/2;
+        sprite.anchor.x = 0.5;
+        sprite.anchor.y = 0.5;
+        this.stage.addChildAt(sprite, 0);
+
+        this.background = sprite;
+
+        scaleSprite(this.background, 2/3);
     }
 
     hideAllCharacters(){
