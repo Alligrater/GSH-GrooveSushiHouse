@@ -29,5 +29,7 @@ class StageSetupAction extends GenericStageAction{
             }
         }
         //Set up something on the stage.
+        //Now move on.
+        nextStageAction();
     }
 }

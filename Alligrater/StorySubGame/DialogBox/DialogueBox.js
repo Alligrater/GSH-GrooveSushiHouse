@@ -16,6 +16,9 @@ class DialogueBox{
         this.x = posx;
         this.y = posy;
 
+        this.isVisible = true;
+
+
         this.stage = stage;
 
 
@@ -28,7 +31,7 @@ class DialogueBox{
 
     update(delta){
         this.dbox.update(delta);
-        if(this.spriteMessage != null){
+        if(this.spriteMessage != null && this.isVisible){
             this.spriteMessage.showNext();
         }
 
@@ -55,11 +58,14 @@ class DialogueBox{
     }
 
     showBox(){
-
+        this.isVisible = true;
+        this.dbox.show();
+        this.spriteMessage.showAll();
     }
 
     hideBox(){
         this.spriteMessage.hideAll();
         this.dbox.hide();
+        this.isVisible = false;
     }
 }

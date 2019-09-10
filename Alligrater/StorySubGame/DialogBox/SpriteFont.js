@@ -24,6 +24,13 @@ class SpriteText{
         this.showindex = 0;
     }
 
+    showAll(){
+        for(var x of this.spritelist){
+            x.visible = true;
+        }
+        this.showindex = this.spritelist.length - 1;
+    }
+
     showNext(){
 
         if(this.showindex >= this.spritelist.length){

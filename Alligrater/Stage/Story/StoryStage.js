@@ -47,18 +47,14 @@ class StoryStage extends GenericStage{
         if(type == 0){
             switch (key){
                 case "Enter":
-                    ACTION_INDEX += 1;
-                    if(STAGE_ACTION_LIST[ACTION_INDEX] != null){
-                        //Do something
-                        STAGE_ACTION_LIST[ACTION_INDEX].execute();
-                    }
+                    nextStageAction();
                     break;
                 default:
                     break;
             }
         }
-
-
     }
+
+
 }
 

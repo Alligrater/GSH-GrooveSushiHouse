@@ -50,9 +50,13 @@ function loadActions(JSON){
                 break;
         }
     }
-
-
-
-    //?
 }
 
+
+function nextStageAction(){
+    ACTION_INDEX += 1;
+    if(STAGE_ACTION_LIST[ACTION_INDEX] != null){
+        //Do something
+        STAGE_ACTION_LIST[ACTION_INDEX].execute();
+    }
+}
