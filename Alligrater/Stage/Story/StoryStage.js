@@ -15,21 +15,21 @@ class StoryStage extends GenericStage{
         this.screenShakeAmount = 0;
         this.screenShakeTime = 0;
         this.screenShakeTargetTime = 0;
+        this.isScreenShakeComplete = true;
 
-        
+        //These are used to keep track of how much the screen has moved.
+        this.screenShakex = 0;
+        this.screenShakey = 0;
 
+        this.isAFrame = false;
     }
 
     update(delta){
         this.dialogueBox.update();
-    }
+        if(!this.isScreenShakeComplete){
 
-    /*
-    clearBackground(){
-        if(this.background){
-            this.background.visible = false;
         }
-    }*/
+    }
 
     removeBackground(){
         if(this.background){
@@ -41,20 +41,6 @@ class StoryStage extends GenericStage{
     setBackground(texturePath){
         this.removeBackground();
         this.background = createBackgroundOnStage(this.stage, texturePath);
-        /*
-        var sprite = new PIXI.Sprite(
-            PIXI.loader.resources[texturePath].texture
-        );
-        //Hanamichi, on Stage!
-        sprite.x = CANVAS_WIDTH/2;
-        sprite.y = CANVAS_HEIGHT/2;
-        sprite.anchor.x = 0.5;
-        sprite.anchor.y = 0.5;
-        this.stage.addChildAt(sprite, 0);
-
-        this.background = sprite;
-
-        scaleSprite(this.background, 2/3);*/
     }
 
     hideAllCharacters(){
@@ -74,6 +60,52 @@ class StoryStage extends GenericStage{
                     break;
             }
         }
+    }
+
+    scheduleScreenshake(time, amount){
+        this.screenShakeTargetTime = time;
+        if(this.screenShakeTargetTime)
+
+
+        this.screenShakeAmount = amount;
+        this.screenShakeTime = 0;
+        this.isScreenShakeComplete = false;
+    }
+
+    screenShake(){
+
+
+        this.screenShakex = (Math.random()-0.5) * this.screenShakeAmount;
+        this.screenShakey = (Math.random()-0.5) * this.screenShakeAmount;
+        if(this.background){
+            this.background.x += this.screenShakex;
+            this.background.y += this.screenShakey;
+        }
+
+        for(var x of this.CHARACTER_POOL){
+            //Shake all characters
+            x.character.x += this.screenShakex;
+            x.character.y += this.screenShakey;
+        }
+    }
+
+    screenUnShake(){
+        if(this.screenShakex == 0 && this.screenShakey ==0){
+            return;
+        }
+
+        if(this.background){
+            this.background.x -= this.screenShakex;
+            this.background.y -= this.screenShakey;
+        }
+        for(var x of this.CHARACTER_POOL){
+            //Shake all characters
+            x.character.x -= this.screenShakex;
+            x.character.y -= this.screenShakey;
+        }
+        this.screenShakex = 0;
+        this.screenShakey = 0;
+
     }
 
 
