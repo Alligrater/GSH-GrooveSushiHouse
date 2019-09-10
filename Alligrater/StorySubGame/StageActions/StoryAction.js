@@ -10,5 +10,6 @@ class StoryAction extends GenericStageAction{
         if(this.JSON.story){
             playStory(this.JSON.story);
         }
+        nextStageAction();
     }
 }

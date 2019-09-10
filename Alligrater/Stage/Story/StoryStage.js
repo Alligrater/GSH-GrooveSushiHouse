@@ -58,6 +58,7 @@ class StoryStage extends GenericStage{
     setBackground(texturePath){
         this.removeBackground();
         this.background = createBackgroundOnStage(this.stage, texturePath);
+        this.background.zIndex = -1;
     }
 
     hideAllCharacters(){
