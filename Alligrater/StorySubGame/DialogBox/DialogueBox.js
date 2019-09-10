@@ -10,7 +10,7 @@ class DialogueBox{
 
         var DIALOGUEPATH = "Resources/Images/UI/DialogueBox.json";
         //Do something.
-        this.speaker = "";
+        this.speaker = null;
         this.width = width;
         this.height = height;
         this.x = posx;
@@ -46,7 +46,10 @@ class DialogueBox{
                 this.hasComplete = true;
             }
             else{
-                if(this.sound && this.soundCooldown >= this.soundTime && alphanumeric(x + "")){
+                if(!alphanumeric(x)){
+                    this.soundCooldown = this.soundTime/2;
+                }
+                if(this.sound && this.soundCooldown >= this.soundTime){
 
                     this.sound.play();
                     this.soundCooldown = 0;
@@ -60,6 +63,20 @@ class DialogueBox{
 
     }
 
+    showName(string){
+        this.clearName();
+        this.speaker = new SpriteText(this.stage, string, this.x - this.width/2.1 , this.y - this.height/1.7, Fonts.LARGE);
+    }
+
+    clearName(){
+        if(this.speaker){
+            this.stage.removeChild(this.speaker.sprites);
+            this.speaker = null;
+        }
+
+    }
+
+
     showDialogue(string){
         this.clearDialogue();
         //Show the new dialogue:
@@ -68,6 +85,7 @@ class DialogueBox{
         this.spriteMessage.hideAll()
         this.hasComplete = false;
     }
+
 
     clearDialogue(){
         if(this.spriteMessage == null){
@@ -87,9 +105,6 @@ class DialogueBox{
 
     }
 
-    setSpeaker(){
-
-    }
 
     showBox(){
         this.isVisible = true;
@@ -107,12 +122,5 @@ class DialogueBox{
 function alphanumeric(inputtxt)
 {
     var letterNumber = new RegExp(/^[0-9a-zA-Z]+$/);
-    if(letterNumber.exec(inputtxt) != null)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+    return letterNumber.test(inputtxt);
 }

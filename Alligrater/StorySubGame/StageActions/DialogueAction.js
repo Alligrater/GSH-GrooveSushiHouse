@@ -20,6 +20,8 @@ class DialogueAction extends GenericStageAction{
             storystage.dialogueBox.setSound(blip, volume, frequency);
 
         }
-
+        if(this.JSON.speaker){
+            storystage.dialogueBox.showName(this.JSON.speaker);
+        }
     }
 }

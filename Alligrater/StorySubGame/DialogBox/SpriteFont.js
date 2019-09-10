@@ -1,6 +1,12 @@
-const FONTPATH = "Resources/Images/UI/Fonts/fonts.json";
+const Fonts = {
+    SMALL: "Resources/Images/UI/Fonts/fonts.json",
+    LARGE: "Resources/Images/UI/NewFonts/fonts.json",
+    MISS: 2,
+    NOT_IN_RANGE: 3
+}
+
 class SpriteText{
-    constructor(stage, text, BASE_X, BASE_Y, color=0xffffff){
+    constructor(stage, text, BASE_X, BASE_Y, fontpath = Fonts.SMALL, color=0xffffff){
         this.text = text.toUpperCase();
         this.sprites = new PIXI.Container();
 
@@ -8,7 +14,7 @@ class SpriteText{
         this.basey = BASE_Y;
         this.spritelist = [];
         this.showindex = 0;
-        this.sheet = PIXI.loader.resources[FONTPATH].spritesheet;
+        this.sheet = PIXI.loader.resources[fontpath].spritesheet;
 
         this.color = color;
 
