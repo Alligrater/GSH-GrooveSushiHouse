@@ -42,12 +42,11 @@ class DialogueBox{
         if(this.spriteMessage != null && this.isVisible && !this.hasComplete){
             var x = this.spriteMessage.showNext();
             //Play the blip sound, if it wants a blip.
-            if(x == false){
+            if(x == null){
                 this.hasComplete = true;
             }
             else{
-
-                if(this.sound && this.soundCooldown >= this.soundTime){
+                if(this.sound && this.soundCooldown >= this.soundTime && alphanumeric(x + "")){
 
                     this.sound.play();
                     this.soundCooldown = 0;
@@ -102,5 +101,18 @@ class DialogueBox{
         this.spriteMessage.hideAll();
         this.dbox.hide();
         this.isVisible = false;
+    }
+}
+
+function alphanumeric(inputtxt)
+{
+    var letterNumber = new RegExp(/^[0-9a-zA-Z]+$/);
+    if(letterNumber.exec(inputtxt) != null)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
     }
 }

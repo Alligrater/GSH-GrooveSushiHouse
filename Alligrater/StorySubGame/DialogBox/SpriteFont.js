@@ -34,11 +34,11 @@ class SpriteText{
     showNext(){
 
         if(this.showindex >= this.spritelist.length){
-            return false;
+            return null;
         }
         this.spritelist[this.showindex].visible = true;
         this.showindex += 1;
-        return true;
+        return this.text[this.showindex-1]; //Returns the character.
     }
 
     constructSpriteBundle(){

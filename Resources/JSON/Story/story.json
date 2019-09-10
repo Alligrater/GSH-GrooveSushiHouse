@@ -27,7 +27,7 @@
 			"sound":
 			{
 				"blip":"Resources/SE/blip.wav",
-				"volume":0.2,
+				"volume":0.1,
 				"frequency":4
 			}
 			
@@ -39,7 +39,7 @@
 			"sound":
 			{
 				"blip":"Resources/SE/blip.wav",
-				"volume":0.2,
+				"volume":0.1,
 				"frequency":4
 			}
 		},
@@ -50,7 +50,7 @@
 			"sound":
 			{
 				"blip":"Resources/SE/blip.wav",
-				"volume":0.2,
+				"volume":0.1,
 				"frequency":4
 			}
 		}

@@ -11,13 +11,6 @@ class DialogueAction extends GenericStageAction{
         storystage.dialogueBox.showDialogue(this.JSON.dialogue);
         storystage.dialogueBox.sound = null;
         if(this.JSON.sound){
-            /*
-            var volume = 0.5;
-            var blip = sounds[this.JSON.blip];
-            if(this.JSON.volume){
-                var volume = this.JSON.volume;
-            }
-            ;*/
 
             var soundData = this.JSON.sound;
 
