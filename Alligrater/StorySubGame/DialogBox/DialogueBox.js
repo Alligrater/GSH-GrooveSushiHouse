@@ -32,7 +32,7 @@ class DialogueBox{
 
         //We need a total of
         this.dbox = new NinePatchBox(stage, DIALOGUEPATH, this.width, this.height, this.x, this.y);
-        this.spriteMessage = new SpriteText(stage, "This is a test message from area E13", this.x - this.width/2.1 , this.y - this.height/2.2);
+        this.spriteMessage = new SpriteText(stage, "IF YOU SEE THIS, SOMETHING HAS WENT WRONG.", this.x - this.width/2.1 , this.y - this.height/2.2);
         this.spriteMessage.hideAll();
 
     }
