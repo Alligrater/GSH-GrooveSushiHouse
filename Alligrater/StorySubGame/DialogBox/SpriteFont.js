@@ -123,6 +123,10 @@ function getActualName(c){
             return "Apostrophe";
         case "$":
             return "Dollar";
+        case "[":
+            return "SquareBracketL";
+        case "]":
+            return "SquareBracketR"
         default:
             return c;
 

@@ -25,6 +25,42 @@
 				"volume": 0.1,
 				"frequency": 4
 			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "Lot of works to do today. Almost time to start my new bussiness.",
+			"speaker": "Master",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "*Door Opening Sound*",
+			"speaker": " ",
+			"audio":"Resources/SE/titleintro.wav"
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "I have never opened a resteraunt in my life, until one day, I \ndecided to do so.",
+			"speaker": "Master",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "The sushi house went pretty good. ",
+			"speaker": "Master",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.2,
+				"frequency": 4
+			}
 		}
 	]
 }

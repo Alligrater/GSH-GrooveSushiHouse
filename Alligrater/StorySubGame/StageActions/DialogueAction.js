@@ -27,6 +27,10 @@ class DialogueAction extends GenericStageAction{
             storystage.scheduleScreenshake(this.JSON.screenshake.time, this.JSON.screenshake.amount)
         }
 
+        if(this.JSON.audio){
+            sounds[this.JSON.audio].play();
+        }
+
         if(this.JSON.params){
             //Execute them.
             for(var x of this.JSON.params){
