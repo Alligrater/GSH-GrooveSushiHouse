@@ -41,25 +41,23 @@ function setupStage(){
 	menustage = new MenuStage();
 	storystage = new StoryStage();
 
-	fishstage.setpause();
-	sushistage.setpause();
-
 	app.stage = menustage.stage;
 	ACTIVE_STAGE = menustage;
 
 	loadAllCharacters('./www/Resources/JSON/Characters/')
 	loadAllStories('./www/Resources/JSON/Story/')
-	setupAudio();
+	loadAudio();
 }
 
+/*
 function setupAudio(){
 	//Manage IO
 	//This has to be loaded differently.
 	loadAudio();
-	loadinRhythmMap('./www/Resources/JSON/Beatmap/beat.json');
-	loadinRhythmMap('./www/Resources/JSON/Beatmap/doremifabeat.json');
+	//loadinRhythmMap('./www/Resources/JSON/Beatmap/beat.json');
+	//loadinRhythmMap('./www/Resources/JSON/Beatmap/doremifabeat.json');
 	//Play that track
-}
+}*/
 
 
 function beginRenderSequence(){

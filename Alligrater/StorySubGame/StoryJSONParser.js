@@ -63,6 +63,8 @@ function loadActions(JSON){
             case "story-action":
                 STAGE_ACTION_LIST.push(new StoryAction(JSON));
                 break;
+            case "game-action":
+                STAGE_ACTION_LIST.push(new GameAction(JSON));
             default:
                 //do nothing
                 break;

@@ -14,6 +14,7 @@ class SushiStage extends GenericStage{
         this.SushiInputQueue = [];
         this.SushiInputIndices = [0, 1, 2, 3];
         this.comboCircles = [];
+        this.setpause();
     }
 
     update(delta){

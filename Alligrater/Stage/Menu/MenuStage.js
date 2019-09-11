@@ -19,11 +19,16 @@ class MenuStage extends GenericStage{
         var startButton = new Button(this.stage, CANVAS_WIDTH / 4, CANVAS_HEIGHT / 3, "Resources/Images/Menu_Button.png","Resources/Images/Menu_Button_HL.png", "start");
         startButton.choose = function(){
             //go to the other stage
+
+            ACTIVE_STAGE = storystage;
+            app.stage = storystage.stage;
+            storystage.unpause();
+            /*
             ACTIVE_STAGE = fishstage;
             app.stage = fishstage.stage;
             fishstage.unpause();
             sushistage.unpause();
-            pause = false;
+            pause = false;*/
         }
         this.buttons.push(startButton);
 
@@ -31,8 +36,7 @@ class MenuStage extends GenericStage{
         var options = new Button(this.stage, CANVAS_WIDTH / 4, CANVAS_HEIGHT / 3 + 96, "Resources/Images/Menu_Options.png","Resources/Images/Menu_Options_HL.png", "options");
         options.choose = function(){
             console.log("options");
-            ACTIVE_STAGE = storystage;
-            app.stage = storystage.stage;
+
         }
         this.buttons.push(options);
         this.changeButton(0);

@@ -54,13 +54,17 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "The sushi house went pretty good. ",
+			"dialogue": "The first day, I went on fishing. I remembered...",
 			"speaker": "Master",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.2,
 				"frequency": 4
 			}
+		},
+		{
+			"type": "game-action",
+			"beatmap": "'./www/Resources/JSON/Beatmap/beat.json'"
 		}
 	]
 }

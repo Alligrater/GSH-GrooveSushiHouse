@@ -12,9 +12,6 @@ class GenericStage{
         if(this.pause){
             return;
         }
-        else{
-            //update....
-        }
     }
 
     setpause(){

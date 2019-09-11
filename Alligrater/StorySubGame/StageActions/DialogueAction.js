@@ -1,8 +1,8 @@
 class DialogueAction extends GenericStageAction{
     constructor(JSON){
-        super();
+        super(JSON);
         this.type = "dialogue-action";
-        this.JSON = JSON;
+
     }
 
     execute(){

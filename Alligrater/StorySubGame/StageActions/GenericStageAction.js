@@ -1,6 +1,7 @@
 class GenericStageAction{
-    constructor(){
+    constructor(JSON){
         this.type = "generic-action"
+        this.JSON = JSON;
     }
 
     execute(){

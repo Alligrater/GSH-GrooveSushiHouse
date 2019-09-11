@@ -10,6 +10,7 @@ class FishingStage extends GenericStage{
     setVariables() {
         this.Fish_Tank = [];
         this.ProcessIndex = 0;
+        this.setpause();
     }
 
     setup(){
@@ -39,6 +40,7 @@ class FishingStage extends GenericStage{
         if(this.pause){
             return;
         }
+
         this.message.text = (TICK_TIME) + "\n INDEX: " + this.ProcessIndex + " COMBO: " + COMBO_COUNT;
         this.detection_perfect.rotation = TICK_TIME/(Math.PI*5);
         //this.fishing_overlay.zIndex = 99;

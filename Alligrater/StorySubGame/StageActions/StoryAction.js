@@ -1,9 +1,8 @@
 class StoryAction extends GenericStageAction{
     constructor(JSON){
-        super();
+        super(JSON);
         //Do something
         this.type = "story-action";
-        this.JSON = JSON;
     }
 
     execute(){

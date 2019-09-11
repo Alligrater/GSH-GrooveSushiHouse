@@ -7,6 +7,9 @@ class StoryStage extends GenericStage{
     }
 
     setVariables() {
+        //Pause the game first.
+        this.setpause();
+
         this.background = null;
         this.backgroundVisible = false;
         this.CHARACTER_POOL = new Map();
@@ -29,6 +32,10 @@ class StoryStage extends GenericStage{
     }
 
     update(delta){
+        if(this.pause){
+            return;
+        }
+
         this.isDialogueComplete = this.dialogueBox.update();
         if(!this.isScreenShakeComplete){
             this.screenShakeTime += 1;

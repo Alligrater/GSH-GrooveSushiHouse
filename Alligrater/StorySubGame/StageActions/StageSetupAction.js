@@ -1,9 +1,8 @@
 class StageSetupAction extends GenericStageAction{
     constructor(JSON){
-        super();
+        super(JSON);
         //Do something
         this.type = "stage-action";
-        this.JSON = JSON;
     }
 
     execute() {
