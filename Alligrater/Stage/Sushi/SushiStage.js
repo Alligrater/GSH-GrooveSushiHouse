@@ -107,7 +107,7 @@ class SushiStage extends GenericStage{
     }
 
     processInput(key, type) {
-
+        console.log("input");
         //Send input to all 4 keys
         //Cheap fix:
         var SushiTemp = [];
