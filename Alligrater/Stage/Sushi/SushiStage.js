@@ -69,13 +69,10 @@ class SushiStage extends GenericStage{
         this.sushi_background  = createBackgroundOnStage(this.stage, "Resources/Images/SushiBackground.png");
 
         createSpriteOnStage(this.stage, SPAWN_X_LEFT, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png");
-        createSpriteOnStage(this.stage, SPAWN_X_LEFT, SUSHI_TARGET_Y, "Resources/Images/ring_good.png");
 
         createSpriteOnStage(this.stage, SPAWN_X_RIGHT, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png");
-        createSpriteOnStage(this.stage, SPAWN_X_RIGHT, SUSHI_TARGET_Y, "Resources/Images/ring_good.png");
 
         createSpriteOnStage(this.stage, MAP_CENTER_X, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png");
-        createSpriteOnStage(this.stage, MAP_CENTER_X, SUSHI_TARGET_Y, "Resources/Images/ring_good.png");
         let style = new PIXI.TextStyle({
             fontFamily: "Arial",
             fontSize: 18,
