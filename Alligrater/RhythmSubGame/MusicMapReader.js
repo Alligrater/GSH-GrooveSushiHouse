@@ -9,6 +9,8 @@ var BeatSpeed;
 var FirstBeatCountdown;
 var hit_sound;
 
+var musicLength = 0;
+
 
 
 function loadinRhythmMap(jsonpath){
@@ -23,12 +25,16 @@ function loadinRhythmMap(jsonpath){
 
     for(var x of JSONContent.map){
         BeatMap.push(x);
+        musicLength = x.start;
+        if(x.until){
+            musicLength = x.until;
+        }
     }
+
+    musicLength += MUSIC_OFFSET * 2
 
     BeatSpeed = JSONContent.timepernote;
     FirstBeatCountdown = JSONContent.map[0].start;
-
-
 
     music = sounds[JSONContent.path];
     music.volume = 0.5;
@@ -47,8 +53,11 @@ function loadinRhythmMap(jsonpath){
 
 
 function clearRhythmMapStatus(){
+    pause = true;
+    TICK_TIME = 0;
     BeatMap = [];
     BeatIndex = 0;
+    musicLength = 0;
     fishstage.setVariables();
     sushistage.setVariables();
 

@@ -9,10 +9,9 @@ class GameAction extends GenericStageAction{
         //Load in the rhythm file
         loadinRhythmMap(this.JSON.beatmap);
         //Wait for it.
-        ACTIVE_STAGE = fishstage;
-        app.stage = fishstage.stage;
-        fishstage.unpause();
-        sushistage.unpause();
-        pause = false;
+        storystage.setpause();
+        nextStageAction();
+        switchToFishingStage();
+
     }
 }

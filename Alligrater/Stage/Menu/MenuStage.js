@@ -20,9 +20,7 @@ class MenuStage extends GenericStage{
         startButton.choose = function(){
             //go to the other stage
 
-            ACTIVE_STAGE = storystage;
-            app.stage = storystage.stage;
-            storystage.unpause();
+            switchToStoryStage();
 
         }
         this.buttons.push(startButton);
@@ -78,5 +76,28 @@ class MenuStage extends GenericStage{
         }
         this.buttons[this.buttonIndex].select();
         console.log(this.buttons[this.buttonIndex].text);
+    }
+}
+
+function switchToStoryStage(){
+    ACTIVE_STAGE = storystage;
+    app.stage = storystage.stage;
+    storystage.unpause();
+    fishstage.setpause();
+    sushistage.setpause();
+    if(music){
+        music.pause();
+    }
+
+}
+
+function switchToFishingStage(){
+    ACTIVE_STAGE = fishstage;
+    app.stage = fishstage.stage;
+    fishstage.unpause();
+    sushistage.unpause();
+    pause = false;
+    if(music){
+        music.pause();
     }
 }

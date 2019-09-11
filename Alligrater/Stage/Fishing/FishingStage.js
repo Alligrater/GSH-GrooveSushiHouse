@@ -1,5 +1,5 @@
 
-var hasPlayed = false;
+
 class FishingStage extends GenericStage{
     constructor(){
         super();
@@ -10,6 +10,8 @@ class FishingStage extends GenericStage{
     setVariables() {
         this.Fish_Tank = [];
         this.ProcessIndex = 0;
+        this.totalTime = 0;
+        this.hasPlayed = false;
         this.setpause();
     }
 
@@ -41,6 +43,11 @@ class FishingStage extends GenericStage{
             return;
         }
 
+        if(TICK_TIME >= musicLength){
+            //switch back to the other stage.
+            switchToStoryStage();
+        }
+
         this.message.text = (TICK_TIME) + "\n INDEX: " + this.ProcessIndex + " COMBO: " + COMBO_COUNT;
         this.detection_perfect.rotation = TICK_TIME/(Math.PI*5);
         //this.fishing_overlay.zIndex = 99;
@@ -50,9 +57,9 @@ class FishingStage extends GenericStage{
         this.stage.removeChild(this.fish_hit_fx.sprite);
         this.stage.addChild(this.fish_hit_fx.sprite);
 
-        if(TICK_TIME >= MUSIC_OFFSET && !hasPlayed){
-            music.play();
-            hasPlayed = true
+        if(TICK_TIME >= MUSIC_OFFSET && !this.hasPlayed){
+            music.restart();
+            this.hasPlayed = true
         }
 
 

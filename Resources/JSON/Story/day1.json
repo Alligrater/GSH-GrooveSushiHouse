@@ -65,6 +65,50 @@
 		{
 			"type": "game-action",
 			"beatmap": "./www/Resources/JSON/Beatmap/beat.json"
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "Not bad. I can see your effort, but you are nowhere close to\nmy fishing skill.",
+			"speaker": "Master",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.2,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "So you don't believe me. How about you try that again, while\n I go prepare you some food?",
+			"speaker": "Master",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.2,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "game-action",
+			"beatmap": "./www/Resources/JSON/Beatmap/doremifabeat.json"
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "Not bad, but that one was easier.",
+			"speaker": "Master",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.2,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "Ignore him. He's like that.",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.2,
+				"frequency": 4
+			}
 		}
 	]
 }

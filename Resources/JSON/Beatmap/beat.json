@@ -3,6 +3,7 @@
 	"path":"Resources/BGM/7El.mp3",
 	"offset":180,
 	"timepernote": 80,
+	"hitsound":"Resources/SE/hit.wav",
 	"map":
 	[
 		{

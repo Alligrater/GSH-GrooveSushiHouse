@@ -16,3 +16,7 @@ function doCombo(level){
 function doMiss(){
     COMBO_COUNT = 0;
 }
+
+function resetCombo(){
+    //COMBO_COUNT = 0;
+}

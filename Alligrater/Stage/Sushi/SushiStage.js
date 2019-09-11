@@ -127,3 +127,14 @@ class SushiStage extends GenericStage{
         }
     }
 }
+
+var DIRECTIONS = ["up", "down", "left", "right"];
+
+function findFirstDir(siq, direction){
+    for(var i = 0; i < siq.length; i++){
+        if(siq[i].side == direction){
+            return i;
+        }
+    }
+    return -1;
+}

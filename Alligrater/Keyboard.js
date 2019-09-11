@@ -132,16 +132,3 @@ function processInput(inputDir, type){
     ACTIVE_STAGE.processInput(inputDir, type);
 
 }
-
-var DIRECTIONS = ["up", "down", "left", "right"];
-
-function findFirstDir(siq, direction){
-    var firstIndex = -1;
-    var first
-    for(var i = 0; i < siq.length; i++){
-        if(siq[i].side == direction){
-            return i;
-        }
-    }
-    return -1;
-}
