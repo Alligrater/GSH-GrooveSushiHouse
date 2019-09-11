@@ -17,6 +17,30 @@ class SushiStage extends GenericStage{
         this.setpause();
     }
 
+    setup(){
+
+        createBackgroundOnStage(this.stage, "Resources/Images/SushiBackground.png");
+
+        this.comboCircles.push(createSpriteOnStage(this.stage, SPAWN_X_LEFT, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png"));
+        this.comboCircles.push(createSpriteOnStage(this.stage, SPAWN_X_RIGHT, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png"));
+        this.comboCircles.push(createSpriteOnStage(this.stage, MAP_CENTER_X, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png"));
+
+        let style = new PIXI.TextStyle({
+            fontFamily: "Arial",
+            fontSize: 18,
+            fill: "white",
+            stroke: '#ff3300',
+            strokeThickness: 4,
+            dropShadow: true,
+            dropShadowColor: "#000000",
+            dropShadowBlur: 4,
+            dropShadowAngle: Math.PI / 6,
+            dropShadowDistance: 6,
+        });
+        this.sushimessage = new PIXI.Text("Hello Pixi!", style);
+        this.stage.addChild(this.sushimessage);
+    }
+
     update(delta){
         if(this.pause){
             return;
@@ -70,34 +94,7 @@ class SushiStage extends GenericStage{
         }
     }
 
-    setup(){
-        //sushistage
-        if(this.pause){
-            return;
-        }
-        this.sushi_background  = createBackgroundOnStage(this.stage, "Resources/Images/SushiBackground.png");
 
-        this.comboCircles.push(createSpriteOnStage(this.stage, SPAWN_X_LEFT, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png"));
-
-        this.comboCircles.push(createSpriteOnStage(this.stage, SPAWN_X_RIGHT, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png"));
-
-        this.comboCircles.push(createSpriteOnStage(this.stage, MAP_CENTER_X, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png"));
-
-        let style = new PIXI.TextStyle({
-            fontFamily: "Arial",
-            fontSize: 18,
-            fill: "white",
-            stroke: '#ff3300',
-            strokeThickness: 4,
-            dropShadow: true,
-            dropShadowColor: "#000000",
-            dropShadowBlur: 4,
-            dropShadowAngle: Math.PI / 6,
-            dropShadowDistance: 6,
-        });
-        this.sushimessage = new PIXI.Text("Hello Pixi!", style);
-        this.stage.addChild(this.sushimessage);
-    }
 
     sushiAutoPlay(sushi){
         switch(sushi.type){
@@ -117,7 +114,6 @@ class SushiStage extends GenericStage{
         for(var i = 0; i < this.SushiInputIndices.length; i++){
             //send to all 4
             var index = this.SushiInputIndices[i];
-
             if(this.SushiInputQueue[index] != null){
                 SushiTemp.push(this.SushiInputQueue[index]);
             }
@@ -125,13 +121,9 @@ class SushiStage extends GenericStage{
 
         for(var i = 0; i < 4; i++){
             var index = findFirstDir(SushiTemp, DIRECTIONS[i]);
-
-            //console.log("First " + DIRECTIONS[i] + ": " + index);
             if(SushiTemp[index] != null){
-                //console.log(SushiTemp[index])
                 SushiTemp[index].processInput(key, type, TICK_TIME);
             }
         }
-        //console.log("===========")
     }
 }

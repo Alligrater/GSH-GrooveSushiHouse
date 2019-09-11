@@ -73,6 +73,9 @@ class LongSushi extends AbstractSushi{
 
     processInput(key, eventType, currentTime){
         //is it key press?
+        if(key != this.side){
+            return;
+        }
         if(eventType == 1){
             var comboRating = inputTimeCheck(currentTime, this.start);
             //Also check if it's head, if it's not head then it's nothing.

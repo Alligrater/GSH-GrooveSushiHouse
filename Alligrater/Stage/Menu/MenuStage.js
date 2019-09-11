@@ -23,12 +23,7 @@ class MenuStage extends GenericStage{
             ACTIVE_STAGE = storystage;
             app.stage = storystage.stage;
             storystage.unpause();
-            /*
-            ACTIVE_STAGE = fishstage;
-            app.stage = fishstage.stage;
-            fishstage.unpause();
-            sushistage.unpause();
-            pause = false;*/
+
         }
         this.buttons.push(startButton);
 
