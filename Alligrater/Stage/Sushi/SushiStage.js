@@ -9,12 +9,17 @@ class SushiStage extends GenericStage{
 
         this.SushiInputQueue = [];
         this.SushiInputIndices = [0, 1, 2, 3];
+        this.comboCircles = [];
         this.setup();
     }
 
     update(delta){
         if(this.pause){
             return;
+        }
+
+        for(var x of this.comboCircles){
+            x.rotation = TICK_TIME/(Math.PI*5);
         }
 
         this.sushimessage.text = (TICK_TIME) + " INDEX: " + sushistage.SushiInputIndices + " COMBO: " + COMBO_COUNT;
@@ -68,11 +73,12 @@ class SushiStage extends GenericStage{
         }
         this.sushi_background  = createBackgroundOnStage(this.stage, "Resources/Images/SushiBackground.png");
 
-        createSpriteOnStage(this.stage, SPAWN_X_LEFT, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png");
+        this.comboCircles.push(createSpriteOnStage(this.stage, SPAWN_X_LEFT, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png"));
 
-        createSpriteOnStage(this.stage, SPAWN_X_RIGHT, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png");
+        this.comboCircles.push(createSpriteOnStage(this.stage, SPAWN_X_RIGHT, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png"));
 
-        createSpriteOnStage(this.stage, MAP_CENTER_X, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png");
+        this.comboCircles.push(createSpriteOnStage(this.stage, MAP_CENTER_X, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png"));
+
         let style = new PIXI.TextStyle({
             fontFamily: "Arial",
             fontSize: 18,

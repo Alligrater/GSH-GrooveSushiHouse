@@ -10,6 +10,7 @@ class FishingStage extends GenericStage{
 
 
         this.Fish_Tank = [];
+        this.fishing_overlay = createBackgroundOnStage(this.stage, "Resources/Images/FishingRockOverlay.png");
         this.fishing_background = createBackgroundOnStage(this.stage, "Resources/Images/FishingBackground.png");
 
 
@@ -41,6 +42,12 @@ class FishingStage extends GenericStage{
         }
         this.message.text = (TICK_TIME) + "\n INDEX: " + ProcessIndex + " COMBO: " + COMBO_COUNT;
         this.detection_perfect.rotation = TICK_TIME/(Math.PI*5);
+        //this.fishing_overlay.zIndex = 99;
+        this.stage.removeChild(this.fishing_overlay);
+        this.stage.addChild(this.fishing_overlay);
+
+        this.stage.removeChild(this.detection_perfect);
+        this.stage.addChild(this.detection_perfect);
 
         if(TICK_TIME >= MUSIC_OFFSET && !hasPlayed){
             music.play();

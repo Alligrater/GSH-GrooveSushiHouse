@@ -1,10 +1,10 @@
 function loadSprites(){
     PIXI.loader
     //General Assets
-        .add("Resources/Images/ring_good.png")
         .add("Resources/Images/ring_perfect.png")
         //Fishing
         .add("Resources/Images/FishingBackground.png")
+        .add("Resources/Images/FishingRockOverlay.png")
         //Fish
         .add("Resources/Images/Fish/RegularFish.png")
         .add("Resources/Images/Fish/FishHead.png")
@@ -83,7 +83,7 @@ function createBackgroundOnStage(stage, spriteName, x = CANVAS_WIDTH/2, y = CANV
 }
 
 
-function createSpriteOnStage(stage, x, y, spriteName, anchorx = 0.5, anchory = 0.5){
+function createSpriteOnStage(stage, x, y, spriteName, zIndex = 1, anchorx = 0.5, anchory = 0.5){
     var sprite = new PIXI.Sprite(
         PIXI.loader.resources[spriteName].texture
     );
@@ -92,6 +92,7 @@ function createSpriteOnStage(stage, x, y, spriteName, anchorx = 0.5, anchory = 0
     sprite.y = y;
     sprite.anchor.x = anchorx;
     sprite.anchor.y = anchory;
+    sprite.zIndex = 1;
     stage.addChild(sprite);
 
     return sprite;
