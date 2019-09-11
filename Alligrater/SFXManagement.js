@@ -2,6 +2,7 @@ var soundcooldown = 0;
 
 function loadAudio(){
     sounds.load([
+        "Resources/BGM/offset_test_music.wav",
         "Resources/BGM/7El.mp3",
         "Resources/SE/hit.wav",
         "Resources/SE/blip.wav",

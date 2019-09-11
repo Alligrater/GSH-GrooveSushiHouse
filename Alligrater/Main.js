@@ -57,6 +57,7 @@ function setupAudio(){
 	//This has to be loaded differently.
 	loadAudio();
 	loadinRhythmMap('./www/Resources/JSON/Beatmap/beat.json');
+	loadinRhythmMap('./www/Resources/JSON/Beatmap/doremifabeat.json');
 	//Play that track
 }
 

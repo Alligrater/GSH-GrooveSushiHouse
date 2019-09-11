@@ -1,0 +1,274 @@
+{
+	"name":"DoReMiFa Beat",
+	"path":"Resources/BGM/offset_test_music.wav",
+	"offset":180,
+	"timepernote": 100,
+	"hitsound":null,
+	"map":
+	[
+		{
+			"start":70,
+			"type":"regular-fish"
+		},
+		
+		{
+			"start":105,
+			"type":"regular-fish"
+		},
+
+		{
+			"start":140,
+			"type":"regular-fish"
+		},
+		
+		{
+			"start":175,
+			"type":"regular-fish"
+		},
+		
+		{
+			"start":210,
+			"type":"regular-fish"
+		},
+		
+		{
+			"start":245,
+			"type":"long-fish",
+			"until":280
+		},
+
+		{
+			"start":315,
+			"type":"long-fish",
+			"until":330
+		},
+		{
+			"start":350,
+			"type":"regular-fish"
+		},
+		{
+			"start":385,
+			"type":"regular-fish"
+		},
+		{
+			"start":420,
+			"type":"long-fish",
+			"until":455
+		},
+				{
+			"start":1064,
+			"type":"mash-fish",
+			"until": 1107
+		},
+
+		{
+			"start":1122,
+			"type":"regular-fish"
+		},
+		{
+			"start":1137,
+			"type":"regular-fish"
+		},
+		{
+			"start":1152,
+			"type":"regular-fish"
+		},
+		{
+			"start": 1153,
+			"type": "switch"
+		},
+
+		{
+			"start": 1205,
+			"type": "regular-sushi",
+			"side": "left",
+			"from": "up"
+		},
+		{
+			"start": 1220,
+			"type": "regular-sushi",
+			"side": "down",
+			"from": "up"
+		},
+		{
+			"start": 1235,
+			"type": "regular-sushi",
+			"side": "left",
+			"from": "up"
+		},
+		{
+			"start": 1260,
+			"until": 1290,
+			"type": "long-sushi",
+			"side": "right",
+			"from": "up"
+		},
+
+
+		{
+			"start": 1315,
+			"type": "regular-sushi",
+			"side": "right",
+			"from": "up"
+		},
+		{
+			"start": 1315,
+			"type": "regular-sushi",
+			"side": "down",
+			"from": "up"
+		},
+		{
+			"start": 1330,
+			"type": "regular-sushi",
+			"side": "down",
+			"from": "up"
+		},
+		{
+			"start": 1330,
+			"type": "regular-sushi",
+			"side": "left",
+			"from": "up"
+		},
+		{
+			"start": 1345,
+			"type": "regular-sushi",
+			"side": "right",
+			"from": "up"
+		},
+		{
+			"start": 1345,
+			"type": "regular-sushi",
+			"side": "down",
+			"from": "up"
+		},
+
+
+
+
+
+
+		{
+			"start": 1515,
+			"type": "ghost-sushi",
+			"side": "left",
+			"from": "up"
+		},
+		{
+			"start": 1521,
+			"type": "ghost-sushi",
+			"side": "right",
+			"from": "up"
+		},
+		{
+			"start": 1527,
+			"type": "ghost-sushi",
+			"side": "left",
+			"from": "up"
+		},
+		{
+			"start": 1533,
+			"type": "ghost-sushi",
+			"side": "right",
+			"from": "up"
+		},
+		{
+			"start": 1539,
+			"type": "ghost-sushi",
+			"side": "left",
+			"from": "up"
+		},
+		{
+			"start": 1545,
+			"type": "ghost-sushi",
+			"side": "right",
+			"from": "up"
+		},
+		{
+			"start": 1551,
+			"type": "ghost-sushi",
+			"side": "left",
+			"from": "up"
+		},
+		{
+			"start": 1557,
+			"type": "ghost-sushi",
+			"side": "right",
+			"from": "up"
+		},
+
+
+		{
+			"start": 1570,
+			"type": "junk-sushi",
+			"side": "left",
+			"from": "up"
+		},
+		{
+			"start": 1584,
+			"type": "junk-sushi",
+			"side": "down",
+			"from": "up"
+		},
+		{
+			"start": 1598,
+			"type": "junk-sushi",
+			"side": "right",
+			"from": "up"
+		},
+
+
+
+
+		{
+			"start": 1611,
+			"type": "switch"
+		},
+		{
+			"start":1650,
+			"type":"directional-fish",
+			"direction": "up"
+		},
+		{
+			"start":1665,
+			"type":"directional-fish",
+			"direction": "down"
+		},
+
+		{
+			"start":1680,
+			"type":"directional-fish",
+			"direction": "up"
+		},
+
+		{
+			"start":1705,
+			"type":"directional-fish",
+			"direction": "down"
+		},
+		{
+			"start":1720,
+			"type":"directional-fish",
+			"direction": "up"
+		},
+		{
+			"start":1735,
+			"type":"directional-fish",
+			"direction": "down"
+		},
+		{
+			"start":1760,
+			"type":"directional-fish",
+			"direction": "down"
+		},
+		{
+			"start":1775,
+			"type":"directional-fish",
+			"direction": "down"
+		},
+		{
+			"start":1790,
+			"type":"directional-fish",
+			"direction": "down"
+		}
+	]
+}

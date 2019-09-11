@@ -12,6 +12,8 @@ var hit_sound;
 
 
 function loadinRhythmMap(jsonpath){
+    clearRhythmMapStatus();
+
     var fs = require('fs');
     var content = fs.readFileSync(jsonpath);
 
@@ -30,7 +32,15 @@ function loadinRhythmMap(jsonpath){
 
     music = sounds[JSONContent.path];
     music.volume = 0.5;
-    hit_sound = sounds["Resources/SE/hit.wav"];
+
+    if(JSONContent.hitsound != null){
+        hit_sound = sounds[JSONContent.hitsound];
+    }
+    else{
+        hit_sound = sounds["Resources/SE/hit.wav"];
+        hit_sound.volume = 0.0;
+    }
+
 
 }
 
@@ -38,6 +48,7 @@ function loadinRhythmMap(jsonpath){
 function clearRhythmMapStatus(){
     BeatMap = [];
     BeatIndex = 0;
-    ProcessIndex = 0;
+    fishstage.setVariables();
+    sushistage.setVariables();
 
 }
