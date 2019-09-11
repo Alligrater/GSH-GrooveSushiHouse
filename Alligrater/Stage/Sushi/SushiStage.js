@@ -101,13 +101,18 @@ class SushiStage extends GenericStage{
             case "junk-sushi":
                 //Do nothing
                 break;
+            case "long-sushi":
+                if(Math.round(TICK_TIME)  == sushi.start){
+                    processInput("up", 1);
+                }
+                break;
             default:
                 processInput(sushi.side, 1);
         }
     }
 
     processInput(key, type) {
-        console.log("input");
+
         //Send input to all 4 keys
         //Cheap fix:
         var SushiTemp = [];

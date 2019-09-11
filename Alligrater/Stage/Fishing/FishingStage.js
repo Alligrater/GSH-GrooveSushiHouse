@@ -108,15 +108,15 @@ class FishingStage extends GenericStage{
                 processInput(this.Fish_Tank[this.ProcessIndex].direction, 1);
                 break;
             case "long-fish":
-                if(TICK_TIME == this.Fish_Tank[this.ProcessIndex].start){
+                if(Math.round(TICK_TIME)  == this.Fish_Tank[this.ProcessIndex].start){
                     processInput("up", 1);
                 }
                 break;
             case "mash-fish":
-                if(TICK_TIME == this.Fish_Tank[this.ProcessIndex].start){
+                if(Math.round(TICK_TIME)  == this.Fish_Tank[this.ProcessIndex].start){
                     processInput("up", 1);
                 }
-                else if((TICK_TIME - this.Fish_Tank[this.ProcessIndex].start) % 5 == 0){
+                else if((Math.round(TICK_TIME) - this.Fish_Tank[this.ProcessIndex].start) % 5 == 0){
                     processInput("up", 1);
                 }
                 else{

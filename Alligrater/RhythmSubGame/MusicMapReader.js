@@ -53,6 +53,7 @@ function loadinRhythmMap(jsonpath){
 
 
 function clearRhythmMapStatus(){
+    CUR_SUSHI_INDEX = 0;
     pause = true;
     TICK_TIME = 0;
     BeatMap = [];

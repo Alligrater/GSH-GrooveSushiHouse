@@ -8,6 +8,7 @@
 
 
 function nextSushi(currentSushi){
+    console.log("new sushi");
     currentSushi.enabled = false;
     currentSushi.unregisterSelf();
     var maxVal = findMax(sushistage.SushiInputIndices.values()) + 1;
