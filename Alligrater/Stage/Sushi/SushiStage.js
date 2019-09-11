@@ -25,6 +25,8 @@ class SushiStage extends GenericStage{
         this.comboCircles.push(createSpriteOnStage(this.stage, SPAWN_X_RIGHT, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png"));
         this.comboCircles.push(createSpriteOnStage(this.stage, MAP_CENTER_X, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png"));
 
+        this.circ = createSpriteOnStage(this.stage, MAP_CENTER_X, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png")
+
         let style = new PIXI.TextStyle({
             fontFamily: "Arial",
             fontSize: 18,
@@ -46,8 +48,8 @@ class SushiStage extends GenericStage{
             return;
         }
 
-        for(var x of this.comboCircles){
-            x.rotation = TICK_TIME/(Math.PI*5);
+        for(var x = 0; x < this.comboCircles.length; x++){
+            this.comboCircles[x].rotation = TICK_TIME/(Math.PI*5);
         }
 
         this.sushimessage.text = (TICK_TIME) + " INDEX: " + sushistage.SushiInputIndices + " COMBO: " + COMBO_COUNT;
@@ -115,6 +117,10 @@ class SushiStage extends GenericStage{
 
         //Send input to all 4 keys
         //Cheap fix:
+        if(key == "up"){
+            key = "down";
+        }
+
         var SushiTemp = [];
         for(var i = 0; i < this.SushiInputIndices.length; i++){
             //send to all 4

@@ -9,6 +9,7 @@ var fishstage;
 var sushistage;
 var menustage;
 var storystage;
+var freeplaymenustage;
 
 var pause = true;
 
@@ -18,7 +19,7 @@ function beginPixi(){
 	app = new PIXI.Application({
 			width: CANVAS_WIDTH,         // default: 800
 			height: CANVAS_HEIGHT,        // default: 600
-			antialias: false,    // default: false
+			antialias: true,    // default: false
 			transparent: false, // default: false
 			resolution: 1,       // default: 1
 		}
@@ -40,6 +41,7 @@ function setupStage(){
 	sushistage = new SushiStage();
 	menustage = new MenuStage();
 	storystage = new StoryStage();
+	freeplaymenustage = new FreeplayMenuStage();
 
 	app.stage = menustage.stage;
 	ACTIVE_STAGE = menustage;
