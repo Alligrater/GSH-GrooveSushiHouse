@@ -212,7 +212,8 @@
 		},
 		{
 			"start":1432.8125,
-			"type": "regular-fish"
+			"type": "directional-fish",
+			"direction": "left"
 		},
 		{
 			"start":1447.3125,
@@ -220,7 +221,8 @@
 		},
 		{
 			"start":1461.8125,
-			"type": "regular-fish"
+			"type": "directional-fish",
+			"direction": "left"
 		},
 		{
 			"start":1476.3125,
@@ -228,12 +230,14 @@
 		},
 		{
 			"start":1490.8125,
-			"type": "regular-fish"
+			"type": "directional-fish",
+			"direction": "left"
 		},
 		
 		{
 			"start":1534.3125,
-			"type": "regular-fish"
+			"type": "directional-fish",
+			"direction": "down"
 		},
 		{
 			"start":1548.8125,
@@ -241,7 +245,8 @@
 		},
 		{
 			"start":1563.3125,
-			"type": "regular-fish"
+			"type": "directional-fish",
+			"direction": "down"
 		},
 		{
 			"start":1577.8125,
@@ -249,7 +254,8 @@
 		},
 		{
 			"start":1592.3125,
-			"type": "regular-fish"
+			"type": "directional-fish",
+			"direction": "down"
 		},
 		{
 			"start":1606.8125,
@@ -258,14 +264,69 @@
 		
 		
 		{
-			"start":1642,
+			"start":1632,
 			"type": "switch"
 		},
 		
 		{
-			"start":1660,
+			"start":1659,
+			"type": "long-sushi",
+			"side":"left",
+			"from":"up",
+			"until":1675
+		},
+		{
+			"start":1692.5,
+			"type": "regular-sushi",
+			"side":"right",
+			"from":"up"
+		},
+		{
+			"start":1707,
+			"type": "regular-sushi",
+			"side":"down",
+			"from":"up"
+		},
+		{
+			"start":1721.5,
+			"type": "regular-sushi",
+			"side":"right",
+			"from":"up"
+		},
+		{
+			"start":1736,
+			"type": "regular-sushi",
+			"side":"down",
+			"from":"up"
+		},
+		{
+			"start":1750.5,
 			"type": "regular-sushi",
 			"side":"left",
+			"from":"up"
+		},
+		{
+			"start":1765,
+			"type": "regular-sushi",
+			"side":"right",
+			"from":"up"
+		},
+		{
+			"start":1779.5,
+			"type": "regular-sushi",
+			"side":"down",
+			"from":"up"
+		},
+		{
+			"start":1794,
+			"type": "regular-sushi",
+			"side":"left",
+			"from":"up"
+		},
+		{
+			"start":1815.75,
+			"type": "regular-sushi",
+			"side":"right",
 			"from":"up"
 		}
 		

@@ -6,6 +6,8 @@ class SushiStage extends GenericStage{
     }
 
     setVariables(){
+
+        CUR_SUSHI_INDEX = 0;
         this.hasUpdatedQueue = false;
 
         this.SushiOrderQueue = [];
@@ -57,6 +59,8 @@ class SushiStage extends GenericStage{
         if(ACTIVE_STAGE == this){
             //Begin parsing:
             if(!this.hasUpdatedQueue){
+                this.setVariables();
+                this.unpause()
                 while(BeatMap[BeatIndex] != null && BeatMap[BeatIndex].type != "switch"){
                     //Do work
                     this.SushiOrderQueue.push(BeatMap[BeatIndex]);
