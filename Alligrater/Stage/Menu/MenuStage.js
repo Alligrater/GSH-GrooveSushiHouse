@@ -2,9 +2,13 @@
 class MenuStage extends GenericStage{
     constructor(){
         super();
+        this.setVariables();
+        this.setup();
+    }
+
+    setVariables() {
         this.buttons = [];
         this.buttonIndex = 0;
-        this.setup();
     }
 
     setup(){

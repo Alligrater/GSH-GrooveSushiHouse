@@ -1,13 +1,12 @@
 class StoryStage extends GenericStage{
     constructor(){
         super();
+        this.setVariables();
         this.setup();
 
     }
 
-
-    setup(){
-        this.dialogueBox = new DialogueBox(this.stage,CANVAS_WIDTH * 0.95, CANVAS_HEIGHT * 0.20, CANVAS_WIDTH/2, CANVAS_HEIGHT*0.85);
+    setVariables() {
         this.background = null;
         this.backgroundVisible = false;
         this.CHARACTER_POOL = new Map();
@@ -23,6 +22,10 @@ class StoryStage extends GenericStage{
         this.screenShakey = 0;
 
         this.isAFrame = true;
+    }
+
+    setup(){
+        this.dialogueBox = new DialogueBox(this.stage,CANVAS_WIDTH * 0.95, CANVAS_HEIGHT * 0.20, CANVAS_WIDTH/2, CANVAS_HEIGHT*0.85);
     }
 
     update(delta){

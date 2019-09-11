@@ -41,4 +41,8 @@ class GenericStage{
     processInput(key, type){
 
     }
+
+    setVariables(){
+        //Do something.
+    }
 }

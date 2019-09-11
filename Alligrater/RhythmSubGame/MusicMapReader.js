@@ -1,6 +1,6 @@
 var BeatMap = [];
 var BeatIndex = 0;
-var ProcessIndex = 0;
+
 
 
 
@@ -31,6 +31,13 @@ function loadinRhythmMap(jsonpath){
     music = sounds[JSONContent.path];
     music.volume = 0.5;
     hit_sound = sounds["Resources/SE/hit.wav"];
-    sounds.whenLoaded = beginRenderSequence;
+
 }
 
+
+function clearRhythmMapStatus(){
+    BeatMap = [];
+    BeatIndex = 0;
+    ProcessIndex = 0;
+
+}

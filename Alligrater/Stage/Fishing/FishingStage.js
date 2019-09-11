@@ -3,17 +3,19 @@ var hasPlayed = false;
 class FishingStage extends GenericStage{
     constructor(){
         super();
+        this.setVariables();
         this.setup();
     }
 
-    setup(){
-
-
+    setVariables() {
         this.Fish_Tank = [];
+        this.ProcessIndex = 0;
+    }
+
+    setup(){
+        //Graphical Ones Here:
         this.fishing_overlay = createBackgroundOnStage(this.stage, "Resources/Images/FishingRockOverlay.png");
         this.fishing_background = createBackgroundOnStage(this.stage, "Resources/Images/FishingBackground.png");
-
-
         this.detection_perfect = createSpriteOnStage(this.stage,FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y, "Resources/Images/ring_perfect.png");
         let style = new PIXI.TextStyle({
             fontFamily: "Arial",
@@ -27,11 +29,8 @@ class FishingStage extends GenericStage{
             dropShadowAngle: Math.PI / 6,
             dropShadowDistance: 6,
         });
-
         this.message = new PIXI.Text("Hello Pixi!", style);
-
         this.fish_hit_fx = new HitVFX(this.stage, FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y);
-
         this.stage.addChild(this.message);
     }
 
@@ -40,14 +39,14 @@ class FishingStage extends GenericStage{
         if(this.pause){
             return;
         }
-        this.message.text = (TICK_TIME) + "\n INDEX: " + ProcessIndex + " COMBO: " + COMBO_COUNT;
+        this.message.text = (TICK_TIME) + "\n INDEX: " + this.ProcessIndex + " COMBO: " + COMBO_COUNT;
         this.detection_perfect.rotation = TICK_TIME/(Math.PI*5);
         //this.fishing_overlay.zIndex = 99;
         this.stage.removeChild(this.fishing_overlay);
         this.stage.addChild(this.fishing_overlay);
 
-        this.stage.removeChild(this.detection_perfect);
-        this.stage.addChild(this.detection_perfect);
+        this.stage.removeChild(this.fish_hit_fx.sprite);
+        this.stage.addChild(this.fish_hit_fx.sprite);
 
         if(TICK_TIME >= MUSIC_OFFSET && !hasPlayed){
             music.play();
@@ -76,7 +75,7 @@ class FishingStage extends GenericStage{
             }
         }
 
-        if(AUTO_PLAY && this.Fish_Tank[ProcessIndex] != null && TICK_TIME >= this.Fish_Tank[ProcessIndex].start){
+        if(AUTO_PLAY && this.Fish_Tank[this.ProcessIndex] != null && TICK_TIME >= this.Fish_Tank[this.ProcessIndex].start){
             this.fishingAutoPlay();
         }
 
@@ -87,28 +86,28 @@ class FishingStage extends GenericStage{
     }
 
     processInput(key, type) {
-        if(this.Fish_Tank[ProcessIndex]){
-            this.Fish_Tank[ProcessIndex].processInput(key, type, TICK_TIME);
+        if(this.Fish_Tank[this.ProcessIndex]){
+            this.Fish_Tank[this.ProcessIndex].processInput(key, type, TICK_TIME);
         }
     }
 
 
     fishingAutoPlay(){
 
-        switch(this.Fish_Tank[ProcessIndex].type){
+        switch(this.Fish_Tank[this.ProcessIndex].type){
             case "directional-fish":
-                processInput(this.Fish_Tank[ProcessIndex].direction, 1);
+                processInput(this.Fish_Tank[this.ProcessIndex].direction, 1);
                 break;
             case "long-fish":
-                if(TICK_TIME == this.Fish_Tank[ProcessIndex].start){
+                if(TICK_TIME == this.Fish_Tank[this.ProcessIndex].start){
                     processInput("up", 1);
                 }
                 break;
             case "mash-fish":
-                if(TICK_TIME == this.Fish_Tank[ProcessIndex].start){
+                if(TICK_TIME == this.Fish_Tank[this.ProcessIndex].start){
                     processInput("up", 1);
                 }
-                else if((TICK_TIME - this.Fish_Tank[ProcessIndex].start) % 5 == 0){
+                else if((TICK_TIME - this.Fish_Tank[this.ProcessIndex].start) % 5 == 0){
                     processInput("up", 1);
                 }
                 else{
@@ -121,11 +120,11 @@ class FishingStage extends GenericStage{
     }
 
     nextFish(){
-        if(this.Fish_Tank[ProcessIndex] != null){
-            this.Fish_Tank[ProcessIndex].enabled = false;
-            this.Fish_Tank[ProcessIndex].unregisterSelf();
+        if(this.Fish_Tank[this.ProcessIndex] != null){
+            this.Fish_Tank[this.ProcessIndex].enabled = false;
+            this.Fish_Tank[this.ProcessIndex].unregisterSelf();
         }
-        ProcessIndex += 1;
+        this.ProcessIndex += 1;
     }
 
     cleanup(){

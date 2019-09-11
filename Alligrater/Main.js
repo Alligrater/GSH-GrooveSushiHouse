@@ -64,10 +64,9 @@ function setupAudio(){
 function beginRenderSequence(){
 	//Tick, tock, tick
 	app.ticker.add(delta => update(delta));
-
 }
 
-var soundcooldown = 0;
+
 
 //This is good
 function update(delta){

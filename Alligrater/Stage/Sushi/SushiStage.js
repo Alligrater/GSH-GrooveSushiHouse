@@ -1,16 +1,19 @@
 class SushiStage extends GenericStage{
     constructor(){
         super();
+        this.setVariables();
+        this.setup();
+    }
+
+    setVariables(){
         this.hasUpdatedQueue = false;
 
         this.SushiOrderQueue = [];
         this.SushiOrderIndex = 0;
 
-
         this.SushiInputQueue = [];
         this.SushiInputIndices = [0, 1, 2, 3];
         this.comboCircles = [];
-        this.setup();
     }
 
     update(delta){
