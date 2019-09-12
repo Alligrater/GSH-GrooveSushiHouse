@@ -2,7 +2,7 @@ function loadSprites(){
     PIXI.loader
     //General Assets
         .add("Resources/Images/ring_perfect.png")
-        //Fishing
+        //RhythmGame
         .add("Resources/Images/FishingBackground.png")
         .add("Resources/Images/FishingRockOverlay.png")
         //Fish
@@ -33,17 +33,14 @@ function loadSprites(){
         .add("Resources/Images/Menu_Options_HL.png")
 
 
+        .add("Resources/Images/ResultsBackground.png")
         .add("Resources/Images/StoryBackground.png")
         .add("Resources/Images/SushiHouse.png")
         //.add("Resources/Images/SushiHouse-Night.png")
         .add("Resources/Images/SushiHouse-Long.png")
         .add("Resources/Images/Title.png")
-        /*
-        .add("Resources/Images/VFX/Hit-0.png")
-        .add("Resources/Images/VFX/Hit-1.png")
-        .add("Resources/Images/VFX/Hit-2.png")
-        .add("Resources/Images/VFX/Hit-3.png")
-        .add("Resources/Images/VFX/Hit-4.png")*/
+
+
         .add("Resources/Images/VFX/HitVFX.json")
         //.add("Resources/Images/HitVFX.json")
 

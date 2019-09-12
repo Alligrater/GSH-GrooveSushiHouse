@@ -5,6 +5,8 @@ class FreeplayMenuStage extends MenuStage{
         super();
         this.setVariables();
         this.setup();
+
+
     }
 
 

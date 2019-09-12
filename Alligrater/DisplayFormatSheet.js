@@ -8,12 +8,12 @@ var MUSIC_OFFSET = 180; //3 Seconds
 
 var AUTO_PLAY = false;
 
-/*Fishing Stage*/
+/*RhythmGame Stage*/
 var FISH_TARGET_X = CANVAS_WIDTH / 4;
 var DEFAULT_SPAWN_POINT_Y = CANVAS_HEIGHT * 4 / 5;
 
 var DEFAULT_FISH_SPAWN_X = CANVAS_WIDTH * 9 / 8;
-/*Fishing Stage Ends*/
+/*RhythmGame Stage Ends*/
 
 
 /*Sushi Stage*/

@@ -14,33 +14,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Sushi/SushiStage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Fishing/FishingStage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1885">
-              <caret line="112" column="17" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Alligrater/RhythmSubGame/Notes/Sushi/RegularSushi.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Alligrater/RhythmSubGame/Notes/Sushi/AbstractSushi.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
@@ -52,8 +25,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Menu/FreeplayMenuStage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+            <state relative-caret-position="475">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Alligrater/Stage/RhythmGame/ResultsStage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Alligrater/SpriteManagement.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="35" column="53" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Menu/MenuStage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="126" />
             </state>
           </provider>
         </entry>
@@ -67,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Story/StoryStage.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
-              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -98,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Menu/Button.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -162,7 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Alligrater/Notes/Fish/MashFish.js" />
         <option value="$PROJECT_DIR$/Alligrater/Notes/Sushi/JunkSushi.js" />
         <option value="$PROJECT_DIR$/Resources/JSON/beat.json" />
         <option value="$PROJECT_DIR$/Alligrater/RhythmSubGame/Notes/Fish/AbstractFish.js" />
@@ -189,7 +188,6 @@
         <option value="$PROJECT_DIR$/Alligrater/StorySubGame/Character/StageCharacter.js" />
         <option value="$PROJECT_DIR$/Alligrater/StorySubGame/DialogBox/DialogueBox.js" />
         <option value="$PROJECT_DIR$/Alligrater/StorySubGame/DialogBox/SpriteFont.js" />
-        <option value="$PROJECT_DIR$/Alligrater/SpriteManagement.js" />
         <option value="$PROJECT_DIR$/Alligrater/Stage/GenericStage.js" />
         <option value="$PROJECT_DIR$/Alligrater/StorySubGame/StageActions/StoryAction.js" />
         <option value="$PROJECT_DIR$/Alligrater/StorySubGame/StageActions/StageSetupAction.js" />
@@ -208,17 +206,19 @@
         <option value="$PROJECT_DIR$/Alligrater/Stage/Menu/FreeplayMenu.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Alligrater/Main.js" />
-        <option value="$PROJECT_DIR$/Alligrater/Stage/Menu/FreeplayMenuStage.js" />
         <option value="$PROJECT_DIR$/Alligrater/SFXManagement.js" />
         <option value="$PROJECT_DIR$/Alligrater/Stage/Fishing/FishingStage.js" />
         <option value="$PROJECT_DIR$/Alligrater/RhythmSubGame/Notes/Sushi/RegularSushi.js" />
         <option value="$PROJECT_DIR$/Alligrater/Stage/Sushi/SushiStage.js" />
+        <option value="$PROJECT_DIR$/Alligrater/Stage/Menu/FreeplayMenuStage.js" />
+        <option value="$PROJECT_DIR$/Alligrater/SpriteManagement.js" />
+        <option value="$PROJECT_DIR$/Alligrater/Stage/RhythmGame/ResultsStage.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="175" />
-    <option name="y" value="-13" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -228,7 +228,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,14 +257,6 @@
               <item name="www" type="b2602c69:ProjectViewProjectNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
               <item name="Alligrater" type="462c0819:PsiDirectoryNode" />
-              <item name="RhythmSubGame" type="462c0819:PsiDirectoryNode" />
-              <item name="Notes" type="462c0819:PsiDirectoryNode" />
-              <item name="Sushi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="www" type="b2602c69:ProjectViewProjectNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="Alligrater" type="462c0819:PsiDirectoryNode" />
               <item name="Stage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -273,28 +264,7 @@
               <item name="www" type="462c0819:PsiDirectoryNode" />
               <item name="Alligrater" type="462c0819:PsiDirectoryNode" />
               <item name="Stage" type="462c0819:PsiDirectoryNode" />
-              <item name="Fishing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="www" type="b2602c69:ProjectViewProjectNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="Alligrater" type="462c0819:PsiDirectoryNode" />
-              <item name="Stage" type="462c0819:PsiDirectoryNode" />
-              <item name="Menu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="www" type="b2602c69:ProjectViewProjectNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="Alligrater" type="462c0819:PsiDirectoryNode" />
-              <item name="Stage" type="462c0819:PsiDirectoryNode" />
-              <item name="Story" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="www" type="b2602c69:ProjectViewProjectNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="Alligrater" type="462c0819:PsiDirectoryNode" />
-              <item name="Stage" type="462c0819:PsiDirectoryNode" />
-              <item name="Sushi" type="462c0819:PsiDirectoryNode" />
+              <item name="RhythmGame" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="www" type="b2602c69:ProjectViewProjectNode" />
@@ -332,6 +302,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -343,11 +314,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GrooveSushiHouse-NW\www\Alligrater\RhythmSubGame\Notes" />
+      <recent name="D:\GrooveSushiHouse-NW\www\Alligrater\Stage\RhythmGame" />
       <recent name="D:\GrooveSushiHouse-NW\www\Alligrater" />
       <recent name="D:\GrooveSushiHouse-NW\www\Alligrater\Stage\Menu" />
       <recent name="D:\GrooveSushiHouse-NW\www\Alligrater\StorySubGame\DialogBox" />
-      <recent name="D:\GrooveSushiHouse-NW\www\Alligrater\UI" />
-      <recent name="D:\GrooveSushiHouse-NW\www\Alligrater\RhythmSubGame" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -409,16 +380,18 @@
       <workItem from="1568159984298" duration="12723000" />
       <workItem from="1568209342553" duration="2559000" />
       <workItem from="1568220942310" duration="2268000" />
+      <workItem from="1568305383253" duration="1207000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273141000" />
+    <option name="totallyTimeSpent" value="274348000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.170706" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19546892" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -467,8 +440,7 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Resources/JSON/7el.json" />
-    <entry file="file://$PROJECT_DIR$/Alligrater/RhythmSubGame/Notes/Generic/GenericNote.js">
+    <entry file="file://$PROJECT_DIR$/Alligrater/RhythmSubGame/Notes/GenericNote.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
@@ -569,13 +541,6 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Alligrater/SpriteManagement.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -708,13 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Menu/MenuStage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Alligrater/Main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="931">
@@ -729,10 +687,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Menu/FreeplayMenuStage.js">
+    <entry file="file://$PROJECT_DIR$/Alligrater/Stage/RhythmGame/SushiStage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+        <state relative-caret-position="1121">
+          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Alligrater/Stage/RhythmGame/FishingStage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2128">
+          <caret line="112" column="17" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Alligrater/RhythmSubGame/Notes/Sushi/RegularSushi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Alligrater/RhythmSubGame/Notes/Sushi/AbstractSushi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -757,45 +736,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Menu/Button.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Alligrater/RhythmSubGame/Notes/Sushi/AbstractSushi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Alligrater/RhythmSubGame/Notes/Sushi/RegularSushi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Sushi/SushiStage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Fishing/FishingStage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1885">
-          <caret line="112" column="17" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Story/StoryStage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Menu/MenuStage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Menu/Button.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Alligrater/Stage/Menu/FreeplayMenuStage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Alligrater/SpriteManagement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="35" column="53" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Alligrater/Stage/RhythmGame/ResultsStage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
         </state>
       </provider>
     </entry>
