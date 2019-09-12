@@ -88,7 +88,7 @@
 		},
 		{
 			"type": "game-action",
-			"beatmap": "./www/Resources/JSON/Beatmap/doremifabeat.json"
+			"beatmap": "./www/Resources/JSON/Beatmap/unreal_superhero_3.json"
 		},
 		{
 			"type": "dialogue-action",

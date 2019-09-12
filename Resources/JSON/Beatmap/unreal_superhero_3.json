@@ -276,61 +276,63 @@
 			"until":1675
 		},
 		{
-			"start":1692.5,
+			"start":1800,
+			"type": "long-sushi",
+			"side":"right",
+			"from":"up",
+			"until":1814.5
+		},
+		{
+			"start":1829,
+			"type": "long-sushi",
+			"side":"left",
+			"from":"up",
+			"until":1843.5
+		},
+		{
+			"start":1872.5,
+			"type": "long-sushi",
+			"side":"right",
+			"from":"up",
+			"until":1887
+		},
+		{
+			"start":1901.5,
+			"type": "long-sushi",
+			"side":"left",
+			"from":"up",
+			"until":1916
+		},
+		{
+			"start":1936.5,
 			"type": "regular-sushi",
 			"side":"right",
 			"from":"up"
 		},
 		{
-			"start":1707,
+			"start":1951,
 			"type": "regular-sushi",
 			"side":"down",
 			"from":"up"
 		},
 		{
-			"start":1721.5,
-			"type": "regular-sushi",
-			"side":"right",
-			"from":"up"
-		},
-		{
-			"start":1736,
-			"type": "regular-sushi",
-			"side":"down",
-			"from":"up"
-		},
-		{
-			"start":1750.5,
+			"start":1965.5,
 			"type": "regular-sushi",
 			"side":"left",
 			"from":"up"
 		},
 		{
-			"start":1765,
+			"start":1980,
 			"type": "regular-sushi",
 			"side":"right",
 			"from":"up"
 		},
 		{
-			"start":1779.5,
-			"type": "regular-sushi",
-			"side":"down",
-			"from":"up"
-		},
-		{
-			"start":1794,
-			"type": "regular-sushi",
-			"side":"left",
-			"from":"up"
-		},
-		{
-			"start":1815.75,
+			"start":2009,
 			"type": "regular-sushi",
 			"side":"right",
 			"from":"up"
 		}
-		
-
 		
 		
 	]
