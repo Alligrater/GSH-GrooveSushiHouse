@@ -49,6 +49,7 @@ function setupStage(){
 	loadAllCharacters('./www/Resources/JSON/Characters/')
 	loadAllStories('./www/Resources/JSON/Story/')
 	loadAudio();
+
 }
 
 /*
@@ -64,6 +65,8 @@ function setupAudio(){
 
 function beginRenderSequence(){
 	//Tick, tock, tick
+
+	sounds["Resources/SE/menu.mp3"].play();
 	app.ticker.add(delta => update(delta));
 }
 
