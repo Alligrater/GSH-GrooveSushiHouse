@@ -3,6 +3,7 @@ class StageSetupAction extends GenericStageAction{
         super(JSON);
         //Do something
         this.type = "stage-action";
+        this.hasWaitExecuted = false;
     }
 
     execute() {
@@ -66,7 +67,13 @@ class StageSetupAction extends GenericStageAction{
 
 
         if(this.JSON.wait){
-            setTimeout(nextStageAction,this.JSON.wait*1000);
+            if(!this.hasWaitExecuted){
+                //Prevents multiple input that can break the game.
+                this.hasWaitExecuted = true;
+                storystage.setDisableInput(this.JSON.wait*80); //Uses a different clock.
+                setTimeout(nextStageAction,this.JSON.wait*1000);
+            }
+
         }
         //Set up something on the stage.
         //Now move on.

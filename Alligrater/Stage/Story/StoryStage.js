@@ -25,6 +25,14 @@ class StoryStage extends GenericStage{
         this.screenShakey = 0;
 
         this.isAFrame = true;
+
+        this.inputTime = 0;
+        this.disableInputTime = 0;
+    }
+
+    setDisableInput(time){
+        this.disableInputTime = time;
+        this.inputTime = 0;
     }
 
     setup(){
@@ -35,6 +43,8 @@ class StoryStage extends GenericStage{
         if(this.pause){
             return;
         }
+
+        this.inputTime += delta;
 
         this.isDialogueComplete = this.dialogueBox.update();
         if(!this.isScreenShakeComplete){
@@ -79,6 +89,10 @@ class StoryStage extends GenericStage{
 
     processInput(key, type) {
         //super.processInput(key, type);
+        if(this.inputTime < this.disableInputTime){
+            //Input is banned
+            return;
+        }
         if(type == 0){
             switch (key){
                 case "Enter":

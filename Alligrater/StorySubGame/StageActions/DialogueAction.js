@@ -8,7 +8,10 @@ class DialogueAction extends GenericStageAction{
     execute(){
         //Set a new text on the dialogue box.
         //Something.
+        console.log(this.JSON.dialogue);
         storystage.dialogueBox.showDialogue(this.JSON.dialogue);
+
+
         storystage.dialogueBox.sound = null;
         if(this.JSON.sound){
 

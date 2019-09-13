@@ -66,7 +66,7 @@ function setupAudio(){
 function beginRenderSequence(){
 	//Tick, tock, tick
 
-	sounds["Resources/SE/menu.mp3"].play();
+	//sounds["Resources/SE/menu.mp3"].play();
 	app.ticker.add(delta => update(delta));
 }
 
