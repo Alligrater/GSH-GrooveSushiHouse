@@ -1,15 +1,18 @@
 
 const dialogueTextStyle = new PIXI.TextStyle({
     fontFamily: "Zpix",
-    fontSize: 12*GLOBAL_SPRITE_SCALE,
+    fontSize: 13*GLOBAL_SPRITE_SCALE,
     letterSpacing: 1,
     fill: "white"
 });
 
+
+const DIALOGUEBOXPATH = "Resources/Images/UI/DialogueBox.json";
+
 class DialogueBox{
     constructor(stage, width, height, posx, posy){
 
-        var DIALOGUEPATH = "Resources/Images/UI/DialogueBox.json";
+
         //Do something.
         this.speaker = null;
         this.width = width;
@@ -31,7 +34,7 @@ class DialogueBox{
         this.autoplay = false;
 
 
-        this.dbox = new NinePatchBox(stage, DIALOGUEPATH, this.width, this.height, this.x, this.y);
+        this.dbox = new NinePatchBox(stage, DIALOGUEBOXPATH, this.width, this.height, this.x, this.y);
 
         //We need a total of
         this.text = "IF YOU SEE THIS, SOMETHING HAS WENT WRONG.";//This one will always be the same
@@ -41,10 +44,6 @@ class DialogueBox{
         this.message.y = this.y - this.height/2.1;
         this.stage.addChild(this.message);
 
-
-
-        //this.spriteMessage = new SpriteText(stage, "IF YOU SEE THIS, SOMETHING HAS WENT WRONG.", this.x - this.width/2.1 , this.y - this.height/2.2);
-        //this.spriteMessage.hideAll();
 
     }
 
@@ -61,7 +60,7 @@ class DialogueBox{
             }
             else{
                 var x = this.text[this.displayIndex];
-                if(!alphanumeric(x)){
+                if(x == " "){
                     this.soundCooldown = this.soundTime/2;
                 }
                 if(this.sound && this.soundCooldown >= this.soundTime){
@@ -139,10 +138,4 @@ class DialogueBox{
         this.speaker.hideAll();
         this.isVisible = false;
     }
-}
-
-function alphanumeric(inputtxt)
-{
-    var letterNumber = new RegExp(/^[0-9a-zA-Z]+$/);
-    return letterNumber.test(inputtxt);
 }

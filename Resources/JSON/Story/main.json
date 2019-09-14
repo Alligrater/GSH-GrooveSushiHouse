@@ -17,8 +17,8 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "This is, a story about a small, small, sushi house.",
-			"speaker": "Narrator",
+			"dialogue": "老板，来一杯冰啤和一份生鱼片寿司军舰卷。",
+			"speaker": "Catherine",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.1,
@@ -27,8 +27,8 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "You see, I've never been to this place. Every part of the\nstory comes from another person, who heard it from ano-\nther guy.",
-			"speaker": "Narrator",
+			"dialogue": "请先喝杯水暖暖身子吧，Catherine。我待会儿给你做寿司。",
+			"speaker": "Iktsuarpok",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.1,
@@ -37,8 +37,8 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "The master, Tadokoro Monosugee, left a legend story of \nhim managing to pay his $1919810 debt in 3 days.\n\nAll by himself.",
-			"speaker": "Narrator",
+			"dialogue": "没有冰啤吗？冰啤总不会现做吧？",
+			"speaker": "Catherine",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.1,
@@ -47,8 +47,8 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "How does he do that? You are about to find out.",
-			"speaker": "Narrator",
+			"dialogue": "没办法，最近几天客人比较多，冰啤也卖完了。",
+			"speaker": "Iktsuarpok",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.1,
@@ -61,8 +61,8 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Let me introduce our protagonist, Tadokoro Monosugee, owner of the\nGroove sushi house.",
-			"speaker": "Narrator",
+			"dialogue": "唉，好吧，待会儿见。",
+			"speaker": "Catherine",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.1,
@@ -71,8 +71,8 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Hi, I'm Monosugee. I paied all my de--",
-			"speaker": "Master",
+			"dialogue": "接下来是钓鱼和寿司的教学。",
+			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.1,

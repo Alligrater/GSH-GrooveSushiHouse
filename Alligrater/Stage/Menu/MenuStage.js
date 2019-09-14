@@ -11,6 +11,10 @@ class MenuStage extends GenericStage{
         this.buttonIndex = 0;
     }
 
+    fadeOut(){
+        this.stage.opacity = 0.5;
+    }
+
     setup(){
 
         this.menu_background = createBackgroundOnStage(this.stage,"Resources/Images/SushiHouse-Long.png", CANVAS_WIDTH*19/30);
@@ -33,6 +37,7 @@ class MenuStage extends GenericStage{
         }
         this.buttons.push(options);
         this.changeButton(0);
+        this.fadeOut();
 
     }
 
