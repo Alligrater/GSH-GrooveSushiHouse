@@ -1,8 +1,9 @@
 
-const style = new PIXI.TextStyle({
-    fontFamily: "Arial",
-    fontSize: 14,
-    fill: "white",
+const dialogueTextStyle = new PIXI.TextStyle({
+    fontFamily: "Zpix",
+    fontSize: 12*GLOBAL_SPRITE_SCALE,
+    letterSpacing: 1,
+    fill: "white"
 });
 
 class DialogueBox{
@@ -30,23 +31,36 @@ class DialogueBox{
         this.autoplay = false;
 
 
-        //We need a total of
         this.dbox = new NinePatchBox(stage, DIALOGUEPATH, this.width, this.height, this.x, this.y);
-        this.spriteMessage = new SpriteText(stage, "IF YOU SEE THIS, SOMETHING HAS WENT WRONG.", this.x - this.width/2.1 , this.y - this.height/2.2);
-        this.spriteMessage.hideAll();
+
+        //We need a total of
+        this.text = "IF YOU SEE THIS, SOMETHING HAS WENT WRONG.";//This one will always be the same
+        this.displayIndex = 0;
+        this.message = new PIXI.Text("IF YOU SEE THIS, SOMETHING HAS WENT WRONG.", dialogueTextStyle);
+        this.message.x = this.x - this.width/2.1;
+        this.message.y = this.y - this.height/2.1;
+        this.stage.addChild(this.message);
+
+
+
+        //this.spriteMessage = new SpriteText(stage, "IF YOU SEE THIS, SOMETHING HAS WENT WRONG.", this.x - this.width/2.1 , this.y - this.height/2.2);
+        //this.spriteMessage.hideAll();
 
     }
 
     update(delta){
         this.soundCooldown += 1;
         this.dbox.update(delta);
-        if(this.spriteMessage != null && this.isVisible && !this.hasComplete){
-            var x = this.spriteMessage.showNext();
-            //Play the blip sound, if it wants a blip.
-            if(x == null){
+
+        if(this.isVisible && !this.hasComplete && this.message){
+            this.displayIndex += 1;
+            //This gets the character.
+            this.message.text = this.text.substr(0, this.displayIndex)
+            if(this.displayIndex >= this.text.length){
                 this.hasComplete = true;
             }
             else{
+                var x = this.text[this.displayIndex];
                 if(!alphanumeric(x)){
                     this.soundCooldown = this.soundTime/2;
                 }
@@ -83,26 +97,22 @@ class DialogueBox{
 
     skipDialogue(){
         this.hasComplete = true;
-        this.spriteMessage.showAll();
+        this.message.text = this.text;
     }
 
 
     showDialogue(string, autoplay = false){
         this.clearDialogue();
         //Show the new dialogue:
-        this.spriteMessage = new SpriteText(this.stage, string, this.x - this.width/2.1 , this.y - this.height/2.2);
+        this.text = string;
         //One last thing:
-        this.spriteMessage.hideAll()
         this.hasComplete = false;
+        this.displayIndex = 0;
     }
 
 
     clearDialogue(){
-        if(this.spriteMessage == null){
-            return;
-        }
-        this.stage.removeChild(this.spriteMessage.sprites);
-        this.spriteMessage = null;
+        this.message.text = ""
     }
 
     setSound(sound,volume=0.5, frequency=4){
@@ -119,12 +129,12 @@ class DialogueBox{
     showBox(){
         this.isVisible = true;
         this.dbox.show();
-        this.spriteMessage.showAll();
+        this.message.visible = true;
         this.speaker.showAll();
     }
 
     hideBox(){
-        this.spriteMessage.hideAll();
+        this.message.visible = false
         this.dbox.hide();
         this.speaker.hideAll();
         this.isVisible = false;

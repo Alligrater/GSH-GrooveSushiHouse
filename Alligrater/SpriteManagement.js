@@ -1,8 +1,6 @@
 function loadSprites(){
     PIXI.loader
     //General Assets
-        .add("Resources/Images/UI/CJK/SourceHanSans.fnt")
-        .add("Resources/Images/UI/8BitWonder_Bitmap.fnt")
         .add("Resources/Images/ring_perfect.png")
         //RhythmGame
         .add("Resources/Images/FishingBackground.png")

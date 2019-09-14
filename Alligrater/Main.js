@@ -19,7 +19,7 @@ function beginPixi(){
 	app = new PIXI.Application({
 			width: CANVAS_WIDTH,         // default: 800
 			height: CANVAS_HEIGHT,        // default: 600
-			antialias: true,    // default: false
+			antialias: false,    // default: false
 			transparent: false, // default: false
 			resolution: 1,       // default: 1
 		}
