@@ -21,7 +21,7 @@ class FishingStage extends GenericStage{
         this.fishing_background = createBackgroundOnStage(this.stage, "Resources/Images/FishingBackground.png");
         this.detection_perfect = createSpriteOnStage(this.stage,FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y, "Resources/Images/ring_perfect.png");
         let style = new PIXI.TextStyle({
-            fontFamily: "Arial",
+            fontFamily: "Source Han Serif SC",
             fontSize: 18,
             fill: "white",
             stroke: '#ff3300',
@@ -48,7 +48,7 @@ class FishingStage extends GenericStage{
             switchToStoryStage();
         }
 
-        this.message.text = (TICK_TIME) + "\n INDEX: " + this.ProcessIndex + " COMBO: " + COMBO_COUNT;
+        this.message.text = (TICK_TIME) + "\n 编号: " + this.ProcessIndex + " 连击: " + COMBO_COUNT;
         this.detection_perfect.rotation = TICK_TIME/(Math.PI*5);
         //this.fishing_overlay.zIndex = 99;
         this.stage.removeChild(this.fishing_overlay);
