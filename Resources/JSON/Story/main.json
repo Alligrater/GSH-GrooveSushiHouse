@@ -77,7 +77,8 @@
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.1,
 				"frequency": 4
-			}
+			},
+			"params":["auto-play"]
 		},
 		{
 			"type": "dialogue-action",

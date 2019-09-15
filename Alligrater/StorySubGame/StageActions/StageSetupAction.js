@@ -3,7 +3,7 @@ class StageSetupAction extends GenericStageAction{
         super(JSON);
         //Do something
         this.type = "stage-action";
-        this.hasWaitExecuted = false;
+
     }
 
     execute() {
@@ -50,6 +50,14 @@ class StageSetupAction extends GenericStageAction{
             }
         }
 
+
+
+        this.executeScreenShake();
+
+        this.executeAudio();
+
+        this.executeWait();
+
         if(this.JSON.params){
             //Execute them.
             for(var x of this.JSON.params){
@@ -57,15 +65,10 @@ class StageSetupAction extends GenericStageAction{
             }
         }
 
-        if(this.JSON.screenshake){
-            storystage.scheduleScreenshake(this.JSON.screenshake.time, this.JSON.screenshake.amount)
-        }
+    }
 
-        if(this.JSON.audio){
-            sounds[this.JSON.audio].play();
-        }
-
-
+    executeWait(){
+        console.log("executewait")
         if(this.JSON.wait){
             if(!this.hasWaitExecuted){
                 //Prevents multiple input that can break the game.
@@ -80,7 +83,6 @@ class StageSetupAction extends GenericStageAction{
         else{
             nextStageAction();
         }
-
     }
 
 

@@ -1,7 +1,7 @@
 
 const dialogueTextStyle = new PIXI.TextStyle({
     fontFamily: "Zpix",
-    fontSize: 13*GLOBAL_SPRITE_SCALE,
+    fontSize: 12*GLOBAL_SPRITE_SCALE,
     letterSpacing: 1,
     fill: "white"
 });
@@ -33,6 +33,9 @@ class DialogueBox{
         this.stage = stage;
         this.autoplay = false;
 
+        this.waitTime = 0;
+        this.targetTime = 0;
+
 
         this.dbox = new NinePatchBox(stage, DIALOGUEBOXPATH, this.width, this.height, this.x, this.y);
 
@@ -42,6 +45,7 @@ class DialogueBox{
         this.message = new PIXI.Text("IF YOU SEE THIS, SOMETHING HAS WENT WRONG.", dialogueTextStyle);
         this.message.x = this.x - this.width/2.1;
         this.message.y = this.y - this.height/2.1;
+        this.message.resolution = 2;
         this.stage.addChild(this.message);
 
 
@@ -73,8 +77,11 @@ class DialogueBox{
         }
         else{
             this.hasComplete = true;
-            if(this.autoplay){
-                nextStageAction();
+            if(this.autoplay == true){
+                if(this.waitTime >= this.targetTime){
+                    nextStageAction();
+                }
+
             }
         }
         return this.hasComplete;
@@ -100,13 +107,17 @@ class DialogueBox{
     }
 
 
-    showDialogue(string, autoplay = false){
+    showDialogue(string, autoplay = false, targetWaitTime = 0){
         this.clearDialogue();
         //Show the new dialogue:
         this.text = string;
         //One last thing:
         this.hasComplete = false;
         this.displayIndex = 0;
+
+        this.autoplay = autoplay;
+        this.targetTime = targetWaitTime;
+        this.waitTime = 0;
     }
 
 

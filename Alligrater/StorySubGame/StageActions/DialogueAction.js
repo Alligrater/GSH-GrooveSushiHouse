@@ -8,10 +8,36 @@ class DialogueAction extends GenericStageAction{
     execute(){
         //Set a new text on the dialogue box.
         //Something.
+
+        if(this.JSON.params){
+            //Execute them.
+            for(var x of this.JSON.params){
+                this.executeParams(x);
+            }
+        }
+
         console.log(this.JSON.dialogue);
-        storystage.dialogueBox.showDialogue(this.JSON.dialogue);
+        storystage.dialogueBox.showDialogue(this.JSON.dialogue, false);
 
+        this.setBlipSound();
 
+        this.showSpeaker();
+
+        this.executeScreenShake();
+
+        this.executeAudio();
+
+        this.executeWait();
+
+    }
+
+    showSpeaker(){
+        if(this.JSON.speaker){
+            storystage.dialogueBox.showName(this.JSON.speaker);
+        }
+    }
+
+    setBlipSound(){
         storystage.dialogueBox.sound = null;
         if(this.JSON.sound){
 
@@ -22,23 +48,6 @@ class DialogueAction extends GenericStageAction{
             var frequency = soundData.frequency==null?4:soundData.frequency;
             storystage.dialogueBox.setSound(blip, volume, frequency);
 
-        }
-        if(this.JSON.speaker){
-            storystage.dialogueBox.showName(this.JSON.speaker);
-        }
-        if(this.JSON.screenshake){
-            storystage.scheduleScreenshake(this.JSON.screenshake.time, this.JSON.screenshake.amount)
-        }
-
-        if(this.JSON.audio){
-            sounds[this.JSON.audio].play();
-        }
-
-        if(this.JSON.params){
-            //Execute them.
-            for(var x of this.JSON.params){
-                this.executeParams(x);
-            }
         }
     }
 
