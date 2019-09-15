@@ -105,9 +105,15 @@ class StageCharacter{
     }
 
     setVelocity(velx, vely){
+
         this.velx = velx;
         this.vely = vely;
         this.internalTick = 0;
+    }
+
+    updatePos(){
+        this.x = this.character.x;
+        this.y = this.character.y;
     }
 
     update(delta){
