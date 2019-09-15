@@ -142,13 +142,18 @@ class DialogueBox{
         this.isVisible = true;
         this.dbox.show();
         this.message.visible = true;
-        this.speaker.showAll();
+        if(this.speaker){
+            this.speaker.showAll();
+        }
+
     }
 
     hideBox(){
         this.message.visible = false
         this.dbox.hide();
-        this.speaker.hideAll();
+        if(this.speaker){
+            this.speaker.hideAll();
+        }
         this.isVisible = false;
     }
 }

@@ -25,7 +25,18 @@
 					"name": "Developer",
 					"velx": 0.0,
 					"vely": -0.5,
-					"visible": true
+					"animation":"idle"
+				}
+			],
+			"wait":1
+		},
+		{
+			"type": "stage-action",
+			"actor": [
+				{
+					"name": "Developer",
+					"velx": 0.0,
+					"vely": 0.0
 				}
 			],
 			"wait":1

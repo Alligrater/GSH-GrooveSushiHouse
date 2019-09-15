@@ -24,12 +24,15 @@ class StageSetupAction extends GenericStageAction{
                     var velx = x.velx!=null?x.velx*GLOBAL_SPRITE_SCALE:character.velx;
                     var vely = x.vely!=null?x.vely*GLOBAL_SPRITE_SCALE:character.vely;
 
-                    //console.log(posx, posy);
-
                     character.setPos(posx, posy);
 
                     character.updatePos();
                     character.setVelocity(velx, vely);
+
+                    if(x.animation){
+                        //set the animation
+                        character.setAnimationWithName(x.animation);
+                    }
 
 
                     if(x.visible != null){

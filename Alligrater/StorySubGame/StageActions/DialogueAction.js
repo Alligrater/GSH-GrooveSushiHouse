@@ -20,17 +20,10 @@ class DialogueAction extends GenericStageAction{
 
         console.log(this.JSON.dialogue);
         storystage.dialogueBox.showDialogue(this.JSON.dialogue, this.autoplay, this.waitTime);
-
         this.setBlipSound();
-
         this.showSpeaker();
-
         this.executeScreenShake();
-
         this.executeAudio();
-
-
-
     }
 
     showSpeaker(){
