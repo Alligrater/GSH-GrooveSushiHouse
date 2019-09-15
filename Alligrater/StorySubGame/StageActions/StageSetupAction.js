@@ -25,8 +25,10 @@ class StageSetupAction extends GenericStageAction{
                     var character = storystage.CHARACTER_POOL.get(x.name);
                     //var
                     //character.visible = true;
-                    var posx = x.posx?x.posx:character.x;
-                    var posy = x.posy?x.posy:character.y;
+                    var posx = x.posx?CANVAS_WIDTH * x.posx:character.x;
+                    var posy = x.posy?CANVAS_HEIGHT * x.posy:character.y;
+
+                    console.log(posx, posy);
 
                     storystage.CHARACTER_POOL.get(x.name).setPos(posx, posy);
 
