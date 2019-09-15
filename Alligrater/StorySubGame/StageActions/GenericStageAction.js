@@ -28,7 +28,6 @@ class GenericStageAction{
     }
 
     executeWait(){
-        console.log("executewait")
         if(this.JSON.wait){
             if(!this.hasWaitExecuted){
                 //Prevents multiple input that can break the game.

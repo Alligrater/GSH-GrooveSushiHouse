@@ -34,7 +34,7 @@ class DialogueBox{
         this.autoplay = false;
 
         this.waitTime = 0;
-        this.targetTime = 0;
+        this.targetWaitTime = 0;
 
 
         this.dbox = new NinePatchBox(stage, DIALOGUEBOXPATH, this.width, this.height, this.x, this.y);
@@ -77,8 +77,10 @@ class DialogueBox{
         }
         else{
             this.hasComplete = true;
+            this.waitTime += 1;
             if(this.autoplay == true){
-                if(this.waitTime >= this.targetTime){
+                if(this.waitTime >= this.targetWaitTime){
+                    console.log("hasComplete");
                     nextStageAction();
                 }
 
@@ -116,7 +118,7 @@ class DialogueBox{
         this.displayIndex = 0;
 
         this.autoplay = autoplay;
-        this.targetTime = targetWaitTime;
+        this.targetWaitTime = targetWaitTime;
         this.waitTime = 0;
     }
 

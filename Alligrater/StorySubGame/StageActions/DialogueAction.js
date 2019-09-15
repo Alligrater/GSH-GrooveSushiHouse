@@ -9,6 +9,8 @@ class DialogueAction extends GenericStageAction{
         //Set a new text on the dialogue box.
         //Something.
 
+        this.executeWait();
+
         if(this.JSON.params){
             //Execute them.
             for(var x of this.JSON.params){
@@ -17,7 +19,7 @@ class DialogueAction extends GenericStageAction{
         }
 
         console.log(this.JSON.dialogue);
-        storystage.dialogueBox.showDialogue(this.JSON.dialogue, false);
+        storystage.dialogueBox.showDialogue(this.JSON.dialogue, this.autoplay, this.waitTime);
 
         this.setBlipSound();
 
@@ -27,7 +29,7 @@ class DialogueAction extends GenericStageAction{
 
         this.executeAudio();
 
-        this.executeWait();
+
 
     }
 
@@ -48,6 +50,12 @@ class DialogueAction extends GenericStageAction{
             var frequency = soundData.frequency==null?4:soundData.frequency;
             storystage.dialogueBox.setSound(blip, volume, frequency);
 
+        }
+    }
+
+    executeWait() {
+        if(this.JSON.wait){
+            this.waitTime = this.JSON.wait*70;
         }
     }
 
