@@ -11,9 +11,24 @@
 				{
 					"name": "Developer",
 					"posx": 0.6,
+					"velx": -0.5,
 					"visible": true
 				}
-			]
+			],
+			"params":["hide-dialogue"],
+			"wait":3
+		},
+		{
+			"type": "stage-action",
+			"actor": [
+				{
+					"name": "Developer",
+					"velx": 0.0,
+					"vely": -0.5,
+					"visible": true
+				}
+			],
+			"wait":1
 		},
 		{
 			"type": "dialogue-action",
@@ -23,7 +38,8 @@
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.1,
 				"frequency": 4
-			}
+			},
+			"params":["show-dialogue"]
 		},
 		{
 			"type": "dialogue-action",
