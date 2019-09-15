@@ -15,6 +15,12 @@ class StageCharacter{
         this.x = x;
         this.y = y;
 
+        //Use delta time interpolation on this one.
+        this.velx = 0;
+        this.vely = 0;
+
+        this.internalTick = 0;
+
 
         //Start by putting in a null animation.
         this.animations = new Map();
@@ -22,8 +28,6 @@ class StageCharacter{
 
         if(JSON != null){
             //Override everything.
-            this.x = x;
-            this.y = y;
             //Read in the json object.
             this.name = JSON.name;
             this.spritesheet = JSON.spritesheet;
@@ -68,9 +72,7 @@ class StageCharacter{
         this.animations.set(name, ani);
 
 
-        //Use delta time interpolation on this one.
-        this.velx = 0;
-        this.vely = 0;
+
 
     }
 
@@ -99,9 +101,40 @@ class StageCharacter{
         this.y = posy;
         this.character.x = this.x;
         this.character.y = this.y;
+        this.internalTick = 0;
+    }
+
+    setVelocity(velx, vely){
+        this.velx = velx;
+        this.vely = vely;
+        this.internalTick = 0;
     }
 
     update(delta){
+        this.internalTick += delta;
         //Update this character to make it move.
+        this.character.x = this.x + GLOBAL_SPRITE_SCALE * this.velx * this.internalTick;
+        var xleft = this.character.width * this.character.anchor.x;
+        var xright = this.character.width * (1-this.character.anchor.x);
+        while(this.character.x < 0 - xright){
+
+            this.character.x += CANVAS_WIDTH + xleft + xright;
+        }
+
+        while(this.character.x > CANVAS_WIDTH + xleft){
+            this.character.x -= CANVAS_WIDTH + xleft + xright;
+        }
+
+
+        var ytop = this.character.height  * this.character.anchor.y;
+        var ybottom = this.character.height  * (1-this.character.anchor.y);
+        this.character.y = this.y + GLOBAL_SPRITE_SCALE * this.vely * this.internalTick;
+        while(this.character.y < 0 - ybottom){
+            this.character.y += CANVAS_HEIGHT + ytop + ybottom;
+        }
+
+        while(this.character.y > CANVAS_HEIGHT + ytop){
+            this.character.y -= CANVAS_HEIGHT + ytop + ybottom;
+        }
     }
 }

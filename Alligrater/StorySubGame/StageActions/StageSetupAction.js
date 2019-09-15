@@ -7,14 +7,7 @@ class StageSetupAction extends GenericStageAction{
     }
 
     execute() {
-        if(this.JSON.background){
-            //Do something with the background:
-            if(this.JSON.background.name){
-                storystage.setBackground(this.JSON.background.name);
-            }
-
-            //storystage.background.
-        }
+        this.executeBackground(); // Always happen first or the background will be in front of everything.
 
         //Put new actors on to the stage, or move them if they are already there.
         if(this.JSON.actor && this.JSON.actor.length > 0){
@@ -32,18 +25,11 @@ class StageSetupAction extends GenericStageAction{
 
                     storystage.CHARACTER_POOL.get(x.name).setPos(posx, posy);
 
-                        /*
-                    if(x.posx){
-                        character.x = CANVAS_WIDTH * x.posx;
-                    }
-                    if(x.posy){
-                        character.y = CANVAS_HEIGHT * x.posy;
-                    }*/
 
                     if(x.visible != null){
                         character.character.visible = x.visible;
                     }
-                }
+                }x
             }
         }
 
@@ -88,6 +74,15 @@ class StageSetupAction extends GenericStageAction{
         //Now move on.
         else{
             nextStageAction();
+        }
+    }
+
+    executeBackground(){
+        if(this.JSON.background){
+            //Do something with the background:
+            if(this.JSON.background.name) {
+                storystage.setBackground(this.JSON.background.name);
+            }
         }
     }
 

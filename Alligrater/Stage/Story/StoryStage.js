@@ -46,6 +46,11 @@ class StoryStage extends GenericStage{
 
         this.inputTime += delta;
 
+        //Time for some good ol' character updating.
+        for(var x of this.CHARACTER_POOL.keys()){
+            this.CHARACTER_POOL.get(x).update(delta);
+        }
+
         this.isDialogueComplete = this.dialogueBox.update();
         if(!this.isScreenShakeComplete){
             this.screenShakeTime += 1;
