@@ -22,20 +22,25 @@ class StageSetupAction extends GenericStageAction{
             //storystage.hideAllCharacters();
             for(var x of this.JSON.actor){
                 if(storystage.CHARACTER_POOL.get(x.name)){
-                    var character = storystage.CHARACTER_POOL.get(x.name).character;
+                    var character = storystage.CHARACTER_POOL.get(x.name);
+                    //var
                     //character.visible = true;
+                    var posx = x.posx?x.posx:character.x;
+                    var posy = x.posy?x.posy:character.y;
+
+                    storystage.CHARACTER_POOL.get(x.name).setPos(posx, posy);
+
+                        /*
                     if(x.posx){
-                        console.log(x.posx);
                         character.x = CANVAS_WIDTH * x.posx;
                     }
                     if(x.posy){
                         character.y = CANVAS_HEIGHT * x.posy;
-                    }
+                    }*/
 
                     if(x.visible != null){
-                        character.visible = x.visible;
+                        character.character.visible = x.visible;
                     }
-                    character.zIndex = 5;
                 }
             }
         }

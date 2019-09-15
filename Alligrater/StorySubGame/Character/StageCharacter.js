@@ -12,16 +12,13 @@ class StageCharacter{
         this.animations = null;
         this.name = null;
 
-        this.x = -1;
-        this.y = -1;
+        this.x = x;
+        this.y = y;
 
 
         //Start by putting in a null animation.
         this.animations = new Map();
-
-        var animation = new CharacterAnimation("default", 0,0);
-
-        this.animations.set("default", animation)
+        this.animations.set("default", new CharacterAnimation("default", 0,0));
 
         if(JSON != null){
             //Override everything.
@@ -31,15 +28,15 @@ class StageCharacter{
             this.name = JSON.name;
             this.spritesheet = JSON.spritesheet;
 
-            var animations = JSON.animations;
-            for(var x of animations){
+            var jsanimations = JSON.animations;
+            for(var x of jsanimations){
                 this.parseAnimation(x);
             }
-            console.log(this.spritesheet);
+
             this.character = createAnimatedSpriteWithJSON(storystage.stage, this.x, this.y, this.spritesheet, "bundle");
             this.character.visible = false; //It's not the right time yet.
             scaleSprite(this.character, GLOBAL_SPRITE_SCALE);
-            this.setAnimation(animation);
+            this.setAnimation(this.animations.get("default"));
 
             this.character.loop = true;
             this.character.animationSpeed = 0.05;
@@ -70,6 +67,11 @@ class StageCharacter{
         var ani = new CharacterAnimation(name,start,stop);
         this.animations.set(name, ani);
 
+
+        //Use delta time interpolation on this one.
+        this.velx = 0;
+        this.vely = 0;
+
     }
 
     playAnimation(frameNumber){
@@ -91,16 +93,15 @@ class StageCharacter{
         }
     }
 
-    /*
-    moveTo(interpSpeed, targetx, targety){
-        var currentX = this.x;
-        var currentY = this.y;
-    }*/
 
     setPos(posx, posy){
         this.x = posx;
         this.y = posy;
         this.character.x = this.x;
         this.character.y = this.y;
+    }
+
+    update(delta){
+        //Update this character to make it move.
     }
 }
