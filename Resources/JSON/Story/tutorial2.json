@@ -68,6 +68,12 @@
 			}
 		},
 		{
+			"type": "stage-action",
+			"background": {
+				"name": "Resources/Images/Tutorial/10.png"
+			}
+		},
+		{
 			"type": "dialogue-action",
 			"dialogue": "和刚才一样，有普通的寿司和长条的寿司。玩法也基本差不多。除此之外，还会有瓜皮\n掉下来。看到瓜皮的时候，什么都不用做，让它自己掉下去即可。\n如果一不小心按下按键接住了，就会被判定成Miss。",
 			"speaker": "Narrator",

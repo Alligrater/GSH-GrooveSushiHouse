@@ -8,7 +8,8 @@ function loadAudio(){
         "Resources/SE/menu.mp3",
         "Resources/SE/hit.wav",
         "Resources/SE/blip.wav",
-        "Resources/SE/titleintro.wav"
+        "Resources/SE/titleintro.wav",
+        "Resources/SE/Honk.wav"
     ]);
     sounds.whenLoaded = beginRenderSequence;
 }

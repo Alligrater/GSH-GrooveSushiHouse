@@ -6,7 +6,7 @@
 			"stage": "stage1",
 			"background": {
 				"name": "Resources/Images/SushiHouseInterior.png"
-			},
+			}
 		},
 		{
 			"type": "dialogue-action",
@@ -88,7 +88,7 @@
 			"type": "dialogue-action",
 			"dialogue": "我已经无所谓了。临死前实现愿望已经是我最终也是最大的目标了。",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
-			"speaker": "Iktsuarpok",
+			"speaker": "Catherine",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.1,
@@ -97,7 +97,88 @@
 		},
 		{
 			"type": "stage-action",
-			"audio":
+			"audio":"Resources/SE/Honk.wav",
+			"fade": 0.1,
+			"wait": 0.5
 		},
+		{
+			"type": "stage-action",
+			"fade": -0.1,
+			"wait": 0.5,
+			"background": {
+				"name": "Resources/Images/SushiHouse.png"
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "先生，这是怎么回事？",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Robo.png",
+			"speaker": "Ternura",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		
+		{
+			"type": "dialogue-action",
+			"dialogue": "我也不清楚现在的情况。GPS上显示没问题，但我们沿着公路开车最后依旧会回到这里。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Mechanic.png",
+			"speaker": "Alkaid",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "先生，我来背你沿着公路走吧，说不定是汽车的问题。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Robo.png",
+			"speaker": "Ternura",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "算了，Ternura，我们进寿司店看看吧。说不定里面会有线索。\n你也累了，补充点机油吧。待会儿喝好机油，我给你松一松调节带。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Mechanic.png",
+			"speaker": "Alkaid",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		
+		{
+			"type": "stage-action",
+			"audio":"Resources/SE/Honk.wav",
+			"fade": 0.1,
+			"wait": 0.5
+		},
+		{
+			"type": "stage-action",
+			"fade": -0.1,
+			"wait": 0.5,
+			"background": {
+				"name": "Resources/Images/SushiHouseInterior.png"
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "你好，来一杯60摄氏度的机油和一杯冰镇啤酒。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Mechanic.png",
+			"speaker": "Alkaid",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		}
 	]
 }

@@ -36,6 +36,7 @@ function loadSprites(){
         .add("Resources/Images/ResultsBackground.png")
         .add("Resources/Images/StoryBackground.png")
         .add("Resources/Images/SushiHouse.png")
+        .add("Resources/Images/SushiHouseInterior.png")
         .add("Resources/Images/SushiHouse-Long.png")
         .add("Resources/Images/Title.png")
 
