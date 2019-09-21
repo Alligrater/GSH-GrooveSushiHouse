@@ -122,8 +122,11 @@ class DialogueBox{
 
     setHeadFigure(path){
         this.clearHeadFigure();
-        this.headfigure = createSpriteOnStage(this.stage,this.x - this.width/2.4, this.y - this.height/2.5, path)
-        scaleSprite(this.headfigure, 1.5*GLOBAL_SPRITE_SCALE)
+        if(path != ""){
+            this.headfigure = createSpriteOnStage(this.stage,this.x - this.width/2.4, this.y - this.height/2.5, path)
+            scaleSprite(this.headfigure, 1.5*GLOBAL_SPRITE_SCALE)
+        }
+
     }
 
     clearHeadFigure(){

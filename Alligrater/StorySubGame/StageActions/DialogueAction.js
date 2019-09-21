@@ -28,8 +28,11 @@ class DialogueAction extends GenericStageAction{
     }
 
     drawSpeakerHeadfigure(){
-        if(this.JSON.headfigure){
+        if(this.JSON.headfigure != null){
             storystage.dialogueBox.setHeadFigure(this.JSON.headfigure);
+        }
+        else{
+            storystage.dialogueBox.clearHeadFigure();
         }
     }
 
