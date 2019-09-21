@@ -21,8 +21,19 @@
 		},
 		{
 			"type": "dialogue-action",
+			"dialogue": "*老板给Catherine端上了一杯热气腾腾的白开水*",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
 			"dialogue": "请先喝杯水暖暖身子吧，Catherine。我待会儿给你做寿司。",
 			"speaker": "Iktsuarpok",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.1,
@@ -33,6 +44,7 @@
 			"type": "dialogue-action",
 			"dialogue": "没有冰啤吗？冰啤总不会现做吧？",
 			"speaker": "Catherine",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.1,
@@ -43,6 +55,7 @@
 			"type": "dialogue-action",
 			"dialogue": "没办法，最近几天客人比较多，冰啤也卖完了。",
 			"speaker": "Iktsuarpok",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.1,
@@ -56,6 +69,7 @@
 		{
 			"type": "dialogue-action",
 			"dialogue": "唉，好吧，待会儿见。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"speaker": "Catherine",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -65,19 +79,32 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "接下来是钓鱼和寿司的教学。",
-			"speaker": "Narrator",
+			"dialogue": "先去准备一下食材吧。",
+			"speaker": "Iktsuarpok",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.1,
 				"frequency": 4
-			},
-			"params":["auto-play"]
+			}
+		},
+		{
+			"type": "stage-action",
+			"stage": "stage1",
+			"fade": 0.1,
+			"wait": 0.5
+		},
+		{
+			"type": "stage-action",
+			"stage": "stage1",
+			"fade": -0.1,
+			"wait": 0.5,
+			"background": {
+				"name": "Resources/Images/FishingBackground.png"
+			}
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "WHOA-- Stop there--",
-			"screenshake":{"time":15,"amount":40},
+			"dialogue": "接下来是钓鱼和寿司模式的教学。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",

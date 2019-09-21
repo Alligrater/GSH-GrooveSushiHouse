@@ -46,7 +46,6 @@ class StageCharacter{
             this.character.animationSpeed = 0.05;
             this.playAnimation(0);
 
-
             this.character.onFrameChange = function(){
 
                 //Check if the current frame is within range:

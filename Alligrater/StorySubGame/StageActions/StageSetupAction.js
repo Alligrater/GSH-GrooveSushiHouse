@@ -56,6 +56,8 @@ class StageSetupAction extends GenericStageAction{
 
         this.executeScreenShake();
 
+        this.executeFade();
+
         this.executeAudio();
 
         this.executeWait();
@@ -67,6 +69,14 @@ class StageSetupAction extends GenericStageAction{
             }
         }
 
+    }
+
+    executeFade(){
+        if(this.JSON.fade &&  this.JSON.fade!= 0){
+            //
+            //Better not set this to 0, or things could get nasty.
+            storystage.fadeBackground(this.JSON.fade);
+        }
     }
 
     executeWait(){

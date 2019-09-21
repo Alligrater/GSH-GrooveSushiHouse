@@ -123,9 +123,10 @@ class DialogueBox{
     setHeadFigure(path){
         this.clearHeadFigure();
         if(path != ""){
-            this.headfigure = createSpriteOnStage(this.stage,this.x - this.width/2.4, this.y - this.height/2.5, path)
+            this.headfigure = createSpriteOnStage(this.stage,this.x - this.width/2.4, this.y - this.height/1.5, path)
             scaleSprite(this.headfigure, 1.5*GLOBAL_SPRITE_SCALE)
         }
+        this.message.x = this.x - this.width/3.1;
 
     }
 
@@ -134,6 +135,8 @@ class DialogueBox{
             this.stage.removeChild(this.headfigure);
             this.headfigure = null;
         }
+        //Move the text to the left.
+        this.message.x = this.x - this.width/2.5;
     }
 
     showName(string){
