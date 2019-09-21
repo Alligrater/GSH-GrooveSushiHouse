@@ -5,110 +5,99 @@
 			"type": "stage-action",
 			"stage": "stage1",
 			"background": {
-				"name": "Resources/Images/SushiHouse.png"
+				"name": "Resources/Images/SushiHouseInterior.png"
 			},
-			"actor": [
-				{
-					"name": "Developer",
-					"posx": 0.6,
-					"visible": true
-				}
-			],
-			"params":["show-dialogue"]
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Ahh, it's day.",
-			"speaker": "Master",
-			"sound": {
-				"blip": "Resources/SE/blip.wav",
-				"volume": 0.1,
-				"frequency": 4
-			}
-		},
-		{
-			"type": "dialogue-action",
-			"dialogue": "Lot of works to do today. Almost time to start my new bussiness.",
-			"speaker": "Master",
-			"sound": {
-				"blip": "Resources/SE/blip.wav",
-				"volume": 0.1,
-				"frequency": 4
-			}
-		},
-		{
-			"type": "dialogue-action",
-			"dialogue": "*Door Opening Sound*",
-			"speaker": " ",
-			"audio":"Resources/SE/titleintro.wav"
-		},
-		{
-			"type": "dialogue-action",
-			"dialogue": "I have never opened a resteraunt in my life, until one day, I \ndecided to do so.",
-			"speaker": "Master",
-			"sound": {
-				"blip": "Resources/SE/blip.wav",
-				"volume": 0.1,
-				"frequency": 4
-			}
-		},
-		{
-			"type": "dialogue-action",
-			"dialogue": "The first day, I went on fishing. I remembered...",
-			"speaker": "Master",
-			"sound": {
-				"blip": "Resources/SE/blip.wav",
-				"volume": 0.2,
-				"frequency": 4
-			}
-		},
-		{
-			"type": "game-action",
-			"beatmap": "./www/Resources/JSON/Beatmap/beat.json"
-		},
-		{
-			"type": "dialogue-action",
-			"dialogue": "Not bad. I can see your effort, but you are nowhere close to\nmy fishing skill.",
-			"speaker": "Master",
-			"sound": {
-				"blip": "Resources/SE/blip.wav",
-				"volume": 0.2,
-				"frequency": 4
-			}
-		},
-		{
-			"type": "dialogue-action",
-			"dialogue": "So you don't believe me. How about you try that again, while\n I go prepare you some food?",
-			"speaker": "Master",
-			"sound": {
-				"blip": "Resources/SE/blip.wav",
-				"volume": 0.2,
-				"frequency": 4
-			}
-		},
-		{
-			"type": "game-action",
-			"beatmap": "./www/Resources/JSON/Beatmap/unreal_superhero_3.json"
-		},
-		{
-			"type": "dialogue-action",
-			"dialogue": "Not bad, but that one was easier.",
-			"speaker": "Master",
-			"sound": {
-				"blip": "Resources/SE/blip.wav",
-				"volume": 0.2,
-				"frequency": 4
-			}
-		},
-		{
-			"type": "dialogue-action",
-			"dialogue": "Ignore him. He's like that.",
+			"dialogue": "老板为Catherine端上了她点的食物。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
-				"volume": 0.2,
+				"volume": 0.1,
 				"frequency": 4
 			}
-		}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "慢用。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
+			"speaker": "Iktsuarpok",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "哇！真是太棒了！不愧是你！",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
+			"speaker": "Catherine",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "这一口让我想起了我寄存在故乡的财宝……",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
+			"speaker": "Catherine",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "Catherine，你最近还在调查那件事吗？",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
+			"speaker": "Iktsuarpok",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "是啊，没办法，那可是1g就价值1亿的大买卖！",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
+			"speaker": "Catherine",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "你也得注意一下身体。那种东西找不到就别太勉强了。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
+			"speaker": "Iktsuarpok",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "我已经无所谓了。临死前实现愿望已经是我最终也是最大的目标了。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
+			"speaker": "Iktsuarpok",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "stage-action",
+			"audio":
+		},
 	]
 }
