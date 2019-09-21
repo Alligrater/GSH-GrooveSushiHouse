@@ -7,8 +7,8 @@ const dialogueTextStyle = new PIXI.TextStyle({
 });
 
 const speakerTextStyle = new PIXI.TextStyle({
-    fontFamily: "Minecraft",
-    fontSize: 12*GLOBAL_SPRITE_SCALE,
+    fontFamily: "Born2BSporty",
+    fontSize: 16*GLOBAL_SPRITE_SCALE,
     letterSpacing: 1,
     fill: "white"
 });
@@ -34,32 +34,36 @@ class DialogueBox{
         this.soundCooldown = 0;
         this.soundTime = 2;
 
-
-
         this.stage = stage;
         this.autoplay = false;
 
         this.waitTime = 0;
         this.targetWaitTime = 0;
 
+        this.dbox = createBackgroundOnStage(stage, DIALOGUEBOXPATH);//new NinePatchBox(stage, DIALOGUEBOXPATH, this.width, this.height, this.x, this.y);
 
-        this.dbox = createBackgroundOnStage(stage, DIALOGUEBOXPATH)//new NinePatchBox(stage, DIALOGUEBOXPATH, this.width, this.height, this.x, this.y);
 
-        //We need a total of
+        this.speakerName = "";
+        this.speaker = new PIXI.Text("SPEAKER NAME", speakerTextStyle);
+        this.speaker.x = this.x - this.width/3.4;
+        this.speaker.y = this.y - this.height/1;
+        this.speaker.resolution = 2;
+        this.stage.addChild(this.speaker);
+
+
+
+
+
         this.text = "IF YOU SEE THIS, SOMETHING HAS WENT WRONG.";//This one will always be the same
         this.displayIndex = 0;
         this.message = new PIXI.Text("IF YOU SEE THIS, SOMETHING HAS WENT WRONG.", dialogueTextStyle);
-        this.message.x = this.x - this.width/3.2;
-        this.message.y = this.y - this.height/1.3;
+        this.message.x = this.x - this.width/3.1;
+        this.message.y = this.y - this.height/1.75;
         this.message.resolution = 2;
         this.stage.addChild(this.message);
 
 
-        this.speaker = new PIXI.Text("[SPEAKER NAME]", dialogueTextStyle);
-        this.speaker.resolution = 2;
-        this.speaker.x = this.x - this.width/3.5;
-        this.speaker.y = this.y - this.height/0.83;
-        this.stage.addChild(this.speaker);
+
 
         this.headfigure = null;
 
@@ -67,8 +71,13 @@ class DialogueBox{
     }
 
     update(delta){
+
         this.soundCooldown += 1;
         //this.dbox.update(delta);
+        if(this.isVisible){
+            this.speaker.text = this.speakerName;
+        }
+
 
         if(this.isVisible && !this.hasComplete && this.message){
             this.displayIndex += 1;
@@ -113,7 +122,8 @@ class DialogueBox{
 
     setHeadFigure(path){
         this.clearHeadFigure();
-        this.headfigure = createSpriteOnStage(this.stage,this.x - this.width/2.1, this.y - this.height/1.7, path)
+        this.headfigure = createSpriteOnStage(this.stage,this.x - this.width/2.4, this.y - this.height/2.5, path)
+        scaleSprite(this.headfigure, 1.5*GLOBAL_SPRITE_SCALE)
     }
 
     clearHeadFigure(){
@@ -125,7 +135,7 @@ class DialogueBox{
 
     showName(string){
         //this.clearName();
-        this.speaker.text = string;
+        this.speakerName = string;
     }
 
 
@@ -136,6 +146,7 @@ class DialogueBox{
 
 
     showDialogue(string, autoplay = false, targetWaitTime = 0){
+
         this.clearDialogue();
         //Show the new dialogue:
         this.text = string;
@@ -168,14 +179,21 @@ class DialogueBox{
         this.isVisible = true;
         this.dbox.visible = true;
         this.message.visible = true;
-        this.speaker.visible = true;
+        //this.speaker.visible = true;
+        if(this.headfigure){
+            this.headfigure.visible = true;
+        }
+
 
     }
 
     hideBox(){
-        this.message.visible = false
+        this.message.visible = false;
         this.dbox.visible = false;
-        this.speaker.visible = true;
+        this.speaker.text = "";
         this.isVisible = false;
+        if(this.headfigure){
+            this.headfigure.visible = false;
+        }
     }
 }
