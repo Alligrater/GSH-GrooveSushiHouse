@@ -325,7 +325,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "这次再来试试钓鱼吧。这次的钓鱼和刚才的背景音乐保持不变，但是会加入刚刚提到的三种鱼。",
+			"dialogue": "这次再来试试钓鱼吧。这次的钓鱼的背景音乐和刚才一样，但是会加入刚刚提到的三种鱼。\n\n祝你好运。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -340,7 +340,7 @@
 		},
 		{
 			"type": "story-action",
-			"story": "Day1"
+			"story": "Tutorial2"
 		}
 	]
 }

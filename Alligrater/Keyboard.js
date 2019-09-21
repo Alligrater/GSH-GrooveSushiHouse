@@ -56,7 +56,16 @@ let up = keyboard("w"),
     downarr = keyboard("ArrowDown"),
     leftarr = keyboard("ArrowLeft"),
     rightarr = keyboard("ArrowRight"),
-    enter = keyboard("Enter");
+    enter = keyboard("Enter"),
+    tab = keyboard("Tab");
+
+tab.press = () => {
+    processInput("Tab", 1);
+};
+
+tab.release = () => {
+    processInput("Tab", 0);
+};
 
 uparr.press = () =>{
     up.press();

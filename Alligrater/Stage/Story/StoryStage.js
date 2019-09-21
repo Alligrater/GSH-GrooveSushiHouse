@@ -124,6 +124,11 @@ class StoryStage extends GenericStage{
         if(type == 0){
             switch (key){
                 case "Enter":
+                    if(!this.dialogueBox.isVisible){
+                        //Do nothing.
+                        return;
+                    }
+
                     if(!this.isDialogueComplete){
                         this.dialogueBox.skipDialogue();
                     }
@@ -132,6 +137,13 @@ class StoryStage extends GenericStage{
                     }
 
                     break;
+                case "Tab":
+                    if(this.dialogueBox.isVisible){
+                        this.dialogueBox.hideBox();
+                    }
+                    else{
+                        this.dialogueBox.showBox();
+                    }
                 default:
                     break;
             }
