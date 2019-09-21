@@ -324,6 +324,21 @@
 			}
 		},
 		{
+			"type": "dialogue-action",
+			"dialogue": "这次再来试试钓鱼吧。这次的钓鱼和刚才的背景音乐保持不变，但是会加入刚刚提到的三种鱼。",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		
+		{
+			"type": "game-action",
+			"beatmap": "./www/Resources/JSON/Beatmap/tutorial_blue.json"
+		},
+		{
 			"type": "story-action",
 			"story": "Day1"
 		}
