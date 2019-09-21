@@ -98,6 +98,10 @@
 		{
 			"type": "stage-action",
 			"audio":"Resources/SE/Honk.wav",
+			"wait": 0.3
+		},
+		{
+			"type": "stage-action",
 			"fade": 0.1,
 			"wait": 0.5
 		},
@@ -123,7 +127,7 @@
 		
 		{
 			"type": "dialogue-action",
-			"dialogue": "我也不清楚现在的情况。GPS上显示没问题，但我们沿着公路开车最后依旧会回到这里。",
+			"dialogue": "我也不清楚现在的情况。GPS上显示没问题，但我们沿着公路开车最后依旧会回到\n这里。",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Mechanic.png",
 			"speaker": "Alkaid",
 			"sound": {
@@ -154,10 +158,8 @@
 				"frequency": 4
 			}
 		},
-		
 		{
 			"type": "stage-action",
-			"audio":"Resources/SE/Honk.wav",
 			"fade": 0.1,
 			"wait": 0.5
 		},
@@ -177,6 +179,302 @@
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "Alkaid递给了老板68纽币。",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "(小声)为什么先生不多给点钱？店主先生不是欠了很大一笔债吗？",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Robo.png",
+			"speaker": "Ternura",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.05,
+				"frequency": 6
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "就算给一些小钱那也是杯水车薪。但我相信他的能力可以做到还清那笔钱。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Mechanic.png",
+			"speaker": "Alkaid",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "哈哈，谢谢你，Alkaid。好久不见。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
+			"speaker": "Iktsuarpok",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "老板端上了Alkaid的机油和啤酒。",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "这不是有冰镇啤酒吗？为什么不给我？",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
+			"speaker": "Catherine",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.15,
+				"frequency": 3
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "这是刚到的。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
+			"speaker": "Iktsuarpok",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "那请给我一杯刚到的冰啤。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
+			"speaker": "Catherine",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.15,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "只进货了一杯。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
+			"speaker": "Iktsuarpok",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "Catherine小姐，你有胰腺癌，还是不要喝冰啤比较好。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Robo.png",
+			"speaker": "Ternura",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "我知道！请不要管我！你们一个个的怎么都这样！？反正我肯定最后都要死的，\n喝不喝对我来说都一样！",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
+			"speaker": "Catherine",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.2,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "抱歉，Catherine小姐。Ternura她说话比较直白，但她确实是在关心您的。\n请不要在意。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Mechanic.png",
+			"speaker": "Alkaid",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "该道歉的是我，我太冲动了。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
+			"speaker": "Catherine",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "不对，该道歉的是Iktsuarpok。要不是因为他私藏啤酒我怎么会这么生气。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
+			"speaker": "Catherine",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "也不对，最该道歉的还是………………*&",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
+			"speaker": "Catherine",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "……",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
+			"speaker": "Catherine",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "对了，我们来这里的路上遇到了一件怪事。我们的车怎么开都开不出这条\n黄金公路。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Mechanic.png",
+			"speaker": "Alkaid",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "车钥匙给我，我带你们开开看。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
+			"speaker": "Iktsuarpok",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "Alkaid把钥匙递给了Iktsuarpok。",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "店主先生，您不在店里不要紧吗？",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Robo.png",
+			"speaker": "Ternura",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "没事。反正你们是最后一批客人了。况且，店里也没什么值钱的东西。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
+			"speaker": "Iktsuarpok",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "我们先出发了，再见，Catherine小姐。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Robo.png",
+			"speaker": "Ternura",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "再见。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
+			"speaker": "Catherine",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "stage-action",
+			"fade": 0.1,
+			"wait": 0.5
+		},
+		{
+			"type": "stage-action",
+			"fade": -0.1,
+			"wait": 0.5,
+			"background": {
+				"name": "Resources/Images/SushiHouse-Night.png"
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "这的确是个大问题。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
+			"speaker": "Iktsuarpok",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.08,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "现在已经很晚了，要不大家先休息。我明天再开车出去试试看。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
+			"speaker": "Iktsuarpok",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.08,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "唉，也不知道明天进货的车会不会来。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
+			"speaker": "Iktsuarpok",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.08,
 				"frequency": 4
 			}
 		}
