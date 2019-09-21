@@ -49,20 +49,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Alligrater/SFXManagement.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+            <state relative-caret-position="19">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Alligrater/SpriteManagement.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+            <state relative-caret-position="557">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
             </state>
           </provider>
         </entry>
@@ -194,8 +194,8 @@
         <option value="$PROJECT_DIR$/Alligrater/StorySubGame/DialogBox/DialogueBox.js" />
         <option value="$PROJECT_DIR$/Alligrater/StorySubGame/StageActions/StageSetupAction.js" />
         <option value="$PROJECT_DIR$/Alligrater/Stage/Story/StoryStage.js" />
-        <option value="$PROJECT_DIR$/Alligrater/SpriteManagement.js" />
         <option value="$PROJECT_DIR$/Alligrater/SFXManagement.js" />
+        <option value="$PROJECT_DIR$/Alligrater/SpriteManagement.js" />
       </list>
     </option>
   </component>
@@ -386,12 +386,12 @@
       <workItem from="1568776515715" duration="2498000" />
       <workItem from="1568850497851" duration="1830000" />
       <workItem from="1568995952630" duration="229000" />
-      <workItem from="1569074109556" duration="13163000" />
+      <workItem from="1569074109556" duration="14724000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="316460000" />
+    <option name="totallyTimeSpent" value="318021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -770,17 +770,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Alligrater/SpriteManagement.js">
+    <entry file="file://$PROJECT_DIR$/Alligrater/SFXManagement.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Alligrater/SFXManagement.js">
+    <entry file="file://$PROJECT_DIR$/Alligrater/SpriteManagement.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        <state relative-caret-position="557">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>

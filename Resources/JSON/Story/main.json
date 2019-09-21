@@ -221,7 +221,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "根据按按键的时机，可以获得Good或者Perfect评价。拿到Perfect评价越多，得分就越高。",
+			"dialogue": "根据按按键的时机，可以获得Good或者Perfect评价。\n如果什么也不按的话，就会获得Miss评价。Miss评价过多的话，可能会导致关卡失败。\n拿到Perfect评价越多，得分就越高。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -254,6 +254,68 @@
 		{
 			"type": "dialogue-action",
 			"dialogue": "说了这么多，还是让你来亲自体验一下吧。第一个教程关只会出现红色的鱼。其他的鱼\n我会在后面继续介绍。这一关里只要注意按键的时机就OK，不需要担心按的是哪一个按键。",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "game-action",
+			"beatmap": "./www/Resources/JSON/Beatmap/tutorial_red.json"
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "做的不错。接下来是关于其他三种鱼的教学。",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "stage-action",
+			"background": {
+				"name": "Resources/Images/Tutorial/6.png"
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "蓝色的鱼身边会有一个箭头。这代表着你按下按键的时候需要按下和箭头指向方向相同的\n按键，不然就没有办法钓上蓝色的鱼。即便按错了也不会被判为Miss，只要在鱼消失之前\n按下正确的按键就可以补救回来。",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "stage-action",
+			"background": {
+				"name": "Resources/Images/Tutorial/7.png"
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "橙色的鱼比其他的鱼都要长。所以，等鱼头接触到了判定点时，需要按住按键不放，直到\n鱼的身体全部消失，鱼尾接触到鱼头为止。中间松开按键就会被判定为Miss。这种鱼没有\n任何方向限制。",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "stage-action",
+			"background": {
+				"name": "Resources/Images/Tutorial/8.png"
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "看到黄色的河豚后需要进行连打来消耗它的体力。不论次数多少，都会被判定为Perfect。\n连打次数越多分数越高。一定时间后河豚会体力不支，即代表钓鱼成功。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",

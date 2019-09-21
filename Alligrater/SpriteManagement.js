@@ -58,6 +58,9 @@ function loadSprites(){
         .add("Resources/Images/Tutorial/3.png")
         .add("Resources/Images/Tutorial/4.png")
         .add("Resources/Images/Tutorial/5.png")
+        .add("Resources/Images/Tutorial/6.png")
+        .add("Resources/Images/Tutorial/7.png")
+        .add("Resources/Images/Tutorial/8.png")
 
 
         .load(setupStage);
