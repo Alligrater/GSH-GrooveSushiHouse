@@ -6,15 +6,21 @@ const dialogueTextStyle = new PIXI.TextStyle({
     fill: "white"
 });
 
+const speakerTextStyle = new PIXI.TextStyle({
+    fontFamily: "Minecraft",
+    fontSize: 12*GLOBAL_SPRITE_SCALE,
+    letterSpacing: 1,
+    fill: "white"
+});
 
-const DIALOGUEBOXPATH = "Resources/Images/UI/DialogueBox.json";
+
+const DIALOGUEBOXPATH = "Resources/Images/UI/DialogueBox_New.png";
 
 class DialogueBox{
     constructor(stage, width, height, posx, posy){
 
 
         //Do something.
-        this.speaker = null;
         this.width = width;
         this.height = height;
         this.x = posx;
@@ -37,16 +43,23 @@ class DialogueBox{
         this.targetWaitTime = 0;
 
 
-        this.dbox = new NinePatchBox(stage, DIALOGUEBOXPATH, this.width, this.height, this.x, this.y);
+        this.dbox = createBackgroundOnStage(stage, DIALOGUEBOXPATH)//new NinePatchBox(stage, DIALOGUEBOXPATH, this.width, this.height, this.x, this.y);
 
         //We need a total of
         this.text = "IF YOU SEE THIS, SOMETHING HAS WENT WRONG.";//This one will always be the same
         this.displayIndex = 0;
         this.message = new PIXI.Text("IF YOU SEE THIS, SOMETHING HAS WENT WRONG.", dialogueTextStyle);
-        this.message.x = this.x - this.width/2.1;
-        this.message.y = this.y - this.height/2.1;
+        this.message.x = this.x - this.width/3.2;
+        this.message.y = this.y - this.height/1.3;
         this.message.resolution = 2;
         this.stage.addChild(this.message);
+
+
+        this.speaker = new PIXI.Text("[SPEAKER NAME]", dialogueTextStyle);
+        this.speaker.resolution = 2;
+        this.speaker.x = this.x - this.width/3.5;
+        this.speaker.y = this.y - this.height/0.83;
+        this.stage.addChild(this.speaker);
 
         this.headfigure = null;
 
@@ -55,7 +68,7 @@ class DialogueBox{
 
     update(delta){
         this.soundCooldown += 1;
-        this.dbox.update(delta);
+        //this.dbox.update(delta);
 
         if(this.isVisible && !this.hasComplete && this.message){
             this.displayIndex += 1;
@@ -111,17 +124,10 @@ class DialogueBox{
     }
 
     showName(string){
-        this.clearName();
-        this.speaker = new SpriteText(this.stage, string, this.x - this.width/2.1 , this.y - this.height/1.7, Fonts.LARGE);
+        //this.clearName();
+        this.speaker.text = string;
     }
 
-    clearName(){
-        if(this.speaker){
-            this.stage.removeChild(this.speaker.sprites);
-            this.speaker = null;
-        }
-
-    }
 
     skipDialogue(){
         this.hasComplete = true;
@@ -160,20 +166,16 @@ class DialogueBox{
 
     showBox(){
         this.isVisible = true;
-        this.dbox.show();
+        this.dbox.visible = true;
         this.message.visible = true;
-        if(this.speaker){
-            this.speaker.showAll();
-        }
+        this.speaker.visible = true;
 
     }
 
     hideBox(){
         this.message.visible = false
-        this.dbox.hide();
-        if(this.speaker){
-            this.speaker.hideAll();
-        }
+        this.dbox.visible = false;
+        this.speaker.visible = true;
         this.isVisible = false;
     }
 }

@@ -45,7 +45,7 @@ function loadSprites(){
 
         .add("Resources/Images/Characters/Master/master.json")
         .add("Resources/Images/Characters/Developer/developer.json")
-        .add("Resources/Images/UI/DialogueBox.json")
+        .add("Resources/Images/UI/DialogueBox_New.png")
         //.add("Resources/Images/UI/Fonts/fonts.json")
         .add("Resources/Images/UI/NewFonts/fonts.json")
         .add("Resources/Images/Characters/HeadFigure/Journalist.png")
