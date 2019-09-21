@@ -477,6 +477,10 @@
 				"volume": 0.08,
 				"frequency": 4
 			}
+		},
+		{
+			"type": "story-action",
+			"story": "Day2"
 		}
 	]
 }

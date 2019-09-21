@@ -3,6 +3,7 @@ var soundcooldown = 0;
 function loadAudio(){
     sounds.load([
         "Resources/BGM/unreal_superhero_3.mp3",
+        "Resources/BGM/sushigroove2.wav",
         "Resources/BGM/dance_in_the_stars.wav",
         "Resources/BGM/7El.mp3",
         "Resources/SE/menu.mp3",

@@ -18,14 +18,13 @@ class MenuStage extends GenericStage{
     setup(){
 
         this.menu_background = createBackgroundOnStage(this.stage,"Resources/Images/SushiHouse-Long.png", CANVAS_WIDTH*19/30);
-
+        this.audioPlayed = false;
 
         var startButton = new Button(this.stage, CANVAS_WIDTH / 4, CANVAS_HEIGHT / 3, "Resources/Images/Menu_Button.png","Resources/Images/Menu_Button_HL.png", "start");
         startButton.choose = function(){
             //go to the other stage
 
             switchToStoryStage();
-
         }
         this.buttons.push(startButton);
 
@@ -44,6 +43,12 @@ class MenuStage extends GenericStage{
     update(delta){
         if(this.pause){
             return;
+        }
+
+        if(!this.audioPlayed){
+            music = sounds["Resources/BGM/sushigroove2.wav"];
+            music.play();
+            this.audioPlayed = true;
         }
     }
 
@@ -104,5 +109,17 @@ function switchToFishingStage(){
     pause = false;
     if(music){
         music.pause();
+    }
+}
+
+function switchToMenuStage(){
+    ACTIVE_STAGE = menustage;
+    app.stage = menustage.stage;
+    fishstage.setpause();
+    sushistage.setpause();
+    if(music){
+        music.pause();
+        music = sounds["Resources/BGM/sushigroove2.wav"];
+        music.play();
     }
 }

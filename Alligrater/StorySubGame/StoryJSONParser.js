@@ -65,6 +65,10 @@ function loadActions(JSON){
                 break;
             case "game-action":
                 STAGE_ACTION_LIST.push(new GameAction(JSON));
+                break;
+            case "switch-action":
+                STAGE_ACTION_LIST.push(new StageSwitchAction(JSON));
+                break;
             default:
                 //do nothing
                 break;

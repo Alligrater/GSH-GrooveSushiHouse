@@ -18,5 +18,11 @@ function doMiss(){
 }
 
 function resetCombo(){
-    //COMBO_COUNT = 0;
+    COMBO_COUNT = 0;
+}
+
+class ComboIndicator{
+    constructor(stage){
+
+    }
 }
