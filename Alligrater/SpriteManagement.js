@@ -50,6 +50,7 @@ function loadSprites(){
         .add("Resources/Images/Characters/HeadFigure/Master.png")
         .add("Resources/Images/Characters/HeadFigure/Mechanic.png")
         .add("Resources/Images/Characters/HeadFigure/Robo.png")
+        .add("Resources/Images/Characters/HeadFigure/Developer.png")
         .add("Resources/Images/UI/PitchBlack.png")
 
         .load(setupStage);

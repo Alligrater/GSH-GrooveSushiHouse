@@ -3,7 +3,6 @@
 	"storyscript": [
 		{
 			"type": "stage-action",
-			"stage": "stage1",
 			"background": {
 				"name": "Resources/Images/SushiHouse-Long.png"
 			}
@@ -19,6 +18,7 @@
 				"frequency": 4
 			}
 		},
+
 		{
 			"type": "dialogue-action",
 			"dialogue": "*老板给Catherine端上了一杯热气腾腾的白开水*",
@@ -81,6 +81,7 @@
 			"type": "dialogue-action",
 			"dialogue": "先去准备一下食材吧。",
 			"speaker": "Iktsuarpok",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.1,
@@ -89,13 +90,11 @@
 		},
 		{
 			"type": "stage-action",
-			"stage": "stage1",
 			"fade": 0.1,
 			"wait": 0.5
 		},
 		{
 			"type": "stage-action",
-			"stage": "stage1",
 			"fade": -0.1,
 			"wait": 0.5,
 			"background": {
@@ -114,7 +113,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "You are talking to the wrong person. Talk to the player, not me.",
+			"dialogue": "本作中，你将扮演寿司店的老板Iktsuarpok。这家寿司店的特殊之处就在于所有的食材都\n是老板亲手采集的。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -124,13 +123,57 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Hmm.                                   \nShall we begin, then?",
-			"speaker": "Master",
+			"dialogue": "从现在开始，我会向你传授钓鱼和做寿司的基本技巧。先从钓鱼模式开始吧。",
+			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.1,
 				"frequency": 4
 			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "因为是教程关，所以即便失败了也没有关系。",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		
+		{
+			"type": "dialogue-action",
+			"dialogue": "倒不如说，我们根本没有准备失败后的分支剧情（实诚）",
+			"speaker": "Developer",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Developer.png",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "喂。      \n不要管他。我们继续教程。",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			},
+			"screenshake":{"time":10,"amount":20}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "这个游戏里一共有四种鱼。虽然都没有名字，但是刚好每个的颜色都不一样。这里就按照\n颜色来直接指代鱼的种类了。",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			},
+			"screenshake":{"time":10,"amount":20}
 		},
 		{
 			"type": "stage-action",
