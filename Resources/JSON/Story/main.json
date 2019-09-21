@@ -165,6 +165,13 @@
 			"screenshake":{"time":10,"amount":20}
 		},
 		{
+			"type": "stage-action",
+			"background": {
+				"name": "Resources/Images/Tutorial/1.png"
+			}
+		},
+		
+		{
 			"type": "dialogue-action",
 			"dialogue": "这个游戏里一共有四种鱼。虽然都没有名字，但是刚好每个的颜色都不一样。这里就按照\n颜色来直接指代鱼的种类了。",
 			"speaker": "Narrator",
@@ -172,25 +179,87 @@
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.1,
 				"frequency": 4
-			},
-			"screenshake":{"time":10,"amount":20}
+			}
 		},
 		{
 			"type": "stage-action",
-			"stage": "stage1",
 			"background": {
-				"name": "Resources/Images/Title.png"
-			},
-			"actor": [
-				{
-					"name": "Developer",
-					"visible": false
-				}
-			],
-			"audio":"Resources/SE/titleintro.wav",
-			"wait": 2,
-			"screenshake":{"time":10,"amount":20},
-			"params":["hide-dialogue"]
+				"name": "Resources/Images/Tutorial/2.png"
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "钓鱼的方法很简单，只要在鱼到达判定点的时候按下按钮，就可以成功钓鱼。",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "stage-action",
+			"background": {
+				"name": "Resources/Images/Tutorial/3.png"
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "前面也说过，这是一个音乐游戏。所以鱼到达判定点的时间也是跟着节奏的。",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "stage-action",
+			"background": {
+				"name": "Resources/Images/Tutorial/4.png"
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "根据按按键的时机，可以获得Good或者Perfect评价。拿到Perfect评价越多，得分就越高。",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "stage-action",
+			"background": {
+				"name": "Resources/Images/Tutorial/5.png"
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "基本的按键就是WASD或者上下左右。除此之外没有多余的按键。",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "stage-action",
+			"background": {
+				"name": "Resources/Images/Tutorial/1.png"
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "说了这么多，还是让你来亲自体验一下吧。第一个教程关只会出现红色的鱼。其他的鱼\n我会在后面继续介绍。这一关里只要注意按键的时机就OK，不需要担心按的是哪一个按键。",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
 		},
 		{
 			"type": "story-action",

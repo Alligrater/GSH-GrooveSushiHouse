@@ -53,6 +53,13 @@ function loadSprites(){
         .add("Resources/Images/Characters/HeadFigure/Developer.png")
         .add("Resources/Images/UI/PitchBlack.png")
 
+        .add("Resources/Images/Tutorial/1.png")
+        .add("Resources/Images/Tutorial/2.png")
+        .add("Resources/Images/Tutorial/3.png")
+        .add("Resources/Images/Tutorial/4.png")
+        .add("Resources/Images/Tutorial/5.png")
+
+
         .load(setupStage);
 }
 
