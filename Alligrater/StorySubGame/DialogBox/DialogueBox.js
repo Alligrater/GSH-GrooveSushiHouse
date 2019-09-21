@@ -48,6 +48,8 @@ class DialogueBox{
         this.message.resolution = 2;
         this.stage.addChild(this.message);
 
+        this.headfigure = null;
+
 
     }
 
@@ -88,6 +90,24 @@ class DialogueBox{
         }
         return this.hasComplete;
 
+    }
+
+    bringToFront(){
+        //storystage.stage.removeChild(this.dbox);
+        storystage.stage.removeChild(this.message);
+        storystage.stage.removeChild(this.dbox);
+    }
+
+    setHeadFigure(path){
+        this.clearHeadFigure();
+        this.headfigure = createSpriteOnStage(this.stage,this.x - this.width/2.1, this.y - this.height/1.7, path)
+    }
+
+    clearHeadFigure(){
+        if(this.headfigure){
+            this.stage.removeChild(this.headfigure);
+            this.headfigure = null;
+        }
     }
 
     showName(string){

@@ -22,8 +22,15 @@ class DialogueAction extends GenericStageAction{
         storystage.dialogueBox.showDialogue(this.JSON.dialogue, this.autoplay, this.waitTime);
         this.setBlipSound();
         this.showSpeaker();
+        this.drawSpeakerHeadfigure();
         this.executeScreenShake();
         this.executeAudio();
+    }
+
+    drawSpeakerHeadfigure(){
+        if(this.JSON.headfigure){
+            storystage.dialogueBox.setHeadFigure(this.JSON.headfigure);
+        }
     }
 
     showSpeaker(){

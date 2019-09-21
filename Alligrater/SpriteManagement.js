@@ -36,20 +36,23 @@ function loadSprites(){
         .add("Resources/Images/ResultsBackground.png")
         .add("Resources/Images/StoryBackground.png")
         .add("Resources/Images/SushiHouse.png")
-        //.add("Resources/Images/SushiHouse-Night.png")
         .add("Resources/Images/SushiHouse-Long.png")
         .add("Resources/Images/Title.png")
 
 
         .add("Resources/Images/VFX/HitVFX.json")
-        //.add("Resources/Images/HitVFX.json")
 
 
         .add("Resources/Images/Characters/Master/master.json")
         .add("Resources/Images/Characters/Developer/developer.json")
         .add("Resources/Images/UI/DialogueBox.json")
-        .add("Resources/Images/UI/Fonts/fonts.json")
+        //.add("Resources/Images/UI/Fonts/fonts.json")
         .add("Resources/Images/UI/NewFonts/fonts.json")
+        .add("Resources/Images/Characters/HeadFigure/Journalist.png")
+        .add("Resources/Images/Characters/HeadFigure/Master.png")
+        .add("Resources/Images/Characters/HeadFigure/Mechanic.png")
+        .add("Resources/Images/Characters/HeadFigure/Robo.png")
+
         .load(setupStage);
 }
 

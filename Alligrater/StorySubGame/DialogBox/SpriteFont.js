@@ -17,10 +17,16 @@ class SpriteText{
         this.sheet = PIXI.loader.resources[fontpath].spritesheet;
 
         this.color = color;
+        this.stage = stage;
 
         this.constructSpriteBundle();
 
         stage.addChild(this.sprites);
+    }
+
+    bringToFront(){
+        this.stage.removeChild(this.sprites);
+        this.stage.addChild(this.sprites);
     }
 
     hideAll(){

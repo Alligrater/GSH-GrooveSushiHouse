@@ -6,45 +6,13 @@
 			"stage": "stage1",
 			"background": {
 				"name": "Resources/Images/SushiHouse-Long.png"
-			},
-			"actor": [
-				{
-					"name": "Developer",
-					"posx": 0.6,
-					"velx": -0.5,
-					"visible": true
-				}
-			],
-			"params":["hide-dialogue"],
-			"wait":3
-		},
-		{
-			"type": "stage-action",
-			"actor": [
-				{
-					"name": "Developer",
-					"velx": 0.0,
-					"vely": -0.5,
-					"animation":"idle"
-				}
-			],
-			"wait":1
-		},
-		{
-			"type": "stage-action",
-			"actor": [
-				{
-					"name": "Developer",
-					"velx": 0.0,
-					"vely": 0.0
-				}
-			],
-			"wait":1
+			}
 		},
 		{
 			"type": "dialogue-action",
 			"dialogue": "老板，来一杯冰啤和一份生鱼片寿司军舰卷。",
 			"speaker": "Catherine",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
 				"volume": 0.1,

@@ -46,9 +46,6 @@ function loadinRhythmMap(jsonpath){
         hit_sound = sounds["Resources/SE/hit.wav"];
         hit_sound.volume = 0.0;
     }
-
-
-
 }
 
 

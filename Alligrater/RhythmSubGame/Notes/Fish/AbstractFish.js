@@ -38,7 +38,3 @@ class AbstractFish extends GenericNote{
 
 
 }
-
-function rng(lowRange, highRange){
-    return Math.floor(Math.random()*highRange+lowRange)
-}
