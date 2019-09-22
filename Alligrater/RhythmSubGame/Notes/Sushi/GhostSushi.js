@@ -16,13 +16,13 @@ class GhostSushi extends AbstractSushi{
             if(comboRating == ComboRating.PERFECT){
                 this.enabled = false;
                 this.isReady = true;
-                doCombo(ComboRating.PERFECT);
+                doCombo(ComboRating.PERFECT, this.side);
                 nextSushi(this);
             }
             else if(comboRating == ComboRating.GOOD){
                 this.enabled = false;
                 this.isReady = true;
-                doCombo(ComboRating.GOOD);
+                doCombo(ComboRating.GOOD, this.side);
                 nextSushi(this);
             }
             else{

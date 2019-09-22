@@ -15,6 +15,27 @@ function doCombo(level, sushiside){
     }
     else{
         //Do the sushi one.
+        var side = -1;
+        switch(sushiside[0]){
+            case "l":
+                side = 0;
+                break;
+            case "d":
+                side = 1;
+                break;
+            case "r":
+                side = 2;
+                break;
+        }
+
+        if(level == ComboRating.PERFECT){
+            sushistage.playPerfectFX(side);
+            //console.log(sushiside);
+        }
+        else if(level == ComboRating.GOOD){
+            sushistage.playGoodFX(side);
+            //console.log(sushiside);
+        }
     }
 
 

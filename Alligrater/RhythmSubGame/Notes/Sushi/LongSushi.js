@@ -63,7 +63,7 @@ class LongSushi extends AbstractSushi{
             this.body.height = this.calculateBodyLength()/GLOBAL_SPRITE_SCALE;
             this.body.y = this.head.y - this.head.height/2
             if(inputTimeCheck(currentTime, this.stop) == ComboRating.PERFECT){
-                doCombo(ComboRating.PERFECT);
+                doCombo(ComboRating.PERFECT, this.side);
                 this.isHolding = false;
                 this.isReady = false;
                 nextSushi(this);
@@ -81,7 +81,7 @@ class LongSushi extends AbstractSushi{
             //Also check if it's head, if it's not head then it's nothing.
             console.log("Begin Long Note");
             if(comboRating == ComboRating.PERFECT){
-                doCombo(ComboRating.PERFECT);
+                doCombo(ComboRating.PERFECT, this.side);
                 this.isHolding = true;
                 //this.head.visible = false;
                 this.isReady = true;
@@ -91,7 +91,7 @@ class LongSushi extends AbstractSushi{
 
             }
             else if(comboRating == ComboRating.GOOD){
-                doCombo(ComboRating.GOOD);
+                doCombo(ComboRating.GOOD, this.side);
                 this.isHolding = true;
                 //this.head.visible = false;
                 this.isReady = true;
@@ -110,11 +110,11 @@ class LongSushi extends AbstractSushi{
                 this.isHolding = false;
                 console.log("End Long Note");
                 if(inputTimeCheck(currentTime, this.stop) == ComboRating.PERFECT){
-                    doCombo(ComboRating.PERFECT);
+                    doCombo(ComboRating.PERFECT, this.side);
                     nextSushi(this);
                 }
                 else if(inputTimeCheck(currentTime, this.stop) == ComboRating.GOOD){
-                    doCombo(ComboRating.GOOD);
+                    doCombo(ComboRating.GOOD, this.side);
                     nextSushi(this);
                 }
                 else{

@@ -16,6 +16,7 @@ class SushiStage extends GenericStage{
         this.SushiInputQueue = [];
         this.SushiInputIndices = [0, 1, 2, 3];
         this.comboCircles = [];
+
         this.setpause();
     }
 
@@ -51,6 +52,30 @@ class SushiStage extends GenericStage{
         this.combo.y += smallstyle.fontSize;
         this.stage.addChild(this.sushimessage);
         this.stage.addChild(this.combo);
+
+
+
+        var perfect_fx_l = new HitVFX(this.stage, SPAWN_X_LEFT, SUSHI_TARGET_Y,"Resources/Images/VFX/HitVFX.json");
+        var good_fx_l = new HitVFX(this.stage, SPAWN_X_LEFT, SUSHI_TARGET_Y,"Resources/Images/VFX/GoodVFX.json");
+
+        var perfect_fx_c = new HitVFX(this.stage, MAP_CENTER_X, SUSHI_TARGET_Y,"Resources/Images/VFX/HitVFX.json");
+        var good_fx_c = new HitVFX(this.stage, MAP_CENTER_X, SUSHI_TARGET_Y,"Resources/Images/VFX/GoodVFX.json");
+
+        var perfect_fx_r = new HitVFX(this.stage, SPAWN_X_RIGHT, SUSHI_TARGET_Y,"Resources/Images/VFX/HitVFX.json");
+        var good_fx_r = new HitVFX(this.stage, SPAWN_X_RIGHT, SUSHI_TARGET_Y,"Resources/Images/VFX/GoodVFX.json");
+
+        this.goodDict = {
+            0:good_fx_l,
+            1:good_fx_c,
+            2:good_fx_r
+        }
+
+        this.perfectDict = {
+            0:perfect_fx_l,
+            1:perfect_fx_c,
+            2:perfect_fx_r
+        }
+
     }
 
     update(delta){
@@ -149,6 +174,14 @@ class SushiStage extends GenericStage{
                 SushiTemp[index].processInput(key, type, TICK_TIME);
             }
         }
+    }
+
+    playPerfectFX(side){
+        this.perfectDict[side].playSpriteAnimation();
+    }
+
+    playGoodFX(side){
+        this.goodDict[side].playSpriteAnimation();
     }
 }
 
