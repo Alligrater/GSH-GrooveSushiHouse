@@ -58,5 +58,6 @@ function clearRhythmMapStatus(){
     musicLength = 0;
     fishstage.setVariables();
     sushistage.setVariables();
+    resetCombo();
 
 }

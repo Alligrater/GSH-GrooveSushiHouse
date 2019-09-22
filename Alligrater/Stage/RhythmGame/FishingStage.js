@@ -21,20 +21,32 @@ class FishingStage extends GenericStage{
         this.fishing_background = createBackgroundOnStage(this.stage, "Resources/Images/FishingBackground.png");
         this.detection_perfect = createSpriteOnStage(this.stage,FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y, "Resources/Images/ring_perfect.png");
         let style = new PIXI.TextStyle({
-            fontFamily: "Arial",
-            fontSize: 18,
+            fontFamily: "Born2BSporty",
+            fontSize: 25*GLOBAL_SPRITE_SCALE,
             fill: "white",
-            stroke: '#ff3300',
+            stroke: '#000000',
             strokeThickness: 4,
-            dropShadow: true,
-            dropShadowColor: "#000000",
-            dropShadowBlur: 4,
-            dropShadowAngle: Math.PI / 6,
-            dropShadowDistance: 6,
+            align: "center"
         });
-        this.message = new PIXI.Text("Hello Pixi!", style);
+        let smallstyle = new PIXI.TextStyle({
+            fontFamily: "Born2BSporty",
+            fontSize: 10*GLOBAL_SPRITE_SCALE,
+            fill: "white",
+            stroke: '#000000',
+            strokeThickness: 4,
+            align: "center"
+        });
+        this.message = new PIXI.Text("Hello Pixi!", smallstyle);
+        this.message.x = CANVAS_WIDTH/2;
+
+
+        this.comboIndicator = new PIXI.Text("Hello Pixi!", style);
+        this.comboIndicator.x = CANVAS_WIDTH/2;
+        this.comboIndicator.y += this.message.height;
+
         this.fish_hit_fx = new HitVFX(this.stage, FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y);
         this.stage.addChild(this.message);
+        this.stage.addChild(this.comboIndicator);
     }
 
     update(delta){
@@ -48,7 +60,8 @@ class FishingStage extends GenericStage{
             switchToStoryStage();
         }
 
-        this.message.text = (TICK_TIME) + "\n Index: " + this.ProcessIndex + " Combo: " + COMBO_COUNT;
+        this.message.text = "Combo:\n";
+        this.comboIndicator.text = COMBO_COUNT;
         this.detection_perfect.rotation = TICK_TIME/(Math.PI*5);
         //this.fishing_overlay.zIndex = 99;
         this.stage.removeChild(this.fishing_overlay);

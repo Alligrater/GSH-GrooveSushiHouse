@@ -30,18 +30,27 @@ class SushiStage extends GenericStage{
         this.circ = createSpriteOnStage(this.stage, MAP_CENTER_X, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png")
 
         let style = new PIXI.TextStyle({
-            fontFamily: "Arial",
-            fontSize: 18,
+            fontFamily: "Born2BSporty",
+            fontSize: 25*GLOBAL_SPRITE_SCALE,
             fill: "white",
-            stroke: '#ff3300',
+            stroke: '#000000',
             strokeThickness: 4,
-            dropShadow: true,
-            dropShadowColor: "#000000",
-            dropShadowBlur: 4,
-            dropShadowAngle: Math.PI / 6,
-            dropShadowDistance: 6,
+            align: "center"
         });
-        this.sushimessage = new PIXI.Text("Hello Pixi!", style);
+        let smallstyle = new PIXI.TextStyle({
+            fontFamily: "Born2BSporty",
+            fontSize: 10*GLOBAL_SPRITE_SCALE,
+            fill: "white",
+            stroke: '#000000',
+            strokeThickness: 4,
+            align: "center"
+        });
+        this.sushimessage = new PIXI.Text("Hello Pixi!", smallstyle);
+        this.sushimessage.x = CANVAS_WIDTH / 2;
+
+        this.combo = new PIXI.Text("Hello Pixi!", style);
+        this.combo.x = CANVAS_WIDTH / 2;
+        this.combo.y += this.sushimessage.height;
         this.stage.addChild(this.sushimessage);
     }
 
@@ -54,7 +63,8 @@ class SushiStage extends GenericStage{
             this.comboCircles[x].rotation = TICK_TIME/(Math.PI*5);
         }
 
-        this.sushimessage.text = (TICK_TIME) + " INDEX: " + sushistage.SushiInputIndices + " COMBO: " + COMBO_COUNT;
+        this.sushimessage.text = "COMBO:\n";
+        this.combo.text = COMBO_COUNT;
 
         if(ACTIVE_STAGE == this){
             //Begin parsing:
