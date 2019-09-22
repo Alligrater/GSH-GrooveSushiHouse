@@ -15,20 +15,19 @@ class SushiStage extends GenericStage{
 
         this.SushiInputQueue = [];
         this.SushiInputIndices = [0, 1, 2, 3];
-        this.comboCircles = [];
 
         this.setpause();
     }
 
     setup(){
 
+        this.comboCircles = [];
+
         createBackgroundOnStage(this.stage, "Resources/Images/SushiBackground.png");
 
         this.comboCircles.push(createSpriteOnStage(this.stage, SPAWN_X_LEFT, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png"));
         this.comboCircles.push(createSpriteOnStage(this.stage, SPAWN_X_RIGHT, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png"));
         this.comboCircles.push(createSpriteOnStage(this.stage, MAP_CENTER_X, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png"));
-
-        this.circ = createSpriteOnStage(this.stage, MAP_CENTER_X, SUSHI_TARGET_Y, "Resources/Images/ring_perfect.png")
 
         let style = new PIXI.TextStyle({
             fontFamily: "Born2BSporty",
