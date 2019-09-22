@@ -155,7 +155,18 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "喂。      \n不要管他。我们继续教程。",
+			"dialogue": "对了，如果想要隐藏对话框的话，可以按下Tab。等一下可能会用到。",
+			"speaker": "Developer",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Developer.png",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "喂。                       \n不要管他。我们继续教程。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -173,7 +184,7 @@
 		
 		{
 			"type": "dialogue-action",
-			"dialogue": "这个游戏里一共有四种鱼。虽然都没有名字，但是刚好每个的颜色都不一样。这里就按照\n颜色来直接指代鱼的种类了。",
+			"dialogue": "这个游戏里一共有四种鱼。虽然都没有名字，但是刚好每个的颜色都不一样。这里就按照\n颜色来直接指代鱼的种类了。鱼会从屏幕的右边出现，然后游到左边。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",

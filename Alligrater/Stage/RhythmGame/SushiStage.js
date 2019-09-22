@@ -46,12 +46,15 @@ class SushiStage extends GenericStage{
             align: "center"
         });
         this.sushimessage = new PIXI.Text("Hello Pixi!", smallstyle);
+        this.sushimessage.anchor.x = 0.5;
         this.sushimessage.x = CANVAS_WIDTH / 2;
 
         this.combo = new PIXI.Text("Hello Pixi!", style);
         this.combo.x = CANVAS_WIDTH / 2;
-        this.combo.y += this.sushimessage.height;
+        this.combo.anchor.x = 0.5;
+        this.combo.y += smallstyle.fontSize;
         this.stage.addChild(this.sushimessage);
+        this.stage.addChild(this.combo);
     }
 
     update(delta){
@@ -64,7 +67,7 @@ class SushiStage extends GenericStage{
         }
 
         this.sushimessage.text = "COMBO:\n";
-        this.combo.text = COMBO_COUNT;
+        this.combo.text = "["+COMBO_COUNT + "]";
 
         if(ACTIVE_STAGE == this){
             //Begin parsing:

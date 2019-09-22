@@ -36,13 +36,15 @@ class FishingStage extends GenericStage{
             strokeThickness: 4,
             align: "center"
         });
-        this.message = new PIXI.Text("Hello Pixi!", smallstyle);
+        this.message = new PIXI.Text("Combo\n", smallstyle);
         this.message.x = CANVAS_WIDTH/2;
+        this.message.anchor.x = 0.5;
 
 
-        this.comboIndicator = new PIXI.Text("Hello Pixi!", style);
+        this.comboIndicator = new PIXI.Text("[00]", style);
         this.comboIndicator.x = CANVAS_WIDTH/2;
-        this.comboIndicator.y += this.message.height;
+        this.comboIndicator.y += smallstyle.fontSize;
+        this.comboIndicator.anchor.x = 0.5;
 
         this.fish_hit_fx = new HitVFX(this.stage, FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y);
         this.stage.addChild(this.message);
@@ -60,8 +62,9 @@ class FishingStage extends GenericStage{
             switchToStoryStage();
         }
 
-        this.message.text = "Combo:\n";
-        this.comboIndicator.text = COMBO_COUNT;
+        this.message.text = "Combo"
+        this.comboIndicator.text = "[" + COMBO_COUNT + "]";
+        this.comboIndicator.x = CANVAS_WIDTH/2;
         this.detection_perfect.rotation = TICK_TIME/(Math.PI*5);
         //this.fishing_overlay.zIndex = 99;
         this.stage.removeChild(this.fishing_overlay);
@@ -71,6 +74,7 @@ class FishingStage extends GenericStage{
         this.stage.addChild(this.fish_hit_fx.sprite);
 
         if(TICK_TIME >= MUSIC_OFFSET && !this.hasPlayed){
+
             music.restart();
             this.hasPlayed = true
         }
