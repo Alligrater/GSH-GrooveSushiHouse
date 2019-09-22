@@ -46,7 +46,9 @@ class DialogueBox{
         this.speakerName = "";
         this.speaker = new PIXI.Text("SPEAKER NAME", speakerTextStyle);
         this.speaker.x = this.x - this.width/3.4;
-        this.speaker.y = this.y - this.height/1.05;
+        this.speaker.y = this.y - this.height/1.16;
+        this.speaker.anchor.y = 0.5;
+
         this.speaker.resolution = 2;
         this.stage.addChild(this.speaker);
 

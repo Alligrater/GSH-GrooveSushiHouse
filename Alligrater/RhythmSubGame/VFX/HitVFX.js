@@ -1,5 +1,5 @@
 class HitVFX{
-    constructor(stage, x, y){
+    constructor(stage, x, y, texture){
 
         /*
         var textureArray = [];
@@ -9,7 +9,7 @@ class HitVFX{
         }*/
 
         //this.sprite = createAnimatedSpriteOnStage(stage, x, y, textureArray);
-        this.sprite = createAnimatedSpriteWithJSON(stage, x, y, "Resources/Images/VFX/HitVFX.json", "Hit");
+        this.sprite = createAnimatedSpriteWithJSON(stage, x, y, texture, "Hit");
         scaleSprite(this.sprite, 4);
         this.sprite.loop = false;
         this.sprite.animationSpeed = 0.8;

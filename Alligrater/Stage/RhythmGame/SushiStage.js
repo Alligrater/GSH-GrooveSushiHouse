@@ -33,16 +33,12 @@ class SushiStage extends GenericStage{
             fontFamily: "Born2BSporty",
             fontSize: 25*GLOBAL_SPRITE_SCALE,
             fill: "white",
-            stroke: '#000000',
-            strokeThickness: 4,
             align: "center"
         });
         let smallstyle = new PIXI.TextStyle({
             fontFamily: "Born2BSporty",
             fontSize: 10*GLOBAL_SPRITE_SCALE,
             fill: "white",
-            stroke: '#000000',
-            strokeThickness: 4,
             align: "center"
         });
         this.sushimessage = new PIXI.Text("Hello Pixi!", smallstyle);

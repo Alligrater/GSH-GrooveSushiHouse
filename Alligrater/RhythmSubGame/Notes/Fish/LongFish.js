@@ -61,7 +61,7 @@ class LongFish extends AbstractFish{
             this.body.width = this.calculateBodyLength()/GLOBAL_SPRITE_SCALE;
             this.body.x = this.head.x + this.head.width/2
             if(inputTimeCheck(currentTime, this.stop) == ComboRating.PERFECT){
-                doCombo("perfect");
+                doCombo(ComboRating.PERFECT);
                 this.isHolding = false;
                 this.isReady = false;
                 fishstage.nextFish();
@@ -77,7 +77,7 @@ class LongFish extends AbstractFish{
             //Also check if it's head, if it's not head then it's nothing.
             console.log("Begin Long Note");
             if(comboRating == ComboRating.PERFECT){
-                doCombo("perfect");
+                doCombo(ComboRating.PERFECT);
                 this.isHolding = true;
                 //this.head.visible = false;
                 this.isReady = true;
@@ -86,7 +86,7 @@ class LongFish extends AbstractFish{
                 }
             }
             else if(comboRating == ComboRating.GOOD){
-                doCombo("good");
+                doCombo(ComboRating.GOOD);
                 this.isHolding = true;
                 //this.head.visible = false;
                 this.isReady = true;
@@ -105,11 +105,11 @@ class LongFish extends AbstractFish{
                 this.isHolding = false;
                 console.log("End Long Note");
                 if(inputTimeCheck(currentTime, this.stop) == ComboRating.PERFECT){
-                    doCombo("perfect");
+                    doCombo(ComboRating.PERFECT);
                     fishstage.nextFish();
                 }
                 else if(inputTimeCheck(currentTime, this.stop) == ComboRating.GOOD){
-                    doCombo("good");
+                    doCombo(ComboRating.GOOD);
                     fishstage.nextFish();
                 }
                 else{

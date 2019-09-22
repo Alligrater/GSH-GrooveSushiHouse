@@ -39,6 +39,6 @@ class JunkSushi extends AbstractSushi{
 
     processMissEvent(){
         nextSushi(this);
-        doCombo("perfect");
+        doCombo(ComboRating.PERFECT);
     }
 }

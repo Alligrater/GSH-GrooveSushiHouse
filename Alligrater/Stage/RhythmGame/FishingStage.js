@@ -24,16 +24,12 @@ class FishingStage extends GenericStage{
             fontFamily: "Born2BSporty",
             fontSize: 25*GLOBAL_SPRITE_SCALE,
             fill: "white",
-            stroke: '#000000',
-            strokeThickness: 4,
             align: "center"
         });
         let smallstyle = new PIXI.TextStyle({
             fontFamily: "Born2BSporty",
             fontSize: 10*GLOBAL_SPRITE_SCALE,
             fill: "white",
-            stroke: '#000000',
-            strokeThickness: 4,
             align: "center"
         });
         this.message = new PIXI.Text("Combo\n", smallstyle);
@@ -46,7 +42,7 @@ class FishingStage extends GenericStage{
         this.comboIndicator.y += smallstyle.fontSize;
         this.comboIndicator.anchor.x = 0.5;
 
-        this.fish_hit_fx = new HitVFX(this.stage, FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y);
+        this.perfect_fx = new HitVFX(this.stage, FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y);
         this.stage.addChild(this.message);
         this.stage.addChild(this.comboIndicator);
     }
@@ -62,7 +58,7 @@ class FishingStage extends GenericStage{
             switchToStoryStage();
         }
 
-        this.message.text = "Combo"
+        this.message.text = "COMBO";
         this.comboIndicator.text = "[" + COMBO_COUNT + "]";
         this.comboIndicator.x = CANVAS_WIDTH/2;
         this.detection_perfect.rotation = TICK_TIME/(Math.PI*5);
@@ -70,8 +66,8 @@ class FishingStage extends GenericStage{
         this.stage.removeChild(this.fishing_overlay);
         this.stage.addChild(this.fishing_overlay);
 
-        this.stage.removeChild(this.fish_hit_fx.sprite);
-        this.stage.addChild(this.fish_hit_fx.sprite);
+        this.stage.removeChild(this.perfect_fx.sprite);
+        this.stage.addChild(this.perfect_fx.sprite);
 
         if(TICK_TIME >= MUSIC_OFFSET && !this.hasPlayed){
 
@@ -155,6 +151,10 @@ class FishingStage extends GenericStage{
 
     cleanup(){
         //Clean up everything.
+    }
+
+    playPerfectFX(){
+        this.perfect_fx.playSpriteAnimation();
     }
 
 }

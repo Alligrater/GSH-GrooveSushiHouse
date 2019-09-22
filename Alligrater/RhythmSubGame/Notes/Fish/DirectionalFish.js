@@ -34,13 +34,13 @@ class DirectionalFish extends AbstractFish{
             if(comboRating == ComboRating.PERFECT){
                 this.enabled = false;
                 this.isReady = true;
-                doCombo("perfect");
+                doCombo(ComboRating.PERFECT);
                 fishstage.nextFish();
             }
             else if(comboRating == ComboRating.GOOD){
                 this.enabled = false;
                 this.isReady = true;
-                doCombo("good");
+                doCombo(ComboRating.GOOD);
                 fishstage.nextFish();
             }
             else{

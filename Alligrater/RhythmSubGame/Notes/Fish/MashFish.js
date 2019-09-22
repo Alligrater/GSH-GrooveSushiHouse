@@ -51,7 +51,7 @@ class MashFish extends AbstractFish{
             if(comboRating == ComboRating.GOOD || comboRating == ComboRating.PERFECT){
                 if(!this.isReady){
                     console.log("Begin Mash!");
-                    doCombo("perfect");
+                    doCombo(ComboRating.PERFECT);
                     this.basespeed = 0;
                     this.head.x = FISH_TARGET_X;
                     this.isReady = true;
