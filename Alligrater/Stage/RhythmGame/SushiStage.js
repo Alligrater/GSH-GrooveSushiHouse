@@ -85,9 +85,9 @@ class SushiStage extends GenericStage{
         for(var x = 0; x < this.comboCircles.length; x++){
             this.comboCircles[x].rotation = TICK_TIME/(Math.PI*5);
             this.stage.removeChild(this.goodDict[x]);
+            //this.stage.addChild(this.goodDict[x]);
             this.stage.removeChild(this.perfectDict[x]);
-            this.stage.addChild(this.goodDict[x]);
-            this.stage.addChild(this.perfectDict[x]);
+            //this.stage.addChild(this.perfectDict[x]);
         }
 
         this.sushimessage.text = "COMBO:\n";
@@ -95,6 +95,14 @@ class SushiStage extends GenericStage{
 
         if(ACTIVE_STAGE == this){
             //Begin parsing:
+
+            for(var x = 0; x < this.goodDict.length; x++){
+                this.stage.removeChild(this.goodDict[x].sprite);
+                this.stage.addChild(this.goodDict[x].sprite);
+                this.stage.removeChild(this.perfectDict[x].sprite);
+                this.stage.addChild(this.perfectDict[x].sprite);
+            }
+
             if(!this.hasUpdatedQueue){
                 this.setVariables();
                 this.unpause()

@@ -70,6 +70,9 @@ class FishingStage extends GenericStage{
         this.stage.removeChild(this.perfect_fx.sprite);
         this.stage.addChild(this.perfect_fx.sprite);
 
+        this.stage.removeChild(this.good_fx.sprite);
+        this.stage.addChild(this.good_fx.sprite);
+
         if(TICK_TIME >= MUSIC_OFFSET && !this.hasPlayed){
 
             music.restart();
