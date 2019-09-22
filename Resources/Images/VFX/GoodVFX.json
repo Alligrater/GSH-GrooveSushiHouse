@@ -46,7 +46,7 @@
 	"anchor": {"x":0.5,"y":0.5}
 }},
 "animations": {
-	"Good": ["Good-0.png","Good-1.png","Good-2.png","Good-3.png","Good-4.png"]
+	"Hit": ["Good-0.png","Good-1.png","Good-2.png","Good-3.png","Good-4.png"]
 },
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",

@@ -42,7 +42,8 @@ class FishingStage extends GenericStage{
         this.comboIndicator.y += smallstyle.fontSize;
         this.comboIndicator.anchor.x = 0.5;
 
-        this.perfect_fx = new HitVFX(this.stage, FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y);
+        this.perfect_fx = new HitVFX(this.stage, FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y,"Resources/Images/VFX/HitVFX.json");
+        this.good_fx = new HitVFX(this.stage, FISH_TARGET_X, DEFAULT_SPAWN_POINT_Y,"Resources/Images/VFX/GoodVFX.json");
         this.stage.addChild(this.message);
         this.stage.addChild(this.comboIndicator);
     }
@@ -155,6 +156,10 @@ class FishingStage extends GenericStage{
 
     playPerfectFX(){
         this.perfect_fx.playSpriteAnimation();
+    }
+
+    playGoodFX(){
+        this.good_fx.playSpriteAnimation();
     }
 
 }

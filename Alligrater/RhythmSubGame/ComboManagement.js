@@ -4,8 +4,13 @@ function doCombo(level, sushiside){
     COMBO_COUNT += 1;
     console.log(level);
     if(sushiside == null){
-        if(level == "perfect")
-        fishstage.perfect_fx.playSpriteAnimation();
+        if(level == ComboRating.PERFECT){
+            fishstage.playPerfectFX()
+        }
+        else if(level == ComboRating.GOOD){
+            fishstage.playGoodFX();
+        }
+
         //Something needs to be done here to to get the sushi one.
     }
     else{

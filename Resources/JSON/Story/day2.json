@@ -62,7 +62,7 @@
 				"frequency": 4
 			}
 		},
-				{
+		{
 			"type": "switch-action"
 		}
 	]

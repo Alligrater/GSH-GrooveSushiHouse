@@ -43,6 +43,7 @@ function loadSprites(){
 
 
         .add("Resources/Images/VFX/HitVFX.json")
+        .add("Resources/Images/VFX/GoodVFX.json")
 
 
         .add("Resources/Images/Characters/Master/master.json")
