@@ -63,17 +63,17 @@ class SushiStage extends GenericStage{
         var perfect_fx_r = new HitVFX(this.stage, SPAWN_X_RIGHT, SUSHI_TARGET_Y,"Resources/Images/VFX/HitVFX.json");
         var good_fx_r = new HitVFX(this.stage, SPAWN_X_RIGHT, SUSHI_TARGET_Y,"Resources/Images/VFX/GoodVFX.json");
 
-        this.goodDict = {
-            0:good_fx_l,
-            1:good_fx_c,
-            2:good_fx_r
-        }
+        this.goodDict = [
+            good_fx_l,
+            good_fx_c,
+            good_fx_r
+        ];
 
-        this.perfectDict = {
-            0:perfect_fx_l,
-            1:perfect_fx_c,
-            2:perfect_fx_r
-        }
+        this.perfectDict = [
+            perfect_fx_l,
+            perfect_fx_c,
+            perfect_fx_r
+        ]
 
     }
 
@@ -84,6 +84,10 @@ class SushiStage extends GenericStage{
 
         for(var x = 0; x < this.comboCircles.length; x++){
             this.comboCircles[x].rotation = TICK_TIME/(Math.PI*5);
+            this.stage.removeChild(this.goodDict[x]);
+            this.stage.removeChild(this.perfectDict[x]);
+            this.stage.addChild(this.goodDict[x]);
+            this.stage.addChild(this.perfectDict[x]);
         }
 
         this.sushimessage.text = "COMBO:\n";
