@@ -29,7 +29,9 @@ function beginPixi(){
 	PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
 	PIXI.settings.ANISOTROPIC_LEVEL = 0;
 	PIXI.ROUND_PIXELS = true;
-
+  window.addEventListener('resize', resizeHandler, false);
+	
+	
 	loadSprites();
 
 
@@ -44,6 +46,9 @@ function setupStage(){
 	freeplaymenustage = new FreeplayMenuStage();
 
 	app.stage = menustage.stage;
+
+	
+	
 	ACTIVE_STAGE = menustage;
 
 	loadAllCharacters('./www/Resources/JSON/Characters/')
@@ -74,7 +79,9 @@ function beginRenderSequence(){
 
 //This is good
 function update(delta){
-
+	//app.stage.scale.set(window.innerWidth/app.view.width, window.innerHeight/app.view.height);
+	//adjustCanvasSize();
+	
 	if(!pause){
 		TICK_TIME += delta;
 		if(soundcooldown >= 5){
@@ -92,3 +99,27 @@ function update(delta){
 
 }
 
+function adjustCanvasSize(){
+	
+    //app.view.resize(window.innerWidth, window.innerHeight);
+	app.view.style.width = window.innerWidth + "px";
+	app.view.style.height = window.innerHeight + "px";
+	
+	app.renderer.width = app.view.style.width;
+	app.renderer.height = app.view.style.height;
+}
+
+const resizeHandler = () => {
+  const scaleFactor = Math.min(
+    window.innerWidth / 1280,
+    window.innerHeight / 720
+  );
+  const newWidth = Math.ceil(1280 * scaleFactor);
+  const newHeight = Math.ceil(720 * scaleFactor);
+  
+  app.view.style.width = `${newWidth}px`;
+  app.view.style.height = `${newHeight}px`;
+
+  app.renderer.resize(newWidth, newHeight);
+  app.stage.scale.set(scaleFactor); 
+};
