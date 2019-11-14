@@ -9,7 +9,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Master, iced beer and a sashimi roll please.",
+			"dialogue": "老板，来一杯冰啤和一份生鱼片寿司军舰卷。",
 			"speaker": "Catherine",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"sound": {
@@ -21,7 +21,7 @@
 
 		{
 			"type": "dialogue-action",
-			"dialogue": "*Master brought Catherine a cup of hot water*",
+			"dialogue": "*老板给Catherine端上了一杯热气腾腾的白开水*",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -31,7 +31,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Please wait while I go prepare for your sushi.",
+			"dialogue": "请先喝杯水暖暖身子吧，Catherine。我待会儿给你做寿司。",
 			"speaker": "Iktsuarpok",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
 			"sound": {
@@ -42,7 +42,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "What about my iced beer?",
+			"dialogue": "没有冰啤吗？冰啤总不会现做吧？",
 			"speaker": "Catherine",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"sound": {
@@ -53,7 +53,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Sorry, but we don't have any beer stock in store anymore.",
+			"dialogue": "没办法，最近几天客人比较多，冰啤也卖完了。",
 			"speaker": "Iktsuarpok",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
 			"sound": {
@@ -68,7 +68,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Fine...",
+			"dialogue": "唉，好吧，待会儿见。",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"speaker": "Catherine",
 			"sound": {
@@ -79,7 +79,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "I should start preparing the ingredients.",
+			"dialogue": "先去准备一下食材吧。",
 			"speaker": "Iktsuarpok",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
 			"sound": {
@@ -103,7 +103,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Tutorials for fishing and sushi mode begins here.",
+			"dialogue": "接下来是钓鱼和寿司模式的教学。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -113,7 +113,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "In this game, you will play as the master of the sushi house, Iktsuarpok \nwho forage all the ingredients in a nearby lake.",
+			"dialogue": "本作中，你将扮演寿司店的老板Iktsuarpok。这家寿司店的特殊之处就在于所有的食材都\n是老板亲手采集的。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -123,7 +123,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "I'll begin by teaching you how to fish correctly.",
+			"dialogue": "从现在开始，我会向你传授钓鱼和做寿司的基本技巧。先从钓鱼模式开始吧。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -133,7 +133,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Don't worry about failing in the tutorial level.",
+			"dialogue": "因为是教程关，所以即便失败了也没有关系。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -144,7 +144,7 @@
 		
 		{
 			"type": "dialogue-action",
-			"dialogue": "Because we never prepared scripts for failing here.",
+			"dialogue": "倒不如说，我们根本没有准备失败后的分支剧情（实诚）",
 			"speaker": "Developer",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Developer.png",
 			"sound": {
@@ -155,7 +155,18 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Hey!                       \nIgnore him. Let's keep the tutorial rolling.",
+			"dialogue": "对了，如果想要隐藏对话框的话，可以按下Tab。等一下可能会用到。",
+			"speaker": "Developer",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Developer.png",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "喂。                       \n不要管他。我们继续教程。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -163,39 +174,6 @@
 				"frequency": 4
 			},
 			"screenshake":{"time":10,"amount":20}
-		},
-		{
-			"type": "dialogue-action",
-			"dialogue": "By the way, if you want to hide the dialogue box, try hitting tab.",
-			"speaker": "Developer",
-			"headfigure": "Resources/Images/Characters/HeadFigure/Developer.png",
-			"sound": {
-				"blip": "Resources/SE/blip.wav",
-				"volume": 0.1,
-				"frequency": 4
-			}
-		},
-		{
-			"type": "dialogue-action",
-			"dialogue": "Can you stop interrupting my tutorial?!!",
-			"speaker": "Narrator",
-			"sound": {
-				"blip": "Resources/SE/blip.wav",
-				"volume": 0.2,
-				"frequency": 4
-			},
-			"screenshake":{"time":10,"amount":20}
-		},
-		{
-			"type": "dialogue-action",
-			"dialogue": "Sorry. I'll be gone right now.",
-			"speaker": "Developer",
-			"headfigure": "Resources/Images/Characters/HeadFigure/Developer.png",
-			"sound": {
-				"blip": "Resources/SE/blip.wav",
-				"volume": 0.1,
-				"frequency": 4
-			}
 		},
 		{
 			"type": "stage-action",
@@ -206,7 +184,7 @@
 		
 		{
 			"type": "dialogue-action",
-			"dialogue": "There's four kind of fish in this game. Each fish has a different color, \nand we will refer them by their color. Fish spawns from the right, and \nmove to the left.",
+			"dialogue": "这个游戏里一共有四种鱼。虽然都没有名字，但是刚好每个的颜色都不一样。这里就按照\n颜色来直接指代鱼的种类了。鱼会从屏幕的右边出现，然后游到左边。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -222,7 +200,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "When a fish reaches the detection point, press one of WASD to catch it!",
+			"dialogue": "钓鱼的方法很简单，只要在鱼到达判定点的时候按下按钮，就可以成功钓鱼。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -238,7 +216,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "It is important to time your presses, because this is a rhythm game.\n Press your keys to the beat, and it will sound beautiful.",
+			"dialogue": "前面也说过，这是一个音乐游戏。所以鱼到达判定点的时间也是跟着节奏的。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -254,17 +232,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Based on the timing of your presses, you can receive a \"good\" or \n\"perfect\" rating. If you failed to press, you will receive a \"miss\".",
-			"speaker": "Narrator",
-			"sound": {
-				"blip": "Resources/SE/blip.wav",
-				"volume": 0.1,
-				"frequency": 4
-			}
-		},
-		{
-			"type": "dialogue-action",
-			"dialogue": "Getting good or perfect rating in a row increases your combo meter. \nHowever, getting a miss will reset the combo meter. Try to get it as high \nas possible.",
+			"dialogue": "根据按按键的时机，可以获得Good或者Perfect评价。\n如果什么也不按的话，就会获得Miss评价。Miss评价过多的话，可能会导致关卡失败。\n拿到Perfect评价越多，得分就越高。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -279,6 +247,16 @@
 			}
 		},
 		{
+			"type": "dialogue-action",
+			"dialogue": "基本的按键就是WASD或者上下左右。除此之外没有多余的按键。",
+			"speaker": "Narrator",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
 			"type": "stage-action",
 			"background": {
 				"name": "Resources/Images/Tutorial/1.png"
@@ -286,7 +264,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Let's give it a shot. The first level will be really, really easy.",
+			"dialogue": "说了这么多，还是让你来亲自体验一下吧。第一个教程关只会出现红色的鱼。其他的鱼\n我会在后面继续介绍。这一关里只要注意按键的时机就OK，不需要担心按的是哪一个按键。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -300,7 +278,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Great work! Now to the other type of fish, shall we?",
+			"dialogue": "做的不错。接下来是关于其他三种鱼的教学。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -316,7 +294,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "The blue fish comes with an arrow nearby. This means you have to \npress the corresponding directional key to catch it, or you will receive \na miss.",
+			"dialogue": "蓝色的鱼身边会有一个箭头。这代表着你按下按键的时候需要按下和箭头指向方向相同的\n按键，不然就没有办法钓上蓝色的鱼。即便按错了也不会被判为Miss，只要在鱼消失之前\n按下正确的按键就可以补救回来。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -332,7 +310,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Press the key when an orange fish reaches the detection point. \nThen, hold the key until it disappears to receive a perfect! You could \nmiss the catch if you let go too early.",
+			"dialogue": "橙色的鱼比其他的鱼都要长。所以，等鱼头接触到了判定点时，需要按住按键不放，直到\n鱼的身体全部消失，鱼尾接触到鱼头为止。中间松开按键就会被判定为Miss。这种鱼没有\n任何方向限制。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -348,7 +326,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "When you see a yellow fish reaching the detection point, mash. \nThe more you mash, the larger the fish grows, and the more score you get.",
+			"dialogue": "看到黄色的河豚后需要进行连打来消耗它的体力。不论次数多少，都会被判定为Perfect。\n连打次数越多分数越高。一定时间后河豚会体力不支，即代表钓鱼成功。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -358,28 +336,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "We don't have a score system yet.",
-			"speaker": "Developer",
-			"headfigure": "Resources/Images/Characters/HeadFigure/Developer.png",
-			"sound": {
-				"blip": "Resources/SE/blip.wav",
-				"volume": 0.05,
-				"frequency": 4
-			}
-		},
-		{
-			"type": "dialogue-action",
-			"dialogue": "%$#%@@!",
-			"speaker": "Narrator",
-			"sound": {
-				"blip": "Resources/SE/blip.wav",
-				"volume": 0.1,
-				"frequency": 4
-			}
-		},
-		{
-			"type": "dialogue-action",
-			"dialogue": "Let's try that again with these new fish. Good luck!",
+			"dialogue": "这次再来试试钓鱼吧。这次的钓鱼的背景音乐和刚才一样，但是会加入刚刚提到的三种鱼。\n\n祝你好运。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",

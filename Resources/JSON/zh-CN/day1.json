@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Master served Catherine her food.",
+			"dialogue": "老板为Catherine端上了她点的食物。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -20,7 +20,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Enjoy.",
+			"dialogue": "慢用。",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
 			"speaker": "Iktsuarpok",
 			"sound": {
@@ -31,7 +31,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Now we're talking about my favorite flavor. Thanks, master!",
+			"dialogue": "哇！真是太棒了！不愧是你！",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"speaker": "Catherine",
 			"sound": {
@@ -42,7 +42,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "That reminds me of the treasure in my hometown...",
+			"dialogue": "这一口让我想起了我寄存在故乡的财宝……",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"speaker": "Catherine",
 			"sound": {

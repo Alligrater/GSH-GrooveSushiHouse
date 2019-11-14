@@ -9,7 +9,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "That's all to the fishing part.",
+			"dialogue": "看起来你已经学会了怎么钓鱼了。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -20,7 +20,7 @@
 		
 		{
 			"type": "dialogue-action",
-			"dialogue": "There's also the sushi part that comes after a fishing phase.",
+			"dialogue": "接下来跟我回到寿司店里，学习怎么做寿司吧。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -43,7 +43,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "The sushi phase is almost the same as the fishing phase, excep that the \nnotes come from above instead of the right.",
+			"dialogue": "寿司模式的玩法简直和钓鱼模式一模一样。只不过，判定点由一个变成了三个。\n这个模式里，寿司会从天上掉下来，而你需要及时接住它们。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -59,7 +59,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Press the corresponding key to catch the sushi with your plate. A for \nleft lane, S or W for middle lane, D for right lane.",
+			"dialogue": "因此，你需要根据寿司掉落的位置来按下指定的按钮。左边的按左键，中间的按上或者\n下键，右边的按右键。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -75,7 +75,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "The long sushi is basically the long fish, except that you have to press \nthe specific key. If you see a melon peel, don't press the key when it \nlands. You don't want to poison your plate, do you?",
+			"dialogue": "和刚才一样，有普通的寿司和长条的寿司。玩法也基本差不多。除此之外，还会有瓜皮\n掉下来。看到瓜皮的时候，什么都不用做，让它自己掉下去即可。\n如果一不小心按下按键接住了，就会被判定成Miss。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -86,7 +86,7 @@
 		
 		{
 			"type": "dialogue-action",
-			"dialogue": "We'll start the same song once again. The song starts at the lake, but \nwill switch to sushi perspective after a while. Get ready.",
+			"dialogue": "该讲的都讲完了。这次还是从钓鱼模式开始，中途会自动切换成寿司模式。完成这个练\n习你就可以正式开始你的旅途了。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -100,7 +100,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Great work! Remember that the scene switches can happen anytime. Always \nbe ready for the scene switches.",
+			"dialogue": "实战的时候，场景切换可能不止一次。随时做好场景切换的准备，就是胜利的法则。",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -110,7 +110,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "It's time to start your journey. Head on, brave soul!",
+			"dialogue": "我的教程已经结束了。去吧，开始你的冒险吧！",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",

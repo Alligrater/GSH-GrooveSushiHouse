@@ -1,0 +1,69 @@
+{
+	"name": "Day2",
+	"storyscript": [
+		{
+			"type": "stage-action",
+			"stage": "stage1",
+			"background": {
+				"name": "Resources/Images/SushiHouse-Night.png"
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "~Day 2~",
+			"speaker": " ",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "先去收集食材吧。反正天还没亮，进货的车不会那么快来的。",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
+			"speaker": "Iktsuarpok",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},		
+		{
+			"type": "game-action",
+			"beatmap": "./www/Resources/JSON/Beatmap/unreal_superhero_3.json"
+		},
+		{
+			"type": "stage-action",
+			"stage": "stage1",
+			"background": {
+				"name": "Resources/Images/Title.png"
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "试玩版本到这里就结束了。",
+			"speaker": "Developer",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Developer.png",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "dialogue-action",
+			"dialogue": "感谢各位一直对我们的支持。",
+			"speaker": "Developer",
+			"headfigure": "Resources/Images/Characters/HeadFigure/Developer.png",
+			"sound": {
+				"blip": "Resources/SE/blip.wav",
+				"volume": 0.1,
+				"frequency": 4
+			}
+		},
+		{
+			"type": "switch-action"
+		}
+	]
+}
