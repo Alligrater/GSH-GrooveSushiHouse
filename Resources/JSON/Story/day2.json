@@ -20,7 +20,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "先去收集食材吧。反正天还没亮，进货的车不会那么快来的。",
+			"dialogue": "I should probably go get some ingredients before the truck arrives.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
 			"speaker": "Iktsuarpok",
 			"sound": {
@@ -42,7 +42,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "试玩版本到这里就结束了。",
+			"dialogue": "The testplay session ends here.",
 			"speaker": "Developer",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Developer.png",
 			"sound": {
@@ -53,7 +53,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "感谢各位一直对我们的支持。",
+			"dialogue": "Thank you for playing!",
 			"speaker": "Developer",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Developer.png",
 			"sound": {

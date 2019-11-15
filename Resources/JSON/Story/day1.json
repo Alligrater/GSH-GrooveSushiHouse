@@ -31,7 +31,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Now we're talking about my favorite flavor. Thanks, master!",
+			"dialogue": "Now that's what I like. Thanks, master!",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"speaker": "Catherine",
 			"sound": {
@@ -53,7 +53,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Catherine，你最近还在调查那件事吗？",
+			"dialogue": "Catherine, are you still searching for that thing?",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
 			"speaker": "Iktsuarpok",
 			"sound": {
@@ -64,7 +64,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "是啊，没办法，那可是1g就价值1亿的大买卖！",
+			"dialogue": "Hey, we're talking about 1 billion bucks here.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"speaker": "Catherine",
 			"sound": {
@@ -75,7 +75,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "你也得注意一下身体。那种东西找不到就别太勉强了。",
+			"dialogue": "How about caring more about your health status? Don't push it too \nhard if you can't find it.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
 			"speaker": "Iktsuarpok",
 			"sound": {
@@ -86,7 +86,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "我已经无所谓了。临死前实现愿望已经是我最终也是最大的目标了。",
+			"dialogue": "I don't really care anymore. It's more or less my last wish now.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"speaker": "Catherine",
 			"sound": {
@@ -115,7 +115,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "先生，这是怎么回事？",
+			"dialogue": "Mister, do you know what's going on?",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Robo.png",
 			"speaker": "Ternura",
 			"sound": {
@@ -127,7 +127,7 @@
 		
 		{
 			"type": "dialogue-action",
-			"dialogue": "我也不清楚现在的情况。GPS上显示没问题，但我们沿着公路开车最后依旧会回到\n这里。",
+			"dialogue": "I am not so sure. The GPS says we are fine, but we always end up \ndriving to the same place.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Mechanic.png",
 			"speaker": "Alkaid",
 			"sound": {
@@ -138,7 +138,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "先生，我来背你沿着公路走吧，说不定是汽车的问题。",
+			"dialogue": "Mister, there could be a problem with the car. We should try to \nwalk our way out of here.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Robo.png",
 			"speaker": "Ternura",
 			"sound": {
@@ -149,7 +149,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "算了，Ternura，我们进寿司店看看吧。说不定里面会有线索。\n你也累了，补充点机油吧。待会儿喝好机油，我给你松一松调节带。",
+			"dialogue": "Anyways Ternura. The master of the sushi house knows more than we \ndo. We should head in and ask him. You are tired too, aren't you?",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Mechanic.png",
 			"speaker": "Alkaid",
 			"sound": {
@@ -173,7 +173,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "你好，来一杯60摄氏度的机油和一杯冰镇啤酒。",
+			"dialogue": "Master, iced beer and a cup of hot engine oil.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Mechanic.png",
 			"speaker": "Alkaid",
 			"sound": {
@@ -184,7 +184,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Alkaid递给了老板68纽币。",
+			"dialogue": "*Alkaid paid master 68 Neobill.*",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -194,7 +194,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "(小声)为什么先生不多给点钱？店主先生不是欠了很大一笔债吗？",
+			"dialogue": "*Whispers* Could you pay more to him? The master had owed a huge \ndebt and we could help him out.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Robo.png",
 			"speaker": "Ternura",
 			"sound": {
@@ -205,7 +205,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "就算给一些小钱那也是杯水车薪。但我相信他的能力可以做到还清那笔钱。",
+			"dialogue": "That wouldn't really help as much. Besides, I believe in his \nability to clear it by himself.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Mechanic.png",
 			"speaker": "Alkaid",
 			"sound": {
@@ -216,7 +216,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "哈哈，谢谢你，Alkaid。好久不见。",
+			"dialogue": "Thank you Alkaid. It's been a long time since we last met.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
 			"speaker": "Iktsuarpok",
 			"sound": {
@@ -227,7 +227,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "老板端上了Alkaid的机油和啤酒。",
+			"dialogue": "*Master served his customers.*",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -237,7 +237,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "这不是有冰镇啤酒吗？为什么不给我？",
+			"dialogue": "Hey! I thought you said you are out of beer!",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"speaker": "Catherine",
 			"sound": {
@@ -248,7 +248,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "这是刚到的。",
+			"dialogue": "It was delivered a few minutes ago.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
 			"speaker": "Iktsuarpok",
 			"sound": {
@@ -259,7 +259,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "那请给我一杯刚到的冰啤。",
+			"dialogue": "A can of iced beer delivered a few minutes ago, please.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"speaker": "Catherine",
 			"sound": {
@@ -270,7 +270,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "只进货了一杯。",
+			"dialogue": "They only delivered one.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
 			"speaker": "Iktsuarpok",
 			"sound": {
@@ -281,7 +281,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Catherine小姐，你有胰腺癌，还是不要喝冰啤比较好。",
+			"dialogue": "Miss Catherine, you should avoid drinking alcohol or your \npancreatic cancer will get worse.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Robo.png",
 			"speaker": "Ternura",
 			"sound": {
@@ -292,7 +292,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "我知道！请不要管我！你们一个个的怎么都这样！？反正我肯定最后都要死的，\n喝不喝对我来说都一样！",
+			"dialogue": "I KNOW! I KNOW! JUST LEAVE ME ALONE! I'LL DIE NO MATTER WHAT SO \nWHAT'S THE MATTER WITH DRINKING!",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"speaker": "Catherine",
 			"sound": {
@@ -303,7 +303,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "抱歉，Catherine小姐。Ternura她说话比较直白，但她确实是在关心您的。\n请不要在意。",
+			"dialogue": "I'm Sorry, Miss Catherine. Ternura is only caring about you. \nPlease don't mind us.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Mechanic.png",
 			"speaker": "Alkaid",
 			"sound": {
@@ -314,7 +314,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "该道歉的是我，我太冲动了。",
+			"dialogue": "I am the one who should said sorry. Shouldn't be mad to you at \nfirst.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"speaker": "Catherine",
 			"sound": {
@@ -325,7 +325,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "不对，该道歉的是Iktsuarpok。要不是因为他私藏啤酒我怎么会这么生气。",
+			"dialogue": "No, it's Iktsuarpok who should apologize. He's the one who didn't \nserve me beer.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"speaker": "Catherine",
 			"sound": {
@@ -336,7 +336,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "也不对，最该道歉的还是………………*&",
+			"dialogue": "Wait, It's...who should...*&$#",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"speaker": "Catherine",
 			"sound": {
@@ -347,7 +347,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "……",
+			"dialogue": "...",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"speaker": "Catherine",
 			"sound": {
@@ -358,7 +358,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "对了，我们来这里的路上遇到了一件怪事。我们的车怎么开都开不出这条\n黄金公路。",
+			"dialogue": "Oh right, we had some weird encounter when we came here. We couldn't \ndrive out of this area no matter what.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Mechanic.png",
 			"speaker": "Alkaid",
 			"sound": {
@@ -369,7 +369,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "车钥匙给我，我带你们开开看。",
+			"dialogue": "I'll take a look. May I have your keys?",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
 			"speaker": "Iktsuarpok",
 			"sound": {
@@ -380,7 +380,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Alkaid把钥匙递给了Iktsuarpok。",
+			"dialogue": "*Alkaid gave his keys to Iktsuarpok*",
 			"speaker": "Narrator",
 			"sound": {
 				"blip": "Resources/SE/blip.wav",
@@ -390,7 +390,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "店主先生，您不在店里不要紧吗？",
+			"dialogue": "Mister Master, is it alright to leave the store open?",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Robo.png",
 			"speaker": "Ternura",
 			"sound": {
@@ -401,7 +401,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "没事。反正你们是最后一批客人了。况且，店里也没什么值钱的东西。",
+			"dialogue": "Don't worry. You people are the last customers of the day. Besides, \nthere isn't anything worthy here either.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
 			"speaker": "Iktsuarpok",
 			"sound": {
@@ -412,7 +412,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "我们先出发了，再见，Catherine小姐。",
+			"dialogue": "We'll take our leave now. See you, Miss Catherine.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Robo.png",
 			"speaker": "Ternura",
 			"sound": {
@@ -423,7 +423,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "再见。",
+			"dialogue": "See you.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Journalist.png",
 			"speaker": "Catherine",
 			"sound": {
@@ -447,7 +447,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "这的确是个大问题。",
+			"dialogue": "That's a serious problem.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
 			"speaker": "Iktsuarpok",
 			"sound": {
@@ -458,7 +458,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "现在已经很晚了，要不大家先休息。我明天再开车出去试试看。",
+			"dialogue": "It's pretty dark now. Get some rest today, I'll try again tomorrow.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
 			"speaker": "Iktsuarpok",
 			"sound": {
@@ -469,7 +469,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "唉，也不知道明天进货的车会不会来。",
+			"dialogue": "Sigh... Will the cargo truck ever come here tomorrow?",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Master.png",
 			"speaker": "Iktsuarpok",
 			"sound": {
