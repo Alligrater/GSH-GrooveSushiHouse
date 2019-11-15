@@ -358,7 +358,7 @@
 		},
 		{
 			"type": "dialogue-action",
-			"dialogue": "Oh right, we had some weird encounter when we came here. We couldn't \ndrive out of this area no matter what.",
+			"dialogue": "Oh right, we had some weird encounter when we came here. We \ncouldn't drive out of this area no matter what.",
 			"headfigure": "Resources/Images/Characters/HeadFigure/Mechanic.png",
 			"speaker": "Alkaid",
 			"sound": {
